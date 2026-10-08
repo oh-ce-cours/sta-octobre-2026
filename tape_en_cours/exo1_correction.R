@@ -1,8 +1,6 @@
 # --- Préparation des données d'exemple (à adapter avec vos données) ---> 
 library(readr)
-setwd('Desktop/sta-octobre-2026/medias/filRouge/')
-
-commandes <- read_delim("commandes.csv", delim = ";", escape_double = FALSE, trim_ws = TRUE)
+#commandes <- read_delim("Desktop/sta-octobre-2026/medias/filRouge/commandes.csv", delim = ";", escape_double = FALSE, trim_ws = TRUE)
 montant <- commandes$montant_eur
 les_quartiles <- quantile(montant, probs = c(0, 0.25, 0.5, 0.75, 1))> 
 print(les_quartiles)
