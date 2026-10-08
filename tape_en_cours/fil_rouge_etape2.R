@@ -60,7 +60,7 @@ head(resultats)
 
 mean(resultats[, "moyenne"])            # ≈ 49.1 : pas de biais
 sd(resultats[, "moyenne"])              # ≈ 5.6  : l'erreur standard, sigma / racine(30)
-mean(resultats[, "ecart_type"])         # ≈ 30.5 : s estime sigma, un peu en dessous en moyenne
+mean(resultats[, "ecart_type"])         # ≈ 30.2 : s estime sigma (31.0), un peu en dessous en moyenne
 
 hist(resultats[, "moyenne"], breaks = 30, main = "1 000 paniers moyens de 30 commandes", xlab = "€")
 abline(v = mu, col = "firebrick", lwd = 2)
