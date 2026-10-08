@@ -31,12 +31,13 @@ Les opérations s'appliquent à tout le vecteur d'un coup : `paniers * 1.2`, `lo
 Les CSV du dossier `medias/` sont « à la française » : séparateur `;`, décimale `,`.
 
 ```r
-commandes = read.table("medias/filRouge/commandes.csv", sep = ";", dec = ",", header = TRUE)
-visites   = read.table("medias/filRouge/visitesAB.csv",  sep = ";", dec = ",", header = TRUE)
-ca        = read.table("medias/filRouge/caHebdo.csv",    sep = ";", dec = ",", header = TRUE)
+commandes = read.table("medias/filRouge/commandes.csv", sep = ";", dec = ",", header = TRUE, fileEncoding = "UTF-8-BOM")
+visites   = read.table("medias/filRouge/visitesAB.csv",  sep = ";", dec = ",", header = TRUE, fileEncoding = "UTF-8-BOM")
+ca        = read.table("medias/filRouge/caHebdo.csv",    sep = ";", dec = ",", header = TRUE, fileEncoding = "UTF-8-BOM")
 ```
 
 - `header = TRUE` : la première ligne contient les noms de colonnes.
+- `fileEncoding = "UTF-8-BOM"` : les fichiers du cours (sortis d'Excel) commencent par un marqueur invisible ; sans cette option, la première colonne s'appelle `X.U.FEFF.id_commande` au lieu de `id_commande`.
 - Fichier anglais (`,` et `.`) : `read.csv("fichier.csv")` suffit.
 - Si R ne trouve pas le fichier : `file.choose()` ouvre une fenêtre et renvoie le chemin.
 
