@@ -8,7 +8,7 @@
 library(ggplot2)
 library(scales)                 # installé avec ggplot2 : formats des axes (€, %)
 
-chwd("/Users/matthieufalce/Desktop/sta-octobre-2026")
+setwd("/Users/matthieufalce/Desktop/sta-octobre-2026")
 # 0. Les données ------------------------------------------------------------
 commandes = read.table("medias/filRouge/commandes.csv", sep = ";", dec = ",", header = TRUE, fileEncoding = "UTF-8-BOM")
 visites   = read.table("medias/filRouge/visitesAB.csv",  sep = ";", dec = ",", header = TRUE, fileEncoding = "UTF-8-BOM")
