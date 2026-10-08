@@ -11,3 +11,4 @@ montant_arrondi <- round(montant / 10) * 10
 tri_frequence <- table(montant_arrondi)
 le_mode <- as.numeric(names(tri_frequence)[which.max(tri_frequence)])
 cat("--- STATISTIQUES DESCRIPTIVES ---\n",     "Minimum :", min(montant), "€\n",     "Premier Quartile (Q1) :", quantile(montant, 0.25), "€\n",     "Médiane :", median(montant), "€\n",     "Troisième Quartile (Q3) :", quantile(montant, 0.75), "€\n",     "Maximum :", max(montant), "€\n",     "Moyenne :", round(la_moyenne, 2), "€\n",     "Écart-type :", round(l_ecart_type, 2), "€\n",     "Mode (arrondi à 10€) :", le_mode, "€\n")
+
