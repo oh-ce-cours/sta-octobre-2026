@@ -51,32 +51,51 @@ data.frame(moyenne = moyennes_salle, bas = round(bas, 1), haut = round(haut, 1),
 sum(bas <= mu & mu <= haut)             # sur 8, on en attend 7 ou 8 (95 %)
 
 # 4. Ce que la salle fait 8 fois, R le fait 1 000 fois --------------------
-tirage = function(n) {
-  x = sample(commandes$montant_eur, n)
-  c(moyenne = mean(x), ecart_type = sd(x))
+# Une boucle : à chaque tour, un nouveau stagiaire imaginaire tire 30 commandes
+# et note sa moyenne, son écart-type et si son intervalle contient 49.12 €.
+
+nb_tirages = 1000
+moyennes    = numeric(nb_tirages)       # trois vecteurs vides, un par chose à noter
+ecarts_types = numeric(nb_tirages)
+contient_mu  = logical(nb_tirages)
+
+for (i in 1:nb_tirages) {
+  x = sample(commandes$montant_eur, 30)         # le tirage numéro i
+  moyennes[i]     = mean(x)                     # on note sa moyenne dans la case i
+  ecarts_types[i] = sd(x)                       # et son écart-type
+  bas  = moyennes[i] - 2.045 * ecarts_types[i] / sqrt(30)
+  haut = moyennes[i] + 2.045 * ecarts_types[i] / sqrt(30)
+  contient_mu[i]  = (bas <= mu) & (mu <= haut)  # TRUE si l'intervalle contient la vraie valeur
 }
-resultats = t(replicate(1000, tirage(30)))   # 1000 lignes : moyenne, ecart_type
-head(resultats)
 
-mean(resultats[, "moyenne"])            # ≈ 49.1 : pas de biais
-sd(resultats[, "moyenne"])              # ≈ 5.6  : l'erreur standard, sigma / racine(30)
-mean(resultats[, "ecart_type"])         # ≈ 30.2 : s estime sigma (31.0), un peu en dessous en moyenne
+head(data.frame(moyennes, ecarts_types, contient_mu))   # les 6 premiers tirages
 
-hist(resultats[, "moyenne"], breaks = 30, main = "1 000 paniers moyens de 30 commandes", xlab = "€")
+mean(moyennes)          # ≈ 49.1 : pas de biais, les moyennes tournent autour de la vérité
+sd(moyennes)            # ≈ 5.6  : l'erreur standard, sigma / racine(30)
+mean(ecarts_types)      # ≈ 30.2 : s estime sigma (31.0), un peu en dessous en moyenne
+mean(contient_mu)       # ≈ 0.93 : la part des intervalles qui contiennent 49.12 €
+                        #   (un peu moins que 95 % : panier très asymétrique et n = 30 petit)
+
+hist(moyennes, breaks = 30, main = "1 000 paniers moyens de 30 commandes", xlab = "€")
 abline(v = mu, col = "firebrick", lwd = 2)
 # la distribution du panier était très asymétrique (étape 1) ; celle des moyennes est en cloche : TCL
 
-# quelle part des 1 000 intervalles contient 49.12 € ?
-bas  = resultats[, "moyenne"] - 2.045 * resultats[, "ecart_type"] / sqrt(30)
-haut = resultats[, "moyenne"] + 2.045 * resultats[, "ecart_type"] / sqrt(30)
-mean(bas <= mu & mu <= haut)            # ≈ 0.93 : un peu moins que 95 % (panier très asymétrique, n = 30 petit)
+# et avec n = 100 ? La même boucle, on change juste n
+n = 100
+moyennes100 = numeric(nb_tirages)
+contient100 = logical(nb_tirages)
+for (i in 1:nb_tirages) {
+  x = sample(commandes$montant_eur, n)
+  moyennes100[i] = mean(x)
+  bas  = mean(x) - qt(0.975, n - 1) * sd(x) / sqrt(n)
+  haut = mean(x) + qt(0.975, n - 1) * sd(x) / sqrt(n)
+  contient100[i] = (bas <= mu) & (mu <= haut)
+}
+sd(moyennes100)         # ≈ 3.1 : sigma / racine(100). Quatre fois plus de clients, erreur divisée par deux (pas par quatre)
+mean(contient100)       # ≈ 0.95
 
-# et avec n = 100 ?
-resultats100 = t(replicate(1000, tirage(100)))
-sd(resultats100[, "moyenne"])           # ≈ 3.1 : sigma / racine(100). Quatre fois plus de clients, erreur divisée par deux (pas par quatre)
-bas  = resultats100[, "moyenne"] - 1.984 * resultats100[, "ecart_type"] / sqrt(100)
-haut = resultats100[, "moyenne"] + 1.984 * resultats100[, "ecart_type"] / sqrt(100)
-mean(bas <= mu & mu <= haut)            # ≈ 0.95
+# Version courte, une fois la boucle comprise (c'est ce que fait l'animation) :
+# moyennes = replicate(1000, mean(sample(commandes$montant_eur, 30)))
 
 # 5. Combien de clients rappeler pour connaître le panier moyen à ± 5 € ? à ± 2 € ?
 # on isole n dans la demi-largeur e = z × sigma / racine(n)
