@@ -2,6 +2,10 @@
 
 Formateur : Matthieu Falce, matthieu@falce.net
 
+Page de la formation (horaires, visio, accès aux postes distants, ressources) : https://matthieu-falce.notion.site/Orsys-STA-Octobre-2026-3f3fd641a63681b4b8d4ef81f473a5e5
+
+Ce dossier est mis à jour en continu pendant les deux jours : `git pull` (ou Code › Download ZIP) pour récupérer ce qui a été tapé en cours.
+
 ## Contenu de ce dossier
 
 | Fichier | Quoi | Quand |
@@ -16,7 +20,7 @@ Formateur : Matthieu Falce, matthieu@falce.net
 | `risques.html` | une seconde animation, même principe : mille médicaments testés, faux positifs et faux négatifs | jour 2 matin |
 | `alpha_beta.html` | le seuil de décision et les deux risques, avec le nombre de patients et la variabilité | jour 2 matin |
 
-Les corrections seront envoyées à la fin de la formation.
+Les corrections sont ajoutées dans ce dossier à la fin de la formation.
 
 ## À installer avant le 8 octobre
 
