@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panier moyen, mille fois</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --bg:#f5f6f3; --surface:#fdfdfb; --line:#e3e6df; --line-2:#cfd4cb;
+  --ink:#171d19; --ink-2:#4d564f; --ink-3:#7d867e;
+  --pop:#2a78d6; --pop-soft:rgba(42,120,214,.14);
+  --samp:#eb6834; --samp-soft:rgba(235,104,52,.16);
+  --dist:#1baf7a; --dist-soft:rgba(27,175,122,.16);
+  --ok:#1baf7a; --bad:#e34948;
+  --mu:#171d19;
+  --focus:#2a78d6;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#151816; --surface:#1c201d; --line:#2b312d; --line-2:#3a423c;
+    --ink:#f2f4f0; --ink-2:#c1c7c0; --ink-3:#8a938c;
+    --pop:#3987e5; --pop-soft:rgba(57,135,229,.2);
+    --samp:#e8683a; --samp-soft:rgba(232,104,58,.22);
+    --dist:#22b982; --dist-soft:rgba(34,185,130,.2);
+    --ok:#22b982; --bad:#e66767;
+    --mu:#f2f4f0;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#151816; --surface:#1c201d; --line:#2b312d; --line-2:#3a423c;
+  --ink:#f2f4f0; --ink-2:#c1c7c0; --ink-3:#8a938c;
+  --pop:#3987e5; --pop-soft:rgba(57,135,229,.2);
+  --samp:#e8683a; --samp-soft:rgba(232,104,58,.22);
+  --dist:#22b982; --dist-soft:rgba(34,185,130,.2);
+  --ok:#22b982; --bad:#e66767;
+  --mu:#f2f4f0;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;line-height:1.45}
+.wrap{max-width:1180px;margin:0 auto;padding-block:20px 40px;padding-inline:16px}
+h1{font-family:"Sora",system-ui,sans-serif;font-weight:600;font-size:clamp(22px,3vw,30px);margin:0;letter-spacing:-.01em;text-wrap:balance}
+.sub{color:var(--ink-2);margin:6px 0 0;max-width:70ch}
+header{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:flex-end;justify-content:space-between;margin-bottom:18px}
+.tag{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase}
+
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-bottom:14px}
+.step{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);border-radius:10px;padding:10px 12px;text-align:left;cursor:pointer;font:inherit;display:flex;flex-direction:column;gap:2px;min-width:0}
+.step b{font-family:"Sora",sans-serif;font-weight:600;color:var(--ink);font-size:14px}
+.step small{color:var(--ink-3);font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.step[aria-pressed="true"]{border-color:var(--pop);box-shadow:inset 0 0 0 1px var(--pop)}
+.step:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+
+.controls{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding:12px 14px;background:var(--surface);border:1px solid var(--line);border-radius:12px;margin-bottom:14px}
+.ctl{display:flex;align-items:center;gap:8px}
+.ctl label{color:var(--ink-2);font-size:14px}
+select{font:inherit;padding:6px 8px;border-radius:8px;border:1px solid var(--line-2);background:var(--bg);color:var(--ink)}
+.btn{appearance:none;font:inherit;font-weight:500;border:1px solid var(--line-2);background:var(--bg);color:var(--ink);border-radius:8px;padding:7px 12px;cursor:pointer}
+.btn.primary{background:var(--samp);border-color:var(--samp);color:#fff}
+.btn:disabled{opacity:.45;cursor:default}
+.spacer{flex:1}
+
+.grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:14px}
+@media (max-width:820px){.grid{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px 10px;min-width:0}
+.panel h2{font-family:"Sora",sans-serif;font-weight:600;font-size:15px;margin:0 0 2px}
+.panel .hint{color:var(--ink-3);font-size:13px;margin:0 0 8px}
+canvas{display:block;width:100%;height:auto}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--ink-2);margin-top:6px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+.sw.line{height:2px;width:16px;border-radius:1px}
+
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}
+.tile{padding:8px 10px;border-radius:8px;background:var(--bg);border:1px solid var(--line)}
+.tile .k{font-size:12px;color:var(--ink-3);letter-spacing:.03em}
+.tile .v{font-family:"IBM Plex Mono",monospace;font-size:19px;font-variant-numeric:tabular-nums;color:var(--ink)}
+.tile .v small{font-size:12px;color:var(--ink-3);font-family:"IBM Plex Sans",sans-serif}
+.tile.accent .v{color:var(--ink)}
+
+.say{margin-top:14px;padding:12px 14px;border-left:3px solid var(--pop);background:var(--surface);border-radius:0 10px 10px 0}
+.say p{margin:0 0 6px;max-width:80ch}
+.say p:last-child{margin:0}
+.say b{font-weight:500}
+
+table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums;font-family:"IBM Plex Mono",monospace}
+th,td{text-align:right;padding:4px 8px;border-bottom:1px solid var(--line)}
+th{color:var(--ink-3);font-weight:500;font-family:"IBM Plex Sans",sans-serif}
+td:first-child,th:first-child{text-align:left}
+.tablewrap{overflow-x:auto;margin-top:8px}
+.pill{display:inline-block;padding:1px 7px;border-radius:99px;font-size:12px;font-family:"IBM Plex Sans",sans-serif}
+.pill.ok{background:var(--dist-soft);color:var(--ink)}
+.pill.bad{background:rgba(227,73,72,.15);color:var(--ink)}
+details summary{cursor:pointer;color:var(--ink-2);font-size:14px;margin-top:12px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <div class="tag">Maison Verdier · 2000 commandes · de la description à l'inférence</div>
+      <h1>Panier moyen, mille fois</h1>
+      <p class="sub">On connaît ici toute la population. On tire un échantillon, on calcule sa moyenne, et on recommence. Ce que fait la moyenne d'un tirage à l'autre, c'est tout l'objet de la statistique inférentielle.</p>
+    </div>
+  </header>
+
+  <div class="steps" role="group" aria-label="Étapes">
+    <button class="step" data-step="1" aria-pressed="true"><b>1 · La population</b><small>2000 paniers, moyenne μ connue</small></button>
+    <button class="step" data-step="2" aria-pressed="false"><b>2 · Un échantillon</b><small>n commandes, une moyenne x̄</small></button>
+    <button class="step" data-step="3" aria-pressed="false"><b>3 · Mille échantillons</b><small>la moyenne devient une variable aléatoire</small></button>
+    <button class="step" data-step="4" aria-pressed="false"><b>4 · Intervalles de confiance</b><small>combien contiennent μ ?</small></button>
+  </div>
+
+  <div class="controls">
+    <div class="ctl"><label for="n">Taille de l'échantillon n</label>
+      <select id="n"><option value="5">5</option><option value="10">10</option><option value="30" selected>30</option><option value="100">100</option></select></div>
+    <div class="ctl"><label for="conf">Niveau de confiance</label>
+      <select id="conf"><option value="90">90 %</option><option value="95" selected>95 %</option><option value="99">99 %</option></select></div>
+    <div class="spacer"></div>
+    <button class="btn primary" id="draw1">Tirer 1 échantillon</button>
+    <button class="btn" id="draw100">Tirer 100</button>
+    <button class="btn" id="draw1000">Tirer 1000</button>
+    <button class="btn" id="reset">Réinitialiser</button>
+  </div>
+
+  <div class="grid">
+    <div class="panel">
+      <h2 id="topTitle">La population : les 2000 paniers</h2>
+      <p class="hint" id="topHint">Distribution des montants (classes de 10 €). Très asymétrique : beaucoup de petits paniers, quelques très gros.</p>
+      <canvas id="cPop" width="760" height="300" role="img" aria-label="Histogramme des 2000 montants de commandes avec la moyenne de la population"></canvas>
+      <div class="legend" id="legTop">
+        <span><i class="sw" style="background:var(--pop)"></i>population (2000 commandes)</span>
+        <span><i class="sw line" style="background:var(--mu)"></i>μ = 49,12 € (vraie moyenne)</span>
+        <span id="legSamp" hidden><i class="sw" style="background:var(--samp)"></i>échantillon courant et sa moyenne x̄</span>
+      </div>
+
+      <div id="distBlock" hidden>
+        <h2 style="margin-top:16px">Les moyennes des échantillons</h2>
+        <p class="hint" id="distHint">Chaque tirage ajoute un point : sa moyenne x̄. La courbe est la loi normale de moyenne μ et d'écart-type σ/√n.</p>
+        <canvas id="cDist" width="760" height="260" role="img" aria-label="Histogramme des moyennes d'échantillons avec la courbe normale théorique"></canvas>
+        <div class="legend">
+          <span><i class="sw" style="background:var(--dist)"></i>moyennes des échantillons tirés</span>
+          <span><i class="sw line" style="background:var(--dist)"></i>loi normale N(μ, σ/√n)</span>
+          <span><i class="sw line" style="background:var(--mu)"></i>μ</span>
+        </div>
+      </div>
+
+      <div id="ciBlock" hidden>
+        <h2 style="margin-top:16px">Les 60 derniers intervalles de confiance</h2>
+        <p class="hint">Chaque segment est l'intervalle x̄ ± t · s/√n d'un tirage. Il contient μ, ou pas.</p>
+        <canvas id="cCI" width="760" height="320" role="img" aria-label="Intervalles de confiance des derniers échantillons, colorés selon qu'ils contiennent la vraie moyenne"></canvas>
+        <div class="legend">
+          <span><i class="sw" style="background:var(--ok)"></i>contient μ</span>
+          <span><i class="sw" style="background:var(--bad)"></i>rate μ</span>
+          <span><i class="sw line" style="background:var(--mu)"></i>μ = 49,12 €</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Les chiffres</h2>
+      <p class="hint">Population à gauche, échantillons à droite.</p>
+      <div class="tiles">
+        <div class="tile"><div class="k">μ · moyenne de la population</div><div class="v">49,12 <small>€</small></div></div>
+        <div class="tile"><div class="k">σ · écart-type de la population</div><div class="v">31,01 <small>€</small></div></div>
+        <div class="tile"><div class="k">x̄ · moyenne du dernier échantillon</div><div class="v" id="vXbar">—</div></div>
+        <div class="tile"><div class="k">s · écart-type du dernier échantillon</div><div class="v" id="vS">—</div></div>
+        <div class="tile"><div class="k">échantillons tirés</div><div class="v" id="vK">0</div></div>
+        <div class="tile"><div class="k">moyenne des x̄</div><div class="v" id="vMeanMeans">—</div></div>
+        <div class="tile accent"><div class="k">écart-type des x̄ (observé)</div><div class="v" id="vSdMeans">—</div></div>
+        <div class="tile accent"><div class="k">σ/√n (théorie)</div><div class="v" id="vSE">5,66 <small>€</small></div></div>
+        <div class="tile" id="tileCov" hidden><div class="k">intervalles contenant μ</div><div class="v" id="vCov">—</div></div>
+        <div class="tile" id="tileT" hidden><div class="k">coefficient t utilisé</div><div class="v" id="vT">2,045</div></div>
+      </div>
+
+      <div class="say" id="say"></div>
+
+      <details>
+        <summary>Voir les 20 derniers échantillons en tableau</summary>
+        <div class="tablewrap">
+          <table id="tbl"><thead><tr><th>#</th><th>x̄</th><th>s</th><th>borne basse</th><th>borne haute</th><th>μ dedans ?</th></tr></thead><tbody></tbody></table>
+        </div>
+      </details>
+    </div>
+  </div>
+</div>
+
+<script>
+const POP=[33.04,72.33,14.23,71.96,65.71,29.3,28.7,33.38,37.07,24.65,174.44,114.8,51.47,31.94,37.3,48.82,65.99,27.24,22.45,26.51,48.42,57.27,200.06,106.01,31.71,96.12,15.41,37.17,37.87,60.49,31.48,49.8,32.52,71.2,17.89,35.38,36.63,49.71,22.67,43.74,51.66,28.99,56.3,34.89,48.5,63.91,83.72,24.99,71.74,33.81,36.45,24.55,34.56,40.56,34.08,36.28,31.48,27.18,35.36,48.45,28.31,48.62,61.91,33.79,64.23,21.15,62.1,73.43,66.44,31.2,46.17,46.1,25.25,49.9,36.91,43.46,56.16,24.58,17.99,24.28,31.07,21.57,63.72,118.73,23.36,33.75,24.25,78.46,65.34,45.54,47.65,78.02,32.42,38.61,28.31,20.95,65.53,21.01,85.01,131.27,38.28,32.87,45.11,48.42,12.29,133.14,41.53,109.49,23.96,80.78,49.56,119.59,53.54,45.95,33.98,57.24,15.71,22.85,22.73,57.85,103.15,25.86,52.59,42.56,33.97,46.08,72.61,27.04,16.63,71.86,33.46,32.16,60.76,18.17,112.31,34.38,30.37,19.42,50.97,29.76,48.95,57.35,24.17,31.66,13.8,45.28,48.0,53.92,36.33,23.6,39.56,53.61,35.3,61.67,52.69,76.67,69.2,14.37,26.66,63.18,18.48,39.91,18.63,23.16,13.92,21.94,25.69,60.09,51.33,47.9,27.53,144.4,58.24,56.08,39.72,14.89,37.87,31.21,17.18,55.35,70.32,24.01,19.22,47.47,35.15,34.7,58.36,20.23,26.49,35.57,55.37,50.03,38.9,62.63,67.62,46.2,51.78,21.05,50.01,71.09,46.49,44.98,40.82,46.66,48.39,51.34,50.91,30.25,53.78,31.77,41.52,56.87,23.44,47.27,28.19,30.59,57.51,82.36,28.01,60.49,38.84,40.72,17.86,48.08,61.09,35.39,57.4,23.19,61.98,73.25,76.18,72.01,31.44,30.91,54.33,55.33,126.78,30.34,25.25,75.63,40.28,21.37,31.8,83.01,25.94,35.31,50.87,55.79,28.77,44.17,18.35,66.88,48.12,54.22,28.95,33.93,106.19,33.42,31.25,27.36,49.18,31.49,54.13,95.37,68.65,55.59,18.52,23.94,24.89,37.98,12.63,26.38,49.36,21.39,36.51,97.04,29.41,43.66,79.16,56.15,74.65,100.67,86.3,50.98,72.82,47.39,29.96,47.63,19.21,34.13,20.27,78.37,33.82,52.35,41.43,124.07,58.91,54.32,73.17,57.75,29.27,32.04,51.99,81.76,41.78,58.14,22.97,75.22,53.9,24.05,40.38,29.46,21.17,37.71,79.78,48.68,226.0,54.41,75.82,115.39,59.05,26.89,146.49,81.3,29.95,55.58,28.87,42.98,23.38,47.82,68.88,32.09,19.44,31.57,68.44,177.79,60.45,22.12,39.52,30.01,83.45,33.44,101.04,12.61,74.05,52.19,22.33,44.27,25.13,58.24,74.4,93.76,31.75,14.59,10.32,67.18,49.35,24.2,81.95,45.91,48.62,104.35,73.58,44.98,49.01,38.71,118.58,29.09,36.4,40.21,88.9,52.65,23.7,32.76,74.4,105.64,76.38,89.73,33.7,61.96,20.41,48.76,218.14,74.29,50.92,41.42,27.72,43.39,27.83,26.52,28.76,176.39,104.02,30.96,39.53,44.14,42.37,61.23,131.65,76.2,29.35,41.0,46.77,80.2,27.99,28.06,37.21,66.12,26.14,42.0,27.34,28.11,45.98,28.51,57.38,36.58,39.07,55.35,21.24,26.33,69.89,34.45,32.5,44.48,60.38,30.98,223.12,40.11,64.37,31.83,18.53,30.53,61.58,34.41,39.3,25.47,40.19,34.61,89.9,54.26,10.58,53.03,48.82,20.56,27.95,55.58,22.87,57.06,37.31,63.53,43.66,53.46,49.58,5.83,24.33,96.83,34.87,43.43,51.96,63.78,29.07,15.94,10.82,48.32,40.34,62.05,57.25,58.57,41.03,35.83,12.64,112.34,29.91,138.25,14.73,43.09,75.72,62.41,38.58,21.08,49.16,44.75,82.81,49.0,109.76,85.87,40.42,46.43,33.11,55.03,31.21,57.16,11.14,92.99,67.13,49.14,86.22,47.16,12.54,27.96,30.41,24.53,56.39,13.87,58.89,50.82,77.01,18.1,59.96,47.24,17.56,89.35,34.0,19.08,42.19,157.46,38.4,111.07,187.05,58.92,100.72,29.87,78.16,12.19,26.32,33.29,79.72,85.51,12.06,92.76,25.37,21.02,26.28,12.66,19.57,60.66,52.82,26.79,56.03,27.47,139.44,42.91,53.85,95.57,81.21,48.19,88.07,51.08,57.87,23.83,35.19,44.63,45.65,71.67,23.02,51.32,76.08,17.06,53.55,108.85,76.54,20.88,45.0,36.7,29.26,28.91,33.74,97.03,52.48,40.06,55.69,24.84,26.86,13.37,62.59,16.57,86.64,31.26,42.66,34.29,36.08,43.85,229.35,23.24,42.9,38.99,107.05,67.84,52.07,30.15,24.74,75.4,111.86,69.55,41.23,62.69,62.61,67.5,28.28,91.48,36.44,104.43,31.1,74.92,19.26,29.29,28.7,33.82,32.49,39.1,20.08,71.92,58.93,20.07,31.75,61.61,56.6,34.91,20.43,40.65,78.41,46.88,26.73,13.31,96.16,31.99,38.35,72.11,55.14,75.93,101.5,66.08,33.08,29.54,58.31,54.51,115.93,53.18,22.74,36.48,110.45,55.22,39.03,68.21,22.49,62.56,32.59,29.23,26.79,70.53,9.88,36.33,31.06,14.5,9.79,29.69,33.26,44.04,42.8,40.86,35.65,40.45,35.22,13.08,26.64,80.22,15.33,122.79,18.64,33.56,34.04,18.39,27.34,41.17,40.29,60.15,51.81,29.98,35.43,126.19,25.87,39.49,20.63,64.55,21.1,27.24,28.5,19.11,10.32,59.28,23.12,35.2,27.61,44.5,22.35,54.74,34.32,181.7,40.54,64.76,12.97,95.17,31.57,21.54,23.9,37.43,40.52,74.21,30.97,50.0,39.14,16.84,44.99,26.32,22.67,25.7,49.2,53.56,21.69,42.48,26.84,29.88,71.73,73.74,32.4,25.86,43.5,154.01,30.07,49.57,70.31,36.06,29.41,29.59,43.86,25.81,133.74,24.15,42.8,15.1,15.6,25.88,51.94,15.2,87.93,41.13,259.89,69.89,42.95,49.37,26.95,57.62,175.28,24.75,22.39,19.72,26.92,128.08,50.05,61.58,99.75,83.38,96.73,34.07,20.82,82.21,87.68,59.33,30.05,43.58,30.5,46.03,72.64,58.0,37.17,105.98,102.86,67.04,108.04,45.72,48.67,34.15,24.31,35.44,23.41,18.49,80.14,65.7,90.83,48.78,56.79,84.61,19.65,51.03,27.39,27.7,18.18,18.99,37.24,22.09,34.49,44.32,179.44,32.35,36.6,28.02,83.02,124.05,39.48,41.44,31.27,85.83,37.08,17.81,28.15,15.4,39.5,24.68,128.88,99.75,80.78,31.04,99.83,66.22,60.84,20.42,32.72,101.88,35.08,30.21,44.31,36.2,10.72,17.04,28.34,52.44,130.48,28.37,95.8,68.18,27.72,55.1,21.86,45.04,19.85,48.5,48.5,48.12,60.67,59.99,47.65,33.41,38.16,25.88,75.8,40.03,26.3,65.93,40.44,68.34,18.37,45.53,26.38,43.09,25.86,65.9,84.81,14.59,76.48,29.19,104.24,37.3,17.66,21.91,25.81,35.58,100.79,48.42,70.93,23.64,87.19,26.84,43.17,32.79,104.79,50.24,19.62,39.15,27.99,12.66,17.26,51.99,72.6,44.16,61.86,38.92,41.17,105.05,31.66,33.33,62.46,26.03,33.21,40.48,31.21,38.81,56.38,79.18,20.2,80.33,58.73,87.02,35.3,75.76,21.47,35.95,50.55,78.6,34.45,35.16,26.04,39.94,19.34,27.4,48.8,29.49,56.81,51.58,187.43,29.7,28.24,36.5,16.93,53.3,85.07,21.56,34.49,78.99,34.41,34.76,44.23,39.75,20.45,71.69,42.67,38.19,43.25,32.05,59.89,26.98,18.26,107.21,37.42,20.45,97.72,7.42,26.42,78.18,25.71,85.2,52.93,67.03,174.81,46.51,25.88,44.87,25.16,29.54,62.62,127.58,80.49,25.16,38.76,29.94,40.57,27.14,15.7,33.04,27.46,20.16,53.73,51.57,29.47,20.51,34.04,83.39,20.36,44.89,44.77,37.99,34.81,68.69,22.51,132.15,55.61,123.52,26.85,41.03,45.38,55.08,17.22,28.4,47.49,70.17,48.77,42.0,27.55,105.98,48.89,63.95,20.64,25.66,86.23,11.73,53.64,72.88,142.38,54.06,19.02,91.66,35.36,47.98,34.12,41.92,54.07,114.95,38.37,41.31,33.06,49.02,19.93,46.57,44.2,121.11,90.44,36.58,34.18,63.94,11.42,20.42,63.42,41.53,51.33,47.53,113.6,50.63,19.53,28.79,27.43,95.88,71.15,36.84,29.96,132.85,34.45,39.23,32.44,45.56,32.62,79.76,11.03,11.89,47.87,55.92,22.53,36.02,61.66,20.99,58.31,271.33,32.64,64.82,50.3,23.11,43.84,73.39,48.19,34.36,53.86,26.8,59.56,77.6,27.64,41.66,62.98,39.22,36.49,75.79,46.31,13.65,30.55,34.05,11.29,43.22,32.4,31.28,41.19,32.34,13.42,18.94,74.97,16.8,39.06,17.26,98.15,168.15,75.96,106.62,63.31,48.54,28.81,28.28,19.3,33.0,65.53,42.21,25.9,45.9,43.69,32.91,18.94,48.41,93.68,24.18,49.51,47.18,48.41,30.6,51.13,53.34,63.39,22.17,45.01,122.81,41.86,67.76,93.59,96.79,24.0,49.18,42.16,21.4,52.75,77.47,30.77,58.36,20.37,29.54,10.21,65.26,47.08,83.7,79.93,110.95,71.95,67.52,43.89,49.97,31.9,14.03,80.53,45.2,43.76,26.66,79.5,28.42,9.62,49.78,37.98,19.88,39.38,27.94,66.72,49.35,36.59,91.12,50.08,69.51,40.22,58.78,28.98,52.28,40.21,40.27,56.08,26.48,30.34,46.68,57.57,56.18,36.69,74.12,47.32,28.89,21.2,98.17,103.52,34.91,30.84,34.4,18.71,20.31,34.83,93.49,31.68,62.32,34.2,20.81,104.11,66.63,39.41,40.45,16.54,37.03,40.74,39.43,78.93,40.07,44.57,27.21,27.85,27.82,141.49,21.46,19.62,30.07,82.43,22.2,93.59,22.6,54.98,34.61,56.85,42.64,36.21,34.33,52.72,21.95,114.96,63.02,30.17,133.45,30.95,70.44,46.48,25.34,31.22,29.33,60.12,30.96,39.37,45.93,87.34,109.37,63.21,33.02,18.06,38.55,38.36,78.18,23.09,48.38,21.08,30.61,26.75,71.23,52.0,43.19,38.28,33.58,32.38,17.01,86.08,66.6,41.51,41.79,20.39,20.02,84.5,99.83,26.91,38.76,39.84,47.16,25.67,32.2,138.69,48.27,34.0,59.61,101.54,43.99,27.11,24.96,46.7,53.55,48.81,21.14,32.3,24.8,34.69,56.18,76.99,38.3,37.76,51.81,20.62,43.13,24.65,160.02,20.98,14.77,70.25,19.56,91.88,29.55,26.52,81.0,44.5,44.41,28.05,61.55,62.84,20.42,45.83,20.48,40.92,27.44,28.54,20.4,23.05,76.39,12.63,17.51,35.62,49.66,53.42,29.99,29.9,32.21,44.92,23.68,24.62,31.62,49.89,39.55,14.75,47.2,83.8,48.0,23.07,33.46,46.11,31.1,24.18,42.2,37.24,46.58,62.29,37.98,59.69,29.35,20.37,68.81,123.62,145.36,39.51,38.95,36.93,158.47,39.31,33.92,106.08,17.65,116.26,37.0,35.38,38.8,45.09,55.81,26.46,16.8,25.34,30.13,91.99,26.7,45.94,43.94,23.32,80.16,62.52,14.6,44.9,26.93,142.6,60.21,43.78,37.22,61.39,116.85,38.63,23.7,43.65,59.67,45.13,31.43,87.04,41.14,66.54,59.29,25.26,48.23,90.84,39.33,41.12,51.07,44.09,42.99,33.94,38.63,30.26,75.38,60.67,68.44,46.18,74.17,22.88,35.12,22.64,27.82,31.27,46.7,31.63,32.02,23.9,51.19,52.71,63.46,78.7,100.99,30.88,30.25,44.81,61.74,60.93,32.82,25.46,62.35,34.06,97.53,74.8,22.1,48.77,33.85,34.71,20.51,112.75,58.03,39.37,17.72,74.93,30.09,75.49,36.77,35.5,35.26,30.96,50.44,37.02,43.82,66.0,82.37,101.33,16.46,34.88,46.97,94.33,12.94,123.85,53.1,34.03,39.47,53.81,33.93,11.63,46.82,46.76,50.86,38.87,35.67,40.18,39.33,32.23,41.24,10.74,42.35,42.72,104.03,21.14,28.67,32.14,16.41,85.17,29.48,46.59,15.72,42.44,65.52,25.97,48.19,33.06,102.61,63.36,45.14,119.91,48.4,36.58,32.75,122.97,53.85,42.86,48.01,29.67,67.32,61.11,70.89,63.06,44.4,54.15,35.1,43.11,39.17,58.2,24.03,25.58,26.92,37.97,20.58,22.37,43.51,28.95,36.91,31.25,55.17,30.34,41.12,32.03,54.4,81.9,49.52,29.87,46.62,56.41,48.62,16.73,26.2,65.79,41.98,67.39,7.35,6.6,22.67,18.0,14.69,32.35,36.6,97.27,43.6,22.96,23.62,45.66,23.12,26.68,16.64,45.89,36.28,25.94,109.24,27.3,69.99,25.9,88.97,44.32,22.9,92.33,21.51,60.46,119.36,43.36,49.26,31.57,27.39,28.87,119.18,91.58,47.49,133.47,49.07,43.9,27.87,88.63,18.25,25.52,23.27,82.78,39.19,134.65,40.95,41.75,41.22,24.07,15.55,36.86,110.34,57.93,92.12,45.24,58.97,190.94,45.98,33.3,18.01,55.54,60.05,85.87,65.41,26.08,61.59,68.75,125.19,38.22,33.4,37.83,53.05,26.35,29.0,28.32,28.37,26.41,47.37,46.62,30.71,57.96,37.63,37.33,22.22,103.34,11.75,12.17,94.82,15.24,21.12,27.83,33.33,106.1,33.22,31.05,37.59,20.26,15.96,27.2,69.17,70.22,51.53,91.36,42.56,16.62,28.97,27.27,38.12,68.38,88.14,54.01,55.77,23.63,35.11,34.86,109.33,30.36,21.85,43.35,40.85,42.8,41.95,16.61,104.14,43.47,27.85,69.03,31.87,87.32,35.91,25.25,42.1,25.07,45.27,62.34,48.24,110.95,82.12,51.07,36.53,44.58,16.13,28.56,31.34,103.54,30.58,47.99,37.88,39.11,59.75,44.26,75.02,41.67,44.41,37.81,28.48,20.62,30.45,74.16,55.43,15.21,18.17,83.8,55.69,34.79,35.08,29.83,91.19,20.57,56.7,53.96,34.13,42.94,65.15,141.96,35.96,61.49,37.12,53.95,29.07,36.33,25.82,26.7,21.2,44.82,84.79,71.43,79.68,38.85,56.96,45.84,22.93,42.86,51.51,41.13,23.55,16.54,36.48,46.23,18.46,12.6,80.09,49.63,37.51,38.18,29.06,31.01,61.85,65.03,37.5,26.46,44.84,51.46,58.72,19.26,8.17,72.65,35.17,26.53,22.42,84.26,46.96,79.83,108.91,31.75,68.57,62.54,17.16,57.65,44.68,26.42,31.18,45.45,45.56,36.94,30.15,91.17,70.13,18.38,40.78,27.05,52.65,95.62,28.98,31.97,84.41,59.25,31.92,27.68,40.09,47.0,29.56,83.61,35.83,16.75,21.03,15.93,40.76,39.83,34.56,41.03,27.52,89.81,8.31,99.18,42.73,53.95,34.59,68.73,60.92,21.55,40.29,30.13,75.0,49.91,55.2,20.76,75.14,28.0,18.56,116.45,19.46,40.01,15.79,16.9,16.43,23.85,41.44,39.41,52.86,30.89,64.94,23.57,78.24,24.63,33.25,19.5,25.3,20.78,158.82,39.04,32.0,101.63,37.61,93.47,28.18,68.74,22.87,17.02,53.88,66.95,97.88,19.74,74.2,24.22,40.24,89.19,203.45,20.79,27.67,36.7,52.56,38.89,46.52,39.53,14.66,73.48,188.82,71.78,32.48,124.96,116.28,29.78,23.45,15.05,25.45,31.07,34.58,112.74,98.3,53.32,94.72,24.16,48.65,20.33,85.3,56.07,59.03,77.86,39.4,53.4,54.12,119.71,45.64,49.09,73.4,39.62,19.61,14.07,16.99,68.27,69.4,27.63,25.84,26.68,39.04,33.36,73.93,38.49,51.2,58.95,44.41,28.1,40.52,50.75,36.81,270.44,51.01,25.36,89.33,88.48,24.61,48.18,32.41,39.8,26.55,26.64,46.7,106.66,38.15,18.95,106.02,14.98,21.9,38.99,25.61,59.43,22.09,13.96,50.23,17.95,32.9,75.56,34.21,45.01,63.03,16.76,112.09,31.75,47.78,17.84,35.02,58.19,37.17,60.52,80.87,18.58,127.21,15.53,34.48,78.42,31.59,54.25,36.32,108.64,28.11,30.5,65.03,67.51,69.28,39.61,19.14,52.21,53.55,21.79,26.38,55.42,28.24];
+// ---------- population ----------
+const N_POP = POP.length;
+const MU = POP.reduce((a, b) => a + b, 0) / N_POP;
+const SIGMA = Math.sqrt(POP.reduce((a, b) => a + (b - MU) * (b - MU), 0) / N_POP);
+// quantiles de Student t_{1-alpha/2} pour n-1 ddl (n = 5, 10, 30, 100)
+const T = { 90: { 5: 2.132, 10: 1.833, 30: 1.699, 100: 1.660 },
+            95: { 5: 2.776, 10: 2.262, 30: 2.045, 100: 1.984 },
+            99: { 5: 4.604, 10: 3.250, 30: 2.756, 100: 2.626 } };
+
+const fr = (x, d = 2) => x.toLocaleString("fr-FR", { minimumFractionDigits: d, maximumFractionDigits: d });
+const css = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+// ---------- state ----------
+let step = 1, n = 30, conf = 95;
+let samples = [];       // {mean, sd, lo, hi, ok}
+let current = null;     // dernier échantillon (valeurs)
+let animating = false;
+
+function sampleOnce() {
+  // tirage sans remise de n commandes (Fisher-Yates partiel)
+  const idx = new Array(N_POP);
+  for (let i = 0; i < N_POP; i++) idx[i] = i;
+  const vals = [];
+  for (let i = 0; i < n; i++) {
+    const j = i + Math.floor(Math.random() * (N_POP - i));
+    [idx[i], idx[j]] = [idx[j], idx[i]];
+    vals.push(POP[idx[i]]);
+  }
+  const mean = vals.reduce((a, b) => a + b, 0) / n;
+  const sd = Math.sqrt(vals.reduce((a, b) => a + (b - mean) * (b - mean), 0) / (n - 1));
+  const half = T[conf][n] * sd / Math.sqrt(n);
+  const s = { mean, sd, lo: mean - half, hi: mean + half };
+  s.ok = s.lo <= MU && MU <= s.hi;
+  samples.push(s); current = vals;
+}
+
+function drawMany(k) {
+  if (animating) return;
+  if (reduced || k === 1) { for (let i = 0; i < k; i++) sampleOnce(); render(); return; }
+  animating = true; setButtons();
+  const chunk = k >= 1000 ? 25 : 4; let done = 0;
+  const tick = () => {
+    for (let i = 0; i < chunk && done < k; i++, done++) sampleOnce();
+    render();
+    if (done < k) requestAnimationFrame(tick); else { animating = false; setButtons(); }
+  };
+  requestAnimationFrame(tick);
+}
+
+function reset() { samples = []; current = null; render(); }
+
+// ---------- canvas helpers ----------
+function setupCanvas(c, cssH) {
+  const dpr = window.devicePixelRatio || 1;
+  const w = c.clientWidth || 760;
+  c.width = Math.round(w * dpr); c.height = Math.round(cssH * dpr);
+  c.style.height = cssH + "px";
+  const ctx = c.getContext("2d"); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  return { ctx, w, h: cssH };
+}
+function axisText(ctx) { ctx.fillStyle = css("--ink-3"); ctx.font = '12px "IBM Plex Mono", monospace'; }
+function hairline(ctx) { ctx.strokeStyle = css("--line"); ctx.lineWidth = 1; }
+
+// ---------- chart 1 : population ----------
+const popBins = (() => {
+  const w = 10, k = 30, bins = new Array(k).fill(0);
+  for (const v of POP) bins[Math.min(k - 1, Math.floor(v / w))]++;
+  return { w, k, bins, max: Math.max(...bins) };
+})();
+
+function drawPop() {
+  const c = document.getElementById("cPop");
+  const { ctx, w, h } = setupCanvas(c, 290);
+  ctx.clearRect(0, 0, w, h);
+  const m = { l: 44, r: 16, t: 18, b: 34 }, pw = w - m.l - m.r, ph = h - m.t - m.b;
+  const x = (v) => m.l + (v / 300) * pw, y = (cnt) => m.t + ph - (cnt / popBins.max) * ph;
+  // grid
+  hairline(ctx); axisText(ctx); ctx.textAlign = "right"; ctx.textBaseline = "middle";
+  for (const g of [0, 100, 200, 300, 400]) { if (g > popBins.max) break; ctx.beginPath(); ctx.moveTo(m.l, y(g)); ctx.lineTo(w - m.r, y(g)); ctx.stroke(); ctx.fillText(g, m.l - 6, y(g)); }
+  // bars
+  ctx.fillStyle = css("--pop");
+  const bw = pw / popBins.k - 2;
+  popBins.bins.forEach((cnt, i) => { const x0 = x(i * popBins.w) + 1, y0 = y(cnt); roundTop(ctx, x0, y0, bw, m.t + ph - y0); });
+  // x axis
+  ctx.textAlign = "center"; ctx.textBaseline = "top"; axisText(ctx);
+  for (const v of [0, 50, 100, 150, 200, 250, 300]) ctx.fillText(v + " €", x(v), m.t + ph + 8);
+  // sample dots
+  if (current && step >= 2) {
+    ctx.fillStyle = css("--samp");
+    const ring = css("--surface");
+    current.forEach((v, i) => {
+      const cx = x(Math.min(v, 299)), cy = m.t + ph - 8 - ((i * 37) % 60);
+      ctx.beginPath(); ctx.arc(cx, cy, 5, 0, Math.PI * 2); ctx.fillStyle = ring; ctx.fill();
+      ctx.beginPath(); ctx.arc(cx, cy, 3.5, 0, Math.PI * 2); ctx.fillStyle = css("--samp"); ctx.fill();
+    });
+    const s = samples[samples.length - 1];
+    ctx.strokeStyle = css("--samp"); ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(x(s.mean), m.t); ctx.lineTo(x(s.mean), m.t + ph); ctx.stroke();
+    labelBox(ctx, "x̄ = " + fr(s.mean) + " €", x(s.mean) + 6, m.t + 20);
+  }
+  // mu line
+  ctx.strokeStyle = css("--mu"); ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(x(MU), m.t); ctx.lineTo(x(MU), m.t + ph); ctx.stroke();
+  labelBox(ctx, "μ = " + fr(MU) + " €", x(MU) + 6, m.t);
+}
+
+function labelBox(ctx, text, x, y) {
+  ctx.font = '500 12px "IBM Plex Sans", sans-serif'; ctx.textAlign = "left"; ctx.textBaseline = "top";
+  const tw = ctx.measureText(text).width;
+  ctx.fillStyle = css("--surface"); ctx.globalAlpha = 0.92; ctx.fillRect(x - 3, y - 2, tw + 6, 17); ctx.globalAlpha = 1;
+  ctx.fillStyle = css("--ink"); ctx.fillText(text, x, y);
+}
+function roundTop(ctx, x, y, w, h) {
+  const r = Math.min(4, w / 2, h);
+  ctx.beginPath(); ctx.moveTo(x, y + h); ctx.lineTo(x, y + r); ctx.arcTo(x, y, x + r, y, r); ctx.lineTo(x + w - r, y); ctx.arcTo(x + w, y, x + w, y + r, r); ctx.lineTo(x + w, y + h); ctx.closePath(); ctx.fill();
+}
+
+// ---------- chart 2 : distribution des moyennes ----------
+function drawDist() {
+  const c = document.getElementById("cDist");
+  const { ctx, w, h } = setupCanvas(c, 250);
+  ctx.clearRect(0, 0, w, h);
+  const m = { l: 44, r: 16, t: 14, b: 34 }, pw = w - m.l - m.r, ph = h - m.t - m.b;
+  const se = SIGMA / Math.sqrt(n);
+  const lo = MU - 4.5 * se, hi = MU + 4.5 * se, k = 40, bw = (hi - lo) / k;
+  const bins = new Array(k).fill(0);
+  for (const s of samples) { const i = Math.floor((s.mean - lo) / bw); if (i >= 0 && i < k) bins[i]++; }
+  const K = samples.length;
+  const expectedPeak = K * bw / (se * Math.sqrt(2 * Math.PI));
+  const ymax = Math.max(5, Math.max(...bins), expectedPeak) * 1.1;
+  const x = (v) => m.l + ((v - lo) / (hi - lo)) * pw, y = (cnt) => m.t + ph - (cnt / ymax) * ph;
+  hairline(ctx); axisText(ctx); ctx.textAlign = "right"; ctx.textBaseline = "middle";
+  const gstep = niceStep(ymax);
+  for (let g = 0; g <= ymax; g += gstep) { ctx.beginPath(); ctx.moveTo(m.l, y(g)); ctx.lineTo(w - m.r, y(g)); ctx.stroke(); ctx.fillText(g, m.l - 6, y(g)); }
+  ctx.fillStyle = css("--dist");
+  bins.forEach((cnt, i) => { if (!cnt) return; const x0 = x(lo + i * bw) + 1, y0 = y(cnt); roundTop(ctx, x0, y0, pw / k - 2, m.t + ph - y0); });
+  // normal curve
+  if (K > 0) {
+    ctx.strokeStyle = css("--dist"); ctx.lineWidth = 2; ctx.beginPath();
+    for (let i = 0; i <= 200; i++) { const v = lo + (i / 200) * (hi - lo); const d = K * bw * Math.exp(-0.5 * ((v - MU) / se) ** 2) / (se * Math.sqrt(2 * Math.PI)); const px = x(v), py = y(d); i ? ctx.lineTo(px, py) : ctx.moveTo(px, py); }
+    ctx.stroke();
+  }
+  ctx.strokeStyle = css("--mu"); ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(x(MU), m.t); ctx.lineTo(x(MU), m.t + ph); ctx.stroke();
+  axisText(ctx); ctx.textAlign = "center"; ctx.textBaseline = "top";
+  const xs = niceTicks(lo, hi);
+  for (const v of xs) ctx.fillText(fr(v, 0) + " €", x(v), m.t + ph + 8);
+  // annotation ± se
+  ctx.fillStyle = css("--ink-2"); ctx.font = '12px "IBM Plex Sans", sans-serif'; ctx.textAlign = "left";
+  ctx.fillText("σ/√n = " + fr(se) + " €", m.l + 6, m.t + 2);
+}
+function niceStep(max) { const raw = max / 4, p = Math.pow(10, Math.floor(Math.log10(raw))), f = raw / p; return (f < 1.5 ? 1 : f < 3.5 ? 2 : f < 7.5 ? 5 : 10) * p; }
+function niceTicks(lo, hi) { const st = niceStep((hi - lo) * 0.8); const out = []; for (let v = Math.ceil(lo / st) * st; v <= hi; v += st) out.push(v); return out; }
+
+// ---------- chart 3 : intervalles de confiance ----------
+function drawCI() {
+  const c = document.getElementById("cCI");
+  const { ctx, w, h } = setupCanvas(c, 320);
+  ctx.clearRect(0, 0, w, h);
+  const m = { l: 16, r: 16, t: 10, b: 30 }, pw = w - m.l - m.r, ph = h - m.t - m.b;
+  const last = samples.slice(-60);
+  const se = SIGMA / Math.sqrt(n);
+  const lo = MU - 5 * se * (n === 5 ? 1.6 : 1.2), hi = MU + 5 * se * (n === 5 ? 1.6 : 1.2);
+  const x = (v) => m.l + Math.min(1, Math.max(0, (v - lo) / (hi - lo))) * pw;
+  hairline(ctx); axisText(ctx); ctx.textAlign = "center"; ctx.textBaseline = "top";
+  for (const v of niceTicks(lo, hi)) { ctx.beginPath(); ctx.moveTo(x(v), m.t); ctx.lineTo(x(v), m.t + ph); ctx.stroke(); ctx.fillText(fr(v, 0) + " €", x(v), m.t + ph + 8); }
+  const rowH = ph / 60;
+  last.forEach((s, i) => {
+    const yy = m.t + ph - (i + 0.5) * rowH;
+    ctx.strokeStyle = s.ok ? css("--ok") : css("--bad"); ctx.lineWidth = Math.max(2, rowH - 2); ctx.lineCap = "butt";
+    ctx.beginPath(); ctx.moveTo(x(s.lo), yy); ctx.lineTo(x(s.hi), yy); ctx.stroke();
+    ctx.fillStyle = css("--surface"); ctx.beginPath(); ctx.arc(x(s.mean), yy, Math.min(3, rowH / 2), 0, Math.PI * 2); ctx.fill();
+  });
+  ctx.strokeStyle = css("--mu"); ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(x(MU), m.t); ctx.lineTo(x(MU), m.t + ph); ctx.stroke();
+}
+
+// ---------- texte du formateur ----------
+function narration() {
+  const K = samples.length, s = samples[K - 1];
+  const se = SIGMA / Math.sqrt(n);
+  const cov = K ? samples.filter(v => v.ok).length / K : null;
+  if (step === 1) return `<p><b>Statistique descriptive.</b> Voici <em>toute</em> la population : les 2000 commandes de l'année. Sa moyenne μ vaut ${fr(MU)} €, son écart-type σ ${fr(SIGMA)} €. La distribution n'a rien d'une cloche : mode vers 30 €, médiane 41 €, moyenne 49 €.</p><p>En pratique, on ne dispose jamais de la population entière. On a un échantillon. Passez à l'étape 2.</p>`;
+  if (step === 2) return s
+    ? `<p><b>Un tirage.</b> ${n} commandes tirées au hasard : leur moyenne x̄ vaut ${fr(s.mean)} €, ${s.mean > MU ? "au-dessus" : "en dessous"} de μ de ${fr(Math.abs(s.mean - MU))} €. Rien n'est faux : c'est le hasard du tirage.</p><p>Cliquez encore sur « Tirer 1 échantillon » : x̄ change à chaque fois. Quelle valeur croire ? C'est la question de l'inférence.</p>`
+    : `<p><b>Un tirage.</b> Le service client ne peut rappeler que ${n} clients. Cliquez sur « Tirer 1 échantillon » : les ${n} commandes tirées s'affichent en orange, avec leur moyenne x̄.</p>`;
+  if (step === 3) return K < 30
+    ? `<p><b>La moyenne est une variable aléatoire.</b> Tirez 100 puis 1000 échantillons. Chaque moyenne x̄ devient un point du second graphique.</p><p>Question à la salle : quelle forme va prendre ce tas de points ?</p>`
+    : `<p><b>Théorème central limite.</b> Après ${K} tirages, les moyennes se rangent en cloche autour de μ (moyenne des x̄ : ${fr(mean(samples.map(v => v.mean)))} €), alors que les paniers eux-mêmes sont très asymétriques.</p><p>L'écart-type observé des x̄ est ${fr(sd(samples.map(v => v.mean)))} €, contre σ/√n = ${fr(se)} € en théorie. C'est <b>l'erreur standard</b> : l'incertitude sur une moyenne se divise par √n. Changez n pour le vérifier.</p>`;
+  return K < 30
+    ? `<p><b>Intervalle de confiance.</b> Pour chaque tirage on calcule x̄ ± t · s/√n, avec t = ${fr(T[conf][n], 3)} (loi de Student à ${n - 1} ddl, niveau ${conf} %). Tirez 100 échantillons et comptez ceux qui ratent μ.</p>`
+    : `<p><b>Ce que veut dire « ${conf} % ».</b> Sur ${K} tirages, ${fr(100 * cov, 1)} % des intervalles contiennent μ${cov < conf / 100 - 0.03 ? " (un peu moins que " + conf + " % : avec n = " + n + " et une loi aussi asymétrique, l'approximation par Student est un peu optimiste)" : ""}.</p><p>Le ${conf} % porte sur <em>la méthode</em>, pas sur un intervalle donné : un intervalle précis contient μ ou ne le contient pas, on ne le sait jamais. En pratique on n'a qu'un seul tirage, une seule ligne de ce graphique.</p>`;
+}
+const mean = (a) => a.reduce((x, y) => x + y, 0) / a.length;
+const sd = (a) => { const mu = mean(a); return Math.sqrt(a.reduce((x, y) => x + (y - mu) ** 2, 0) / (a.length - 1)); };
+
+// ---------- render ----------
+function render() {
+  const K = samples.length, s = samples[K - 1];
+  document.getElementById("vXbar").innerHTML = s ? fr(s.mean) + " <small>€</small>" : "—";
+  document.getElementById("vS").innerHTML = s ? fr(s.sd) + " <small>€</small>" : "—";
+  document.getElementById("vK").textContent = K;
+  document.getElementById("vMeanMeans").innerHTML = K ? fr(mean(samples.map(v => v.mean))) + " <small>€</small>" : "—";
+  document.getElementById("vSdMeans").innerHTML = K > 1 ? fr(sd(samples.map(v => v.mean))) + " <small>€</small>" : "—";
+  document.getElementById("vSE").innerHTML = fr(SIGMA / Math.sqrt(n)) + " <small>€</small>";
+  document.getElementById("vCov").innerHTML = K ? fr(100 * samples.filter(v => v.ok).length / K, 1) + " <small>%</small>" : "—";
+  document.getElementById("vT").textContent = fr(T[conf][n], 3);
+
+  document.getElementById("legSamp").hidden = step < 2;
+  document.getElementById("distBlock").hidden = step < 3;
+  document.getElementById("ciBlock").hidden = step < 4;
+  document.getElementById("tileCov").hidden = step < 4;
+  document.getElementById("tileT").hidden = step < 4;
+  document.getElementById("topTitle").textContent = step === 1 ? "La population : les 2000 paniers" : "La population, et l'échantillon tiré";
+  document.getElementById("topHint").textContent = step === 1
+    ? "Distribution des montants (classes de 10 €). Très asymétrique : beaucoup de petits paniers, quelques très gros."
+    : "Les points orange sont les " + n + " commandes du dernier tirage ; le trait orange est leur moyenne x̄.";
+  document.getElementById("say").innerHTML = narration();
+
+  drawPop();
+  if (step >= 3) drawDist();
+  if (step >= 4) drawCI();
+
+  const tb = document.querySelector("#tbl tbody"); tb.innerHTML = "";
+  samples.slice(-20).reverse().forEach((v, i) => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td>${K - i}</td><td>${fr(v.mean)}</td><td>${fr(v.sd)}</td><td>${fr(v.lo)}</td><td>${fr(v.hi)}</td><td><span class="pill ${v.ok ? "ok" : "bad"}">${v.ok ? "oui" : "non"}</span></td>`;
+    tb.appendChild(tr);
+  });
+}
+function setButtons() { for (const id of ["draw1", "draw100", "draw1000", "reset"]) document.getElementById(id).disabled = animating; }
+
+// ---------- events ----------
+document.querySelectorAll(".step").forEach(b => b.addEventListener("click", () => {
+  step = +b.dataset.step;
+  document.querySelectorAll(".step").forEach(o => o.setAttribute("aria-pressed", o === b ? "true" : "false"));
+  render();
+}));
+document.getElementById("n").addEventListener("change", e => { n = +e.target.value; samples = []; current = null; render(); });
+document.getElementById("conf").addEventListener("change", e => { conf = +e.target.value; samples = samples.map(s => { const half = T[conf][n] * s.sd / Math.sqrt(n); const o = { ...s, lo: s.mean - half, hi: s.mean + half }; o.ok = o.lo <= MU && MU <= o.hi; return o; }); render(); });
+document.getElementById("draw1").addEventListener("click", () => drawMany(1));
+document.getElementById("draw100").addEventListener("click", () => drawMany(100));
+document.getElementById("draw1000").addEventListener("click", () => drawMany(1000));
+document.getElementById("reset").addEventListener("click", reset);
+window.addEventListener("resize", render);
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", render);
+new MutationObserver(render).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+render();
+</script>
+</body>
+</html>

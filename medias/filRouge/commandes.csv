@@ -1,0 +1,2001 @@
+﻿id_commande;date;canal;region;transporteur;nb_articles;montant_eur;delai_livraison_jours;satisfaction;client_nouveau
+CMD-250106-2502;06/01/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;1;33,04;1;4;non
+CMD-250106-3669;06/01/2025;Email;Auvergne-Rhône-Alpes;Colissimo;4;72,33;2;5;non
+CMD-250106-7420;06/01/2025;Réseaux sociaux;Hauts-de-France;Mondial Relay;1;14,23;2;5;oui
+CMD-250106-5779;06/01/2025;Réseaux sociaux;Île-de-France;Colissimo;3;71,96;2;2;oui
+CMD-250106-5745;06/01/2025;Email;Île-de-France;Chronopost;5;65,71;1;3;non
+CMD-250107-9655;07/01/2025;SEA;Grand Est;Colissimo;2;29,3;1;3;non
+CMD-250107-7543;07/01/2025;SEO;PACA;Chronopost;2;28,7;1;4;non
+CMD-250108-8884;08/01/2025;Direct;Auvergne-Rhône-Alpes;Mondial Relay;3;33,38;5;3;oui
+CMD-250108-2754;08/01/2025;SEO;Île-de-France;Colissimo;3;37,07;3;4;oui
+CMD-250108-6075;08/01/2025;SEO;Île-de-France;Colissimo;6;24,65;2;4;non
+CMD-250109-3278;09/01/2025;SEO;Hauts-de-France;Colissimo;2;174,44;2;3;non
+CMD-250109-2533;09/01/2025;SEA;Nouvelle-Aquitaine;Colissimo;4;114,8;3;3;non
+CMD-250109-1693;09/01/2025;SEA;Île-de-France;Colissimo;5;51,47;3;3;oui
+CMD-250109-9248;09/01/2025;Réseaux sociaux;Hauts-de-France;Colissimo;1;31,94;2;4;non
+CMD-250110-7765;10/01/2025;SEO;Île-de-France;Mondial Relay;3;37,3;6;3;oui
+CMD-250110-5870;10/01/2025;Direct;Bretagne;Colissimo;3;48,82;2;4;non
+CMD-250110-6049;10/01/2025;SEO;Nouvelle-Aquitaine;Colissimo;2;65,99;3;3;oui
+CMD-250110-5005;10/01/2025;SEA;Hauts-de-France;Colissimo;4;27,24;3;3;non
+CMD-250111-3467;11/01/2025;Email;Nouvelle-Aquitaine;Chronopost;2;22,45;2;4;non
+CMD-250111-9631;11/01/2025;Réseaux sociaux;PACA;Chronopost;2;26,51;2;4;oui
+CMD-250111-4548;11/01/2025;SEO;PACA;Mondial Relay;2;48,42;3;3;non
+CMD-250111-1426;11/01/2025;SEO;PACA;Mondial Relay;3;57,27;5;3;oui
+CMD-250111-6954;11/01/2025;Email;Hauts-de-France;Mondial Relay;4;200,06;4;2;oui
+CMD-250111-6346;11/01/2025;Email;Occitanie;Chronopost;6;106,01;2;3;non
+CMD-250111-4728;11/01/2025;SEA;Auvergne-Rhône-Alpes;Chronopost;2;31,71;1;5;non
+CMD-250112-1938;12/01/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;3;96,12;6;2;oui
+CMD-250112-3403;12/01/2025;Email;Grand Est;Colissimo;1;15,41;5;4;non
+CMD-250112-5227;12/01/2025;SEA;Nouvelle-Aquitaine;Colissimo;2;37,17;5;2;oui
+CMD-250112-9338;12/01/2025;Email;Occitanie;Chronopost;3;37,87;1;5;non
+CMD-250112-3518;12/01/2025;Direct;Île-de-France;Mondial Relay;2;60,49;2;3;oui
+CMD-250112-4916;12/01/2025;Réseaux sociaux;Occitanie;Mondial Relay;2;31,48;4;2;non
+CMD-250112-8247;12/01/2025;SEA;Hauts-de-France;Colissimo;2;49,8;4;2;oui
+CMD-250113-3616;13/01/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;3;32,52;3;3;oui
+CMD-250113-4252;13/01/2025;SEA;Hauts-de-France;Colissimo;4;71,2;2;3;oui
+CMD-250114-2949;14/01/2025;SEA;Hauts-de-France;Colissimo;2;17,89;5;4;oui
+CMD-250114-4503;14/01/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;2;35,38;4;4;non
+CMD-250114-7559;14/01/2025;Direct;Bretagne;Colissimo;1;36,63;3;4;non
+CMD-250114-4927;14/01/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;3;49,71;3;4;non
+CMD-250114-5264;14/01/2025;Direct;Bretagne;Mondial Relay;2;22,67;5;3;oui
+CMD-250115-9134;15/01/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;3;43,74;2;3;oui
+CMD-250115-4536;15/01/2025;SEO;Hauts-de-France;Chronopost;4;51,66;1;4;non
+CMD-250115-5093;15/01/2025;SEA;Occitanie;Colissimo;3;28,99;3;4;non
+CMD-250115-7104;15/01/2025;SEO;Nouvelle-Aquitaine;Colissimo;2;56,3;4;4;oui
+CMD-250115-5568;15/01/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;2;34,89;3;2;non
+CMD-250115-4976;15/01/2025;Email;Bretagne;Mondial Relay;3;48,5;4;2;non
+CMD-250115-1183;15/01/2025;SEO;Hauts-de-France;Colissimo;1;63,91;3;5;oui
+CMD-250115-5334;15/01/2025;Email;Île-de-France;Colissimo;3;83,72;2;4;oui
+CMD-250115-5094;15/01/2025;Direct;Île-de-France;Colissimo;1;24,99;6;2;non
+CMD-250115-6211;15/01/2025;SEO;Île-de-France;Mondial Relay;4;71,74;3;3;non
+CMD-250116-3364;16/01/2025;SEA;Bretagne;Chronopost;3;33,81;2;5;oui
+CMD-250116-4306;16/01/2025;SEA;PACA;Colissimo;1;36,45;3;4;non
+CMD-250116-7458;16/01/2025;Direct;PACA;Mondial Relay;1;24,55;4;4;oui
+CMD-250117-6882;17/01/2025;Direct;Auvergne-Rhône-Alpes;Mondial Relay;3;34,56;3;3;oui
+CMD-250117-4194;17/01/2025;SEO;PACA;Chronopost;3;40,56;2;4;oui
+CMD-250117-7670;17/01/2025;Direct;Occitanie;Colissimo;2;34,08;3;4;non
+CMD-250117-9293;17/01/2025;Réseaux sociaux;Hauts-de-France;Mondial Relay;3;36,28;3;2;non
+CMD-250117-1401;17/01/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;3;31,48;2;5;non
+CMD-250117-6896;17/01/2025;SEO;Nouvelle-Aquitaine;Colissimo;3;27,18;8;2;non
+CMD-250117-7817;17/01/2025;Réseaux sociaux;Hauts-de-France;Mondial Relay;1;35,36;6;2;oui
+CMD-250117-7441;17/01/2025;Direct;PACA;Mondial Relay;2;48,45;1;4;oui
+CMD-250118-7739;18/01/2025;Direct;Bretagne;Mondial Relay;1;28,31;3;3;oui
+CMD-250118-1833;18/01/2025;Email;PACA;Colissimo;1;48,62;5;3;non
+CMD-250118-1884;18/01/2025;Email;Auvergne-Rhône-Alpes;Mondial Relay;3;61,91;5;3;non
+CMD-250119-2241;19/01/2025;SEO;Île-de-France;Colissimo;4;33,79;4;5;oui
+CMD-250119-1438;19/01/2025;SEO;Île-de-France;Colissimo;1;64,23;3;3;non
+CMD-250119-2985;19/01/2025;Direct;Hauts-de-France;Mondial Relay;2;21,15;3;4;oui
+CMD-250119-9576;19/01/2025;Email;Île-de-France;Colissimo;5;62,1;2;4;non
+CMD-250120-3735;20/01/2025;Email;Île-de-France;Chronopost;2;73,43;2;4;non
+CMD-250120-1258;20/01/2025;Email;Hauts-de-France;Chronopost;2;66,44;1;4;non
+CMD-250120-4156;20/01/2025;SEO;Hauts-de-France;Mondial Relay;2;31,2;5;2;non
+CMD-250120-8556;20/01/2025;Email;Île-de-France;Colissimo;1;46,17;3;3;non
+CMD-250120-7804;20/01/2025;SEO;Hauts-de-France;Mondial Relay;1;46,1;7;2;non
+CMD-250120-6571;20/01/2025;Direct;Nouvelle-Aquitaine;Chronopost;2;25,25;2;4;oui
+CMD-250120-1209;20/01/2025;SEA;Bretagne;Mondial Relay;2;49,9;4;3;non
+CMD-250120-5175;20/01/2025;Email;Auvergne-Rhône-Alpes;Chronopost;2;36,91;2;5;non
+CMD-250120-7639;20/01/2025;Réseaux sociaux;Hauts-de-France;Colissimo;1;43,46;3;3;oui
+CMD-250120-7629;20/01/2025;SEA;Île-de-France;Mondial Relay;3;56,16;4;4;oui
+CMD-250121-8613;21/01/2025;Direct;Hauts-de-France;Mondial Relay;1;24,58;5;4;non
+CMD-250121-3863;21/01/2025;Email;Grand Est;Colissimo;2;17,99;3;4;oui
+CMD-250121-2698;21/01/2025;Direct;Nouvelle-Aquitaine;Colissimo;1;24,28;2;5;oui
+CMD-250122-7067;22/01/2025;SEO;Nouvelle-Aquitaine;Colissimo;1;31,07;4;2;oui
+CMD-250122-8799;22/01/2025;SEA;Île-de-France;Colissimo;3;21,57;4;5;non
+CMD-250122-1198;22/01/2025;Email;Occitanie;Chronopost;3;63,72;2;2;non
+CMD-250122-8550;22/01/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;2;118,73;4;3;non
+CMD-250122-9411;22/01/2025;Réseaux sociaux;Occitanie;Colissimo;1;23,36;4;4;oui
+CMD-250122-8004;22/01/2025;Réseaux sociaux;Île-de-France;Colissimo;4;33,75;1;3;oui
+CMD-250122-8289;22/01/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;2;24,25;4;4;non
+CMD-250123-7965;23/01/2025;SEO;PACA;Colissimo;4;78,46;2;3;non
+CMD-250123-8489;23/01/2025;Email;Hauts-de-France;Mondial Relay;3;65,34;2;4;non
+CMD-250123-1509;23/01/2025;SEO;Île-de-France;Colissimo;1;45,54;7;1;oui
+CMD-250123-5892;23/01/2025;Email;Hauts-de-France;Colissimo;1;47,65;4;4;non
+CMD-250123-3557;23/01/2025;Direct;PACA;Mondial Relay;4;78,02;3;3;oui
+CMD-250123-4364;23/01/2025;Réseaux sociaux;Bretagne;Colissimo;2;32,42;1;4;oui
+CMD-250123-2034;23/01/2025;Email;Île-de-France;Chronopost;5;38,61;2;2;non
+CMD-250124-1265;24/01/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;2;28,31;2;3;oui
+CMD-250124-2069;24/01/2025;SEO;Occitanie;Colissimo;3;20,95;5;3;non
+CMD-250124-4406;24/01/2025;SEO;Île-de-France;Colissimo;1;65,53;5;3;oui
+CMD-250124-9995;24/01/2025;Réseaux sociaux;Île-de-France;Mondial Relay;3;21,01;4;5;oui
+CMD-250124-1039;24/01/2025;Direct;Nouvelle-Aquitaine;Colissimo;3;85,01;4;3;oui
+CMD-250124-8496;24/01/2025;Email;Auvergne-Rhône-Alpes;Colissimo;4;131,27;5;3;oui
+CMD-250124-2725;24/01/2025;SEO;Grand Est;Mondial Relay;4;38,28;5;3;oui
+CMD-250124-1377;24/01/2025;SEA;Nouvelle-Aquitaine;Colissimo;3;32,87;2;4;oui
+CMD-250124-3159;24/01/2025;Direct;Auvergne-Rhône-Alpes;Chronopost;2;45,11;2;5;oui
+CMD-250125-6362;25/01/2025;SEA;Grand Est;Mondial Relay;3;48,42;4;4;non
+CMD-250125-3239;25/01/2025;Direct;Grand Est;Colissimo;2;12,29;3;4;oui
+CMD-250125-4366;25/01/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;5;133,14;3;4;non
+CMD-250125-9868;25/01/2025;SEA;Bretagne;Chronopost;3;41,53;2;4;oui
+CMD-250125-6599;25/01/2025;SEO;Bretagne;Mondial Relay;2;109,49;4;3;non
+CMD-250125-9789;25/01/2025;SEO;Occitanie;Mondial Relay;4;23,96;3;5;oui
+CMD-250125-9813;25/01/2025;Email;Île-de-France;Mondial Relay;2;80,78;5;2;non
+CMD-250125-3105;25/01/2025;Direct;Nouvelle-Aquitaine;Mondial Relay;1;49,56;2;3;non
+CMD-250125-1879;25/01/2025;SEO;PACA;Mondial Relay;5;119,59;7;2;oui
+CMD-250125-1118;25/01/2025;Email;Île-de-France;Colissimo;3;53,54;2;4;non
+CMD-250125-7997;25/01/2025;SEO;Île-de-France;Mondial Relay;1;45,95;5;4;oui
+CMD-250126-3161;26/01/2025;Direct;PACA;Mondial Relay;2;33,98;4;2;non
+CMD-250126-5431;26/01/2025;SEO;Bretagne;Colissimo;5;57,24;3;3;oui
+CMD-250126-8068;26/01/2025;SEA;Bretagne;Colissimo;2;15,71;4;4;non
+CMD-250127-6103;27/01/2025;Réseaux sociaux;Nouvelle-Aquitaine;Colissimo;3;22,85;3;4;non
+CMD-250127-8751;27/01/2025;Email;Auvergne-Rhône-Alpes;Chronopost;3;22,73;2;4;non
+CMD-250127-8745;27/01/2025;Email;PACA;Mondial Relay;4;57,85;5;2;non
+CMD-250127-1698;27/01/2025;SEA;Île-de-France;Colissimo;2;103,15;3;3;oui
+CMD-250127-3466;27/01/2025;SEO;Hauts-de-France;Colissimo;1;25,86;5;2;non
+CMD-250127-6453;27/01/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;3;52,59;3;3;non
+CMD-250128-7451;28/01/2025;Email;Auvergne-Rhône-Alpes;Mondial Relay;1;42,56;6;4;oui
+CMD-250128-9981;28/01/2025;SEA;Bretagne;Chronopost;1;33,97;1;5;oui
+CMD-250128-4513;28/01/2025;SEO;Île-de-France;Colissimo;3;46,08;5;2;non
+CMD-250128-1721;28/01/2025;SEO;Occitanie;Colissimo;3;72,61;2;4;non
+CMD-250128-2026;28/01/2025;SEA;Île-de-France;Mondial Relay;3;27,04;3;4;non
+CMD-250128-7590;28/01/2025;Réseaux sociaux;Île-de-France;Mondial Relay;3;16,63;4;3;non
+CMD-250129-9958;29/01/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;4;71,86;4;3;oui
+CMD-250129-9849;29/01/2025;Direct;Île-de-France;Colissimo;2;33,46;3;3;oui
+CMD-250129-6986;29/01/2025;Direct;Nouvelle-Aquitaine;Colissimo;2;32,16;4;4;non
+CMD-250129-4305;29/01/2025;SEA;Île-de-France;Chronopost;2;60,76;2;5;oui
+CMD-250130-9193;30/01/2025;Réseaux sociaux;Hauts-de-France;Chronopost;2;18,17;2;3;oui
+CMD-250130-4086;30/01/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;4;112,31;4;3;non
+CMD-250130-1414;30/01/2025;SEA;Bretagne;Colissimo;4;34,38;3;3;non
+CMD-250130-3569;30/01/2025;Direct;Île-de-France;Mondial Relay;1;30,37;4;4;oui
+CMD-250130-5137;30/01/2025;SEA;Île-de-France;Colissimo;2;19,42;3;4;oui
+CMD-250130-3684;30/01/2025;SEO;Grand Est;Mondial Relay;2;50,97;5;3;oui
+CMD-250131-8129;31/01/2025;Email;Île-de-France;Colissimo;3;29,76;3;3;non
+CMD-250131-3204;31/01/2025;SEO;Bretagne;Mondial Relay;1;48,95;4;3;non
+CMD-250131-5103;31/01/2025;SEO;PACA;Chronopost;3;57,35;1;5;non
+CMD-250131-3019;31/01/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;2;24,17;1;4;non
+CMD-250131-3660;31/01/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;6;31,66;6;3;non
+CMD-250131-8219;31/01/2025;Réseaux sociaux;Nouvelle-Aquitaine;Colissimo;2;13,8;3;3;oui
+CMD-250131-1944;31/01/2025;SEO;Île-de-France;Colissimo;1;45,28;3;3;non
+CMD-250131-5727;31/01/2025;SEO;Occitanie;Colissimo;2;48,0;13;1;oui
+CMD-250131-3412;31/01/2025;Réseaux sociaux;Hauts-de-France;Mondial Relay;5;53,92;3;4;non
+CMD-250131-9149;31/01/2025;Email;Île-de-France;Chronopost;2;36,33;2;5;non
+CMD-250131-4938;31/01/2025;SEO;PACA;Chronopost;1;23,6;2;4;oui
+CMD-250201-6770;01/02/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Chronopost;1;39,56;2;5;non
+CMD-250201-5552;01/02/2025;Email;Occitanie;Colissimo;2;53,61;3;3;non
+CMD-250201-1976;01/02/2025;Direct;Hauts-de-France;Mondial Relay;2;35,3;5;3;non
+CMD-250201-9012;01/02/2025;SEA;Grand Est;Colissimo;1;61,67;1;4;oui
+CMD-250201-4110;01/02/2025;SEO;Nouvelle-Aquitaine;Colissimo;3;52,69;4;4;non
+CMD-250201-5346;01/02/2025;Direct;Occitanie;Colissimo;4;76,67;4;5;non
+CMD-250201-1804;01/02/2025;Direct;Île-de-France;Colissimo;2;69,2;4;4;oui
+CMD-250201-6056;01/02/2025;Direct;Île-de-France;Colissimo;1;14,37;3;4;non
+CMD-250202-8857;02/02/2025;SEA;Nouvelle-Aquitaine;Mondial Relay;5;26,66;6;3;oui
+CMD-250202-8546;02/02/2025;SEA;Nouvelle-Aquitaine;Chronopost;2;63,18;2;4;non
+CMD-250202-2130;02/02/2025;SEA;Île-de-France;Colissimo;1;18,48;2;4;oui
+CMD-250202-1545;02/02/2025;SEA;Occitanie;Colissimo;4;39,91;3;4;oui
+CMD-250202-4526;02/02/2025;SEO;Occitanie;Mondial Relay;3;18,63;8;2;non
+CMD-250202-9728;02/02/2025;Direct;Île-de-France;Chronopost;1;23,16;1;4;oui
+CMD-250202-2629;02/02/2025;SEO;Occitanie;Mondial Relay;4;13,92;2;4;non
+CMD-250202-7984;02/02/2025;Direct;Nouvelle-Aquitaine;Colissimo;2;21,94;2;4;non
+CMD-250202-7948;02/02/2025;SEO;Grand Est;Colissimo;1;25,69;5;2;non
+CMD-250202-8110;02/02/2025;Direct;Occitanie;Colissimo;2;60,09;5;4;non
+CMD-250203-1918;03/02/2025;SEA;Hauts-de-France;Colissimo;3;51,33;3;3;oui
+CMD-250203-3498;03/02/2025;SEA;PACA;Colissimo;6;47,9;3;5;non
+CMD-250203-1288;03/02/2025;Email;Île-de-France;Colissimo;2;27,53;4;5;oui
+CMD-250203-2583;03/02/2025;SEO;Île-de-France;Colissimo;4;144,4;3;2;non
+CMD-250203-9544;03/02/2025;Réseaux sociaux;Île-de-France;Colissimo;4;58,24;4;4;oui
+CMD-250203-2848;03/02/2025;Réseaux sociaux;Île-de-France;Colissimo;7;56,08;5;4;non
+CMD-250204-7548;04/02/2025;Email;Hauts-de-France;Mondial Relay;3;39,72;5;3;non
+CMD-250204-1833;04/02/2025;Direct;Île-de-France;Colissimo;4;14,89;4;4;oui
+CMD-250204-3898;04/02/2025;Email;PACA;Mondial Relay;2;37,87;2;4;non
+CMD-250204-4383;04/02/2025;SEO;Grand Est;Colissimo;2;31,21;6;3;oui
+CMD-250205-4407;05/02/2025;SEO;PACA;Colissimo;3;17,18;2;4;non
+CMD-250205-2338;05/02/2025;Direct;Nouvelle-Aquitaine;Chronopost;3;55,35;3;4;non
+CMD-250205-9333;05/02/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;2;70,32;5;3;non
+CMD-250205-2502;05/02/2025;SEO;Occitanie;Mondial Relay;3;24,01;5;1;oui
+CMD-250206-5438;06/02/2025;SEO;Bretagne;Mondial Relay;3;19,22;4;4;non
+CMD-250206-1922;06/02/2025;SEA;Île-de-France;Colissimo;6;47,47;3;5;non
+CMD-250206-6708;06/02/2025;Réseaux sociaux;Île-de-France;Colissimo;1;35,15;3;5;non
+CMD-250206-5828;06/02/2025;SEA;Hauts-de-France;Colissimo;1;34,7;4;4;oui
+CMD-250206-6572;06/02/2025;SEA;Grand Est;Colissimo;1;58,36;2;4;oui
+CMD-250207-6843;07/02/2025;SEA;Hauts-de-France;Mondial Relay;2;20,23;5;2;oui
+CMD-250207-7834;07/02/2025;SEO;Île-de-France;Colissimo;2;26,49;3;4;non
+CMD-250207-7304;07/02/2025;SEA;Île-de-France;Mondial Relay;2;35,57;3;4;non
+CMD-250208-4611;08/02/2025;SEA;Hauts-de-France;Colissimo;2;55,37;4;4;oui
+CMD-250208-4957;08/02/2025;Direct;PACA;Colissimo;1;50,03;2;4;oui
+CMD-250208-3080;08/02/2025;Réseaux sociaux;Île-de-France;Colissimo;3;38,9;4;3;oui
+CMD-250208-1462;08/02/2025;Réseaux sociaux;Occitanie;Mondial Relay;4;62,63;6;3;non
+CMD-250208-7638;08/02/2025;SEA;Auvergne-Rhône-Alpes;Chronopost;2;67,62;2;4;oui
+CMD-250208-8502;08/02/2025;SEA;Île-de-France;Colissimo;3;46,2;3;3;non
+CMD-250208-7677;08/02/2025;SEO;Île-de-France;Chronopost;6;51,78;2;4;non
+CMD-250209-9396;09/02/2025;Email;PACA;Mondial Relay;2;21,05;7;2;non
+CMD-250209-4787;09/02/2025;SEO;Grand Est;Colissimo;3;50,01;6;2;non
+CMD-250209-6132;09/02/2025;Réseaux sociaux;Grand Est;Colissimo;2;71,09;2;3;oui
+CMD-250209-4256;09/02/2025;Email;Auvergne-Rhône-Alpes;Colissimo;3;46,49;3;3;non
+CMD-250209-9406;09/02/2025;Direct;Grand Est;Mondial Relay;1;44,98;5;3;oui
+CMD-250210-2362;10/02/2025;SEO;Île-de-France;Colissimo;2;40,82;4;3;non
+CMD-250210-7956;10/02/2025;Email;Grand Est;Mondial Relay;2;46,66;2;4;non
+CMD-250210-1402;10/02/2025;SEA;Grand Est;Mondial Relay;2;48,39;5;2;oui
+CMD-250210-9187;10/02/2025;Réseaux sociaux;Île-de-France;Colissimo;1;51,34;2;3;oui
+CMD-250210-3937;10/02/2025;SEO;Grand Est;Colissimo;4;50,91;3;3;non
+CMD-250211-1355;11/02/2025;SEO;Île-de-France;Colissimo;5;30,25;3;4;oui
+CMD-250211-8021;11/02/2025;Direct;Grand Est;Mondial Relay;4;53,78;3;5;non
+CMD-250211-4997;11/02/2025;SEO;Nouvelle-Aquitaine;Colissimo;1;31,77;5;3;non
+CMD-250211-4320;11/02/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;3;41,52;7;4;non
+CMD-250212-9853;12/02/2025;Direct;Île-de-France;Mondial Relay;1;56,87;4;2;oui
+CMD-250212-1209;12/02/2025;Direct;Grand Est;Chronopost;3;23,44;1;5;oui
+CMD-250213-1733;13/02/2025;Direct;Bretagne;Chronopost;3;47,27;2;3;oui
+CMD-250213-1607;13/02/2025;SEA;Île-de-France;Colissimo;3;28,19;5;2;non
+CMD-250213-9749;13/02/2025;Email;Nouvelle-Aquitaine;Colissimo;1;30,59;3;3;oui
+CMD-250213-9515;13/02/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;3;57,51;2;3;oui
+CMD-250214-1877;14/02/2025;Email;PACA;Mondial Relay;4;82,36;3;3;non
+CMD-250214-8764;14/02/2025;Direct;Grand Est;Colissimo;1;28,01;2;3;non
+CMD-250214-1015;14/02/2025;SEA;Grand Est;Colissimo;3;60,49;3;5;oui
+CMD-250214-6922;14/02/2025;SEO;PACA;Chronopost;4;38,84;2;5;oui
+CMD-250215-8537;15/02/2025;Email;Auvergne-Rhône-Alpes;Colissimo;3;40,72;3;4;non
+CMD-250215-7245;15/02/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;1;17,86;3;4;oui
+CMD-250215-5202;15/02/2025;SEO;Bretagne;Mondial Relay;4;48,08;3;4;oui
+CMD-250215-7711;15/02/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;3;61,09;3;3;oui
+CMD-250215-6158;15/02/2025;Réseaux sociaux;Nouvelle-Aquitaine;Colissimo;5;35,39;4;3;non
+CMD-250215-3372;15/02/2025;SEO;Hauts-de-France;Colissimo;2;57,4;4;3;oui
+CMD-250215-2842;15/02/2025;SEO;Bretagne;Colissimo;1;23,19;3;4;oui
+CMD-250216-3376;16/02/2025;Email;Nouvelle-Aquitaine;Colissimo;5;61,98;3;5;non
+CMD-250216-1416;16/02/2025;Email;Auvergne-Rhône-Alpes;Colissimo;2;73,25;2;3;oui
+CMD-250216-2860;16/02/2025;Direct;Auvergne-Rhône-Alpes;Mondial Relay;2;76,18;2;5;non
+CMD-250216-1704;16/02/2025;Email;PACA;Mondial Relay;2;72,01;4;3;non
+CMD-250216-4440;16/02/2025;Email;Île-de-France;Mondial Relay;2;31,44;5;2;non
+CMD-250216-3652;16/02/2025;SEA;PACA;Mondial Relay;3;30,91;4;4;oui
+CMD-250216-6581;16/02/2025;SEO;Île-de-France;Mondial Relay;3;54,33;5;4;non
+CMD-250217-4368;17/02/2025;SEA;Bretagne;Colissimo;5;55,33;3;4;non
+CMD-250217-7953;17/02/2025;Email;Grand Est;Colissimo;2;126,78;3;3;non
+CMD-250217-2561;17/02/2025;Email;Auvergne-Rhône-Alpes;Chronopost;1;30,34;2;5;non
+CMD-250218-5927;18/02/2025;Email;Île-de-France;Colissimo;2;25,25;4;4;non
+CMD-250218-7023;18/02/2025;SEA;Occitanie;Mondial Relay;2;75,63;5;3;oui
+CMD-250218-7406;18/02/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;2;40,28;1;5;oui
+CMD-250218-2194;18/02/2025;SEO;Île-de-France;Chronopost;1;21,37;1;5;oui
+CMD-250218-5859;18/02/2025;Réseaux sociaux;Île-de-France;Chronopost;3;31,8;1;4;non
+CMD-250218-8338;18/02/2025;SEO;Nouvelle-Aquitaine;Colissimo;3;83,01;3;2;non
+CMD-250219-1391;19/02/2025;Réseaux sociaux;Île-de-France;Colissimo;2;25,94;3;3;non
+CMD-250219-5346;19/02/2025;Email;Île-de-France;Colissimo;2;35,31;4;3;non
+CMD-250219-4033;19/02/2025;SEA;Île-de-France;Chronopost;3;50,87;1;5;oui
+CMD-250220-6358;20/02/2025;SEA;Occitanie;Colissimo;3;55,79;3;4;non
+CMD-250220-7864;20/02/2025;SEO;Bretagne;Colissimo;3;28,77;4;3;non
+CMD-250220-7927;20/02/2025;Direct;Occitanie;Mondial Relay;1;44,17;8;3;oui
+CMD-250220-3489;20/02/2025;Réseaux sociaux;Hauts-de-France;Mondial Relay;1;18,35;2;5;non
+CMD-250220-6933;20/02/2025;SEO;Île-de-France;Mondial Relay;2;66,88;3;4;oui
+CMD-250220-4844;20/02/2025;SEO;Hauts-de-France;Colissimo;2;48,12;3;4;oui
+CMD-250220-1787;20/02/2025;SEO;Occitanie;Chronopost;1;54,22;2;4;non
+CMD-250220-7753;20/02/2025;SEO;Hauts-de-France;Colissimo;4;28,95;4;3;oui
+CMD-250220-2440;20/02/2025;Direct;Occitanie;Mondial Relay;2;33,93;7;4;oui
+CMD-250220-9202;20/02/2025;Email;Nouvelle-Aquitaine;Chronopost;3;106,19;1;4;non
+CMD-250221-6077;21/02/2025;SEA;Hauts-de-France;Chronopost;2;33,42;1;4;non
+CMD-250221-4394;21/02/2025;Réseaux sociaux;Nouvelle-Aquitaine;Colissimo;3;31,25;2;4;non
+CMD-250222-5932;22/02/2025;Email;Occitanie;Chronopost;2;27,36;2;4;non
+CMD-250222-5909;22/02/2025;Réseaux sociaux;Nouvelle-Aquitaine;Colissimo;8;49,18;3;3;non
+CMD-250222-1980;22/02/2025;Email;PACA;Colissimo;2;31,49;3;3;non
+CMD-250223-5869;23/02/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;2;54,13;2;3;non
+CMD-250223-6917;23/02/2025;Email;Hauts-de-France;Mondial Relay;2;95,37;5;3;oui
+CMD-250223-2825;23/02/2025;Réseaux sociaux;Île-de-France;Colissimo;4;68,65;3;4;oui
+CMD-250224-1947;24/02/2025;Direct;Île-de-France;Mondial Relay;4;55,59;3;3;non
+CMD-250224-6303;24/02/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;3;18,52;4;2;oui
+CMD-250224-1178;24/02/2025;SEO;PACA;Colissimo;3;23,94;3;5;non
+CMD-250224-2003;24/02/2025;Direct;Grand Est;Mondial Relay;3;24,89;5;4;oui
+CMD-250224-1560;24/02/2025;SEO;Grand Est;Colissimo;2;37,98;2;3;oui
+CMD-250224-2731;24/02/2025;Réseaux sociaux;Occitanie;Chronopost;4;12,63;2;3;oui
+CMD-250224-5305;24/02/2025;SEO;Hauts-de-France;Chronopost;2;26,38;2;3;non
+CMD-250224-7035;24/02/2025;Email;Île-de-France;Colissimo;1;49,36;3;4;non
+CMD-250225-6723;25/02/2025;Direct;Occitanie;Colissimo;4;21,39;3;4;oui
+CMD-250225-9277;25/02/2025;Direct;Hauts-de-France;Colissimo;2;36,51;6;3;oui
+CMD-250225-9393;25/02/2025;SEO;Nouvelle-Aquitaine;Chronopost;4;97,04;2;3;non
+CMD-250226-4239;26/02/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;2;29,41;1;3;oui
+CMD-250226-8417;26/02/2025;Réseaux sociaux;Île-de-France;Colissimo;3;43,66;2;4;oui
+CMD-250226-5455;26/02/2025;SEO;PACA;Mondial Relay;2;79,16;3;3;oui
+CMD-250226-1123;26/02/2025;SEA;Île-de-France;Colissimo;3;56,15;1;4;oui
+CMD-250226-5899;26/02/2025;Email;Île-de-France;Chronopost;2;74,65;1;4;oui
+CMD-250226-1823;26/02/2025;Email;Grand Est;Colissimo;3;100,67;7;3;non
+CMD-250226-4442;26/02/2025;Email;Bretagne;Chronopost;2;86,3;1;5;non
+CMD-250227-9288;27/02/2025;SEA;Île-de-France;Chronopost;1;50,98;1;3;non
+CMD-250227-8853;27/02/2025;SEA;Île-de-France;Colissimo;3;72,82;2;5;oui
+CMD-250227-3726;27/02/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Chronopost;3;47,39;2;4;non
+CMD-250227-8869;27/02/2025;SEO;PACA;Colissimo;3;29,96;4;4;non
+CMD-250227-2912;27/02/2025;SEO;Grand Est;Mondial Relay;3;47,63;5;3;oui
+CMD-250227-2071;27/02/2025;Email;PACA;Mondial Relay;4;19,21;4;4;non
+CMD-250227-8636;27/02/2025;Réseaux sociaux;Bretagne;Colissimo;2;34,13;3;4;non
+CMD-250227-5397;27/02/2025;Direct;Auvergne-Rhône-Alpes;Mondial Relay;1;20,27;4;5;non
+CMD-250228-8953;28/02/2025;Email;Nouvelle-Aquitaine;Chronopost;4;78,37;1;3;non
+CMD-250228-5451;28/02/2025;Email;Bretagne;Mondial Relay;4;33,82;2;4;non
+CMD-250228-2129;28/02/2025;Direct;Grand Est;Colissimo;2;52,35;2;3;non
+CMD-250228-9415;28/02/2025;SEO;Hauts-de-France;Colissimo;2;41,43;3;3;non
+CMD-250228-7526;28/02/2025;Email;Bretagne;Colissimo;2;124,07;2;5;non
+CMD-250301-1305;01/03/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;3;58,91;2;4;oui
+CMD-250301-8323;01/03/2025;SEO;Île-de-France;Colissimo;3;54,32;4;3;oui
+CMD-250301-8756;01/03/2025;SEO;Occitanie;Mondial Relay;2;73,17;5;2;non
+CMD-250301-1889;01/03/2025;Email;Île-de-France;Mondial Relay;2;57,75;4;4;non
+CMD-250301-1532;01/03/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;1;29,27;6;3;non
+CMD-250302-3757;02/03/2025;SEO;Bretagne;Colissimo;3;32,04;3;4;oui
+CMD-250302-4056;02/03/2025;Direct;Nouvelle-Aquitaine;Colissimo;1;51,99;3;4;non
+CMD-250302-6070;02/03/2025;Réseaux sociaux;Grand Est;Colissimo;5;81,76;4;4;non
+CMD-250303-7649;03/03/2025;SEA;Hauts-de-France;Colissimo;3;41,78;4;3;oui
+CMD-250303-5653;03/03/2025;Email;Auvergne-Rhône-Alpes;Colissimo;1;58,14;5;4;non
+CMD-250304-4009;04/03/2025;Direct;Île-de-France;Colissimo;3;22,97;4;4;oui
+CMD-250304-7478;04/03/2025;SEO;PACA;Mondial Relay;3;75,22;3;3;oui
+CMD-250304-2938;04/03/2025;Email;Grand Est;Colissimo;2;53,9;4;4;non
+CMD-250304-9878;04/03/2025;SEO;Hauts-de-France;Colissimo;1;24,05;4;3;non
+CMD-250304-3825;04/03/2025;Email;Île-de-France;Mondial Relay;2;40,38;4;4;non
+CMD-250304-8169;04/03/2025;Réseaux sociaux;Île-de-France;Mondial Relay;2;29,46;4;3;non
+CMD-250304-9907;04/03/2025;Email;Île-de-France;Colissimo;3;21,17;4;4;non
+CMD-250304-1451;04/03/2025;Réseaux sociaux;PACA;Chronopost;1;37,71;2;5;oui
+CMD-250304-4251;04/03/2025;Direct;Bretagne;Colissimo;4;79,78;3;4;oui
+CMD-250305-3506;05/03/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;4;48,68;4;3;non
+CMD-250305-9004;05/03/2025;Réseaux sociaux;Occitanie;Mondial Relay;2;226,0;4;3;non
+CMD-250305-8384;05/03/2025;SEO;PACA;Chronopost;2;54,41;2;4;oui
+CMD-250305-4278;05/03/2025;SEO;Nouvelle-Aquitaine;Colissimo;4;75,82;3;4;oui
+CMD-250306-4369;06/03/2025;SEA;Bretagne;Colissimo;5;115,39;2;5;non
+CMD-250306-9100;06/03/2025;Email;Bretagne;Mondial Relay;2;59,05;5;2;non
+CMD-250306-8466;06/03/2025;SEA;Occitanie;Colissimo;4;26,89;4;3;non
+CMD-250306-9078;06/03/2025;Réseaux sociaux;Nouvelle-Aquitaine;Colissimo;4;146,49;4;3;non
+CMD-250306-2337;06/03/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;2;81,3;3;4;oui
+CMD-250306-1331;06/03/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;5;29,95;3;3;non
+CMD-250306-8592;06/03/2025;Direct;Bretagne;Mondial Relay;1;55,58;5;2;non
+CMD-250307-4826;07/03/2025;SEA;Île-de-France;Colissimo;3;28,87;5;3;non
+CMD-250307-3536;07/03/2025;SEA;Nouvelle-Aquitaine;Chronopost;3;42,98;1;5;non
+CMD-250307-9085;07/03/2025;SEA;PACA;Colissimo;3;23,38;2;4;non
+CMD-250307-8347;07/03/2025;SEO;Nouvelle-Aquitaine;Colissimo;3;47,82;5;3;oui
+CMD-250307-7160;07/03/2025;SEO;Île-de-France;Colissimo;2;68,88;3;4;non
+CMD-250307-4420;07/03/2025;Email;Nouvelle-Aquitaine;Mondial Relay;2;32,09;4;3;non
+CMD-250308-1760;08/03/2025;Email;Île-de-France;Colissimo;4;19,44;1;4;oui
+CMD-250308-1833;08/03/2025;SEA;PACA;Colissimo;1;31,57;5;3;non
+CMD-250308-8472;08/03/2025;Direct;Île-de-France;Mondial Relay;3;68,44;1;5;non
+CMD-250309-5170;09/03/2025;SEO;Île-de-France;Chronopost;4;177,79;2;4;non
+CMD-250309-1263;09/03/2025;SEO;Occitanie;Colissimo;5;60,45;4;2;oui
+CMD-250309-4863;09/03/2025;Direct;Île-de-France;Colissimo;1;22,12;5;3;oui
+CMD-250309-3600;09/03/2025;Email;Île-de-France;Mondial Relay;1;39,52;4;4;non
+CMD-250309-7661;09/03/2025;Email;PACA;Colissimo;4;30,01;4;4;non
+CMD-250309-2120;09/03/2025;Email;PACA;Colissimo;3;83,45;4;4;non
+CMD-250309-4783;09/03/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;1;33,44;2;5;oui
+CMD-250309-3213;09/03/2025;SEO;Hauts-de-France;Colissimo;3;101,04;1;5;oui
+CMD-250310-5421;10/03/2025;Direct;Nouvelle-Aquitaine;Colissimo;1;12,61;4;3;non
+CMD-250310-5970;10/03/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;4;74,05;2;5;oui
+CMD-250310-2132;10/03/2025;Email;Île-de-France;Mondial Relay;2;52,19;2;4;non
+CMD-250310-7629;10/03/2025;Email;Hauts-de-France;Mondial Relay;1;22,33;3;3;non
+CMD-250310-1656;10/03/2025;SEO;Occitanie;Colissimo;5;44,27;3;3;non
+CMD-250311-3422;11/03/2025;SEO;Île-de-France;Colissimo;2;25,13;5;2;oui
+CMD-250311-9433;11/03/2025;SEA;Île-de-France;Colissimo;3;58,24;4;3;oui
+CMD-250311-5672;11/03/2025;SEO;PACA;Chronopost;1;74,4;3;3;oui
+CMD-250311-4941;11/03/2025;SEA;Île-de-France;Colissimo;6;93,76;3;3;oui
+CMD-250311-9508;11/03/2025;Email;Nouvelle-Aquitaine;Colissimo;2;31,75;3;3;non
+CMD-250312-6216;12/03/2025;SEO;Île-de-France;Chronopost;3;14,59;2;3;non
+CMD-250312-1210;12/03/2025;Direct;Île-de-France;Colissimo;1;10,32;4;3;non
+CMD-250312-2060;12/03/2025;SEA;PACA;Mondial Relay;1;67,18;5;3;non
+CMD-250312-5930;12/03/2025;SEO;Bretagne;Colissimo;4;49,35;5;3;non
+CMD-250312-4169;12/03/2025;SEA;Grand Est;Colissimo;2;24,2;3;4;oui
+CMD-250312-9997;12/03/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;4;81,95;2;4;oui
+CMD-250312-5921;12/03/2025;Direct;Bretagne;Chronopost;1;45,91;2;4;non
+CMD-250312-2418;12/03/2025;SEO;Grand Est;Chronopost;4;48,62;1;4;oui
+CMD-250313-8357;13/03/2025;SEO;Bretagne;Colissimo;3;104,35;3;4;non
+CMD-250313-8325;13/03/2025;SEA;Grand Est;Colissimo;3;73,58;2;3;oui
+CMD-250313-8136;13/03/2025;SEO;Île-de-France;Colissimo;1;44,98;4;3;oui
+CMD-250313-5585;13/03/2025;SEO;Île-de-France;Colissimo;1;49,01;3;4;oui
+CMD-250314-9003;14/03/2025;SEO;Île-de-France;Chronopost;2;38,71;1;5;non
+CMD-250314-3816;14/03/2025;Email;Grand Est;Chronopost;3;118,58;2;5;non
+CMD-250314-7638;14/03/2025;Direct;PACA;Colissimo;2;29,09;4;3;non
+CMD-250314-6209;14/03/2025;SEO;Île-de-France;Mondial Relay;2;36,4;5;3;oui
+CMD-250314-8275;14/03/2025;SEA;Nouvelle-Aquitaine;Chronopost;3;40,21;2;5;non
+CMD-250315-5150;15/03/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;3;88,9;2;4;non
+CMD-250315-8098;15/03/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;5;52,65;5;3;non
+CMD-250315-4174;15/03/2025;SEA;PACA;Chronopost;5;23,7;1;4;oui
+CMD-250315-2510;15/03/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;4;32,76;4;3;oui
+CMD-250315-2034;15/03/2025;Email;Grand Est;Colissimo;5;74,4;3;5;non
+CMD-250315-4196;15/03/2025;Email;Nouvelle-Aquitaine;Mondial Relay;3;105,64;2;4;oui
+CMD-250315-9911;15/03/2025;Direct;Île-de-France;Colissimo;2;76,38;1;4;non
+CMD-250316-9568;16/03/2025;Direct;Auvergne-Rhône-Alpes;Chronopost;3;89,73;2;3;oui
+CMD-250316-2476;16/03/2025;Email;Auvergne-Rhône-Alpes;Colissimo;2;33,7;4;4;non
+CMD-250316-7259;16/03/2025;Email;PACA;Mondial Relay;5;61,96;6;2;non
+CMD-250316-8091;16/03/2025;SEO;PACA;Mondial Relay;2;20,41;6;4;non
+CMD-250316-8017;16/03/2025;SEA;Hauts-de-France;Chronopost;3;48,76;2;5;oui
+CMD-250316-4768;16/03/2025;SEO;PACA;Colissimo;1;218,14;2;4;oui
+CMD-250316-3143;16/03/2025;SEA;Grand Est;Mondial Relay;5;74,29;4;4;non
+CMD-250316-8367;16/03/2025;Direct;Île-de-France;Colissimo;3;50,92;5;2;oui
+CMD-250316-5655;16/03/2025;SEO;Île-de-France;Colissimo;3;41,42;2;5;oui
+CMD-250317-3578;17/03/2025;Email;Nouvelle-Aquitaine;Chronopost;1;27,72;2;4;non
+CMD-250317-8551;17/03/2025;Réseaux sociaux;Bretagne;Chronopost;1;43,39;2;5;non
+CMD-250317-6444;17/03/2025;SEA;Île-de-France;Colissimo;2;27,83;2;3;non
+CMD-250317-5674;17/03/2025;SEO;Hauts-de-France;Colissimo;5;26,52;5;3;non
+CMD-250317-4360;17/03/2025;Email;Nouvelle-Aquitaine;Colissimo;2;28,76;4;4;non
+CMD-250317-5970;17/03/2025;Email;Île-de-France;Colissimo;3;176,39;2;3;non
+CMD-250317-6088;17/03/2025;SEA;Île-de-France;Chronopost;1;104,02;1;3;oui
+CMD-250318-5141;18/03/2025;Email;Île-de-France;Chronopost;2;30,96;1;4;non
+CMD-250318-2698;18/03/2025;Email;Nouvelle-Aquitaine;Colissimo;3;39,53;2;3;non
+CMD-250318-6457;18/03/2025;Réseaux sociaux;Île-de-France;Colissimo;3;44,14;3;5;oui
+CMD-250318-5927;18/03/2025;SEO;Bretagne;Colissimo;1;42,37;3;2;oui
+CMD-250318-4552;18/03/2025;SEO;Occitanie;Mondial Relay;3;61,23;4;5;non
+CMD-250318-4970;18/03/2025;SEA;Grand Est;Colissimo;3;131,65;3;3;non
+CMD-250318-5590;18/03/2025;SEO;PACA;Chronopost;3;76,2;2;4;non
+CMD-250319-3170;19/03/2025;SEA;Hauts-de-France;Chronopost;3;29,35;2;4;oui
+CMD-250319-2572;19/03/2025;SEA;Île-de-France;Colissimo;3;41,0;2;5;non
+CMD-250319-4851;19/03/2025;SEO;Grand Est;Mondial Relay;4;46,77;3;4;oui
+CMD-250319-7481;19/03/2025;SEO;Nouvelle-Aquitaine;Colissimo;3;80,2;3;3;oui
+CMD-250319-4683;19/03/2025;SEO;Bretagne;Mondial Relay;2;27,99;4;3;oui
+CMD-250320-4217;20/03/2025;Direct;Nouvelle-Aquitaine;Colissimo;4;28,06;3;4;non
+CMD-250320-7393;20/03/2025;SEO;PACA;Colissimo;4;37,21;5;3;non
+CMD-250320-4778;20/03/2025;Email;Grand Est;Colissimo;3;66,12;3;5;non
+CMD-250320-5472;20/03/2025;Réseaux sociaux;Île-de-France;Mondial Relay;3;26,14;3;4;oui
+CMD-250321-4570;21/03/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;3;42,0;5;5;oui
+CMD-250321-3060;21/03/2025;SEO;Grand Est;Colissimo;4;27,34;1;4;non
+CMD-250322-7203;22/03/2025;Direct;Île-de-France;Colissimo;3;28,11;4;3;non
+CMD-250322-9769;22/03/2025;SEO;Nouvelle-Aquitaine;Colissimo;5;45,98;1;5;oui
+CMD-250322-9502;22/03/2025;SEO;Nouvelle-Aquitaine;Colissimo;2;28,51;3;2;non
+CMD-250322-8880;22/03/2025;SEO;Grand Est;Colissimo;3;57,38;3;4;oui
+CMD-250322-3293;22/03/2025;Réseaux sociaux;Île-de-France;Mondial Relay;3;36,58;4;3;oui
+CMD-250322-3701;22/03/2025;SEA;Occitanie;Colissimo;4;39,07;2;5;oui
+CMD-250322-8543;22/03/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;5;55,35;2;5;oui
+CMD-250322-5903;22/03/2025;SEO;Île-de-France;Colissimo;2;21,24;4;3;non
+CMD-250323-1085;23/03/2025;Direct;Île-de-France;Mondial Relay;4;26,33;4;3;oui
+CMD-250323-9898;23/03/2025;SEA;Hauts-de-France;Mondial Relay;4;69,89;5;4;non
+CMD-250323-9614;23/03/2025;SEO;Occitanie;Mondial Relay;1;34,45;3;4;oui
+CMD-250323-4521;23/03/2025;SEO;Grand Est;Colissimo;1;32,5;2;4;oui
+CMD-250323-8966;23/03/2025;SEO;Île-de-France;Mondial Relay;3;44,48;4;3;oui
+CMD-250323-5059;23/03/2025;Direct;Grand Est;Colissimo;4;60,38;2;4;non
+CMD-250323-2322;23/03/2025;Réseaux sociaux;Occitanie;Colissimo;1;30,98;4;4;non
+CMD-250324-7633;24/03/2025;Direct;Île-de-France;Colissimo;4;223,12;2;3;oui
+CMD-250324-5872;24/03/2025;Direct;Île-de-France;Colissimo;3;40,11;3;3;non
+CMD-250324-9130;24/03/2025;Email;Auvergne-Rhône-Alpes;Colissimo;4;64,37;3;3;non
+CMD-250324-9003;24/03/2025;SEO;Grand Est;Mondial Relay;2;31,83;5;4;oui
+CMD-250324-6996;24/03/2025;Direct;Nouvelle-Aquitaine;Colissimo;1;18,53;5;3;oui
+CMD-250324-8610;24/03/2025;SEO;Île-de-France;Colissimo;4;30,53;4;3;oui
+CMD-250325-8445;25/03/2025;Direct;Occitanie;Mondial Relay;4;61,58;7;2;non
+CMD-250325-7191;25/03/2025;SEO;Grand Est;Mondial Relay;2;34,41;3;4;oui
+CMD-250325-5064;25/03/2025;SEO;Île-de-France;Chronopost;3;39,3;2;4;oui
+CMD-250325-8508;25/03/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;8;25,47;2;3;non
+CMD-250325-3100;25/03/2025;SEO;Île-de-France;Mondial Relay;1;40,19;3;5;non
+CMD-250325-5613;25/03/2025;Email;Auvergne-Rhône-Alpes;Chronopost;3;34,61;1;4;oui
+CMD-250325-1831;25/03/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;1;89,9;5;2;oui
+CMD-250325-7156;25/03/2025;Réseaux sociaux;Île-de-France;Colissimo;2;54,26;2;4;non
+CMD-250325-7604;25/03/2025;Email;Grand Est;Mondial Relay;5;10,58;4;3;non
+CMD-250326-1733;26/03/2025;Email;PACA;Chronopost;4;53,03;2;4;non
+CMD-250326-5462;26/03/2025;SEO;Île-de-France;Colissimo;2;48,82;2;4;oui
+CMD-250327-3006;27/03/2025;Réseaux sociaux;Grand Est;Colissimo;2;20,56;3;4;non
+CMD-250327-9686;27/03/2025;Réseaux sociaux;Bretagne;Mondial Relay;1;27,95;5;3;oui
+CMD-250327-2545;27/03/2025;Réseaux sociaux;Île-de-France;Colissimo;3;55,58;4;3;oui
+CMD-250327-3526;27/03/2025;Email;PACA;Colissimo;2;22,87;3;4;non
+CMD-250327-6279;27/03/2025;SEA;PACA;Mondial Relay;3;57,06;8;2;oui
+CMD-250327-2920;27/03/2025;SEA;Île-de-France;Colissimo;2;37,31;4;3;non
+CMD-250327-8360;27/03/2025;SEO;Hauts-de-France;Mondial Relay;2;63,53;4;3;oui
+CMD-250327-7356;27/03/2025;Réseaux sociaux;Hauts-de-France;Chronopost;3;43,66;2;3;non
+CMD-250327-2134;27/03/2025;Direct;Île-de-France;Colissimo;1;53,46;1;4;oui
+CMD-250328-4080;28/03/2025;SEO;Nouvelle-Aquitaine;Colissimo;2;49,58;2;3;oui
+CMD-250328-1436;28/03/2025;Réseaux sociaux;Île-de-France;Colissimo;2;5,83;2;4;oui
+CMD-250328-8752;28/03/2025;Email;Île-de-France;Mondial Relay;3;24,33;1;4;non
+CMD-250329-9837;29/03/2025;SEO;Bretagne;Chronopost;3;96,83;2;4;oui
+CMD-250329-8575;29/03/2025;Direct;Grand Est;Colissimo;4;34,87;4;3;oui
+CMD-250329-3573;29/03/2025;Direct;Nouvelle-Aquitaine;Colissimo;2;43,43;2;4;non
+CMD-250329-4329;29/03/2025;SEO;Nouvelle-Aquitaine;Colissimo;1;51,96;3;4;non
+CMD-250330-4918;30/03/2025;SEO;PACA;Chronopost;3;63,78;2;4;non
+CMD-250330-9410;30/03/2025;Direct;Grand Est;Colissimo;1;29,07;5;4;non
+CMD-250330-5086;30/03/2025;Email;Île-de-France;Colissimo;2;15,94;2;4;non
+CMD-250330-1985;30/03/2025;Email;Île-de-France;Mondial Relay;3;10,82;5;4;non
+CMD-250330-9170;30/03/2025;Réseaux sociaux;Hauts-de-France;Colissimo;1;48,32;3;3;non
+CMD-250330-7123;30/03/2025;Email;Bretagne;Mondial Relay;3;40,34;2;4;non
+CMD-250331-7351;31/03/2025;SEA;Île-de-France;Chronopost;3;62,05;2;4;oui
+CMD-250331-1039;31/03/2025;Direct;Nouvelle-Aquitaine;Colissimo;3;57,25;5;3;non
+CMD-250331-4310;31/03/2025;Email;Grand Est;Colissimo;1;58,57;2;3;oui
+CMD-250331-2524;31/03/2025;Email;Île-de-France;Colissimo;2;41,03;4;3;non
+CMD-250331-4118;31/03/2025;SEA;Occitanie;Mondial Relay;4;35,83;3;4;non
+CMD-250331-9542;31/03/2025;Réseaux sociaux;Occitanie;Chronopost;3;12,64;4;4;oui
+CMD-250331-9465;31/03/2025;Direct;Île-de-France;Mondial Relay;1;112,34;2;5;oui
+CMD-250331-7212;31/03/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;1;29,91;3;3;oui
+CMD-250401-5666;01/04/2025;SEA;Hauts-de-France;Colissimo;3;138,25;3;4;oui
+CMD-250401-5158;01/04/2025;Réseaux sociaux;Île-de-France;Mondial Relay;1;14,73;8;2;oui
+CMD-250401-2723;01/04/2025;Direct;Auvergne-Rhône-Alpes;Mondial Relay;4;43,09;3;3;oui
+CMD-250401-8085;01/04/2025;SEA;Grand Est;Colissimo;3;75,72;2;5;non
+CMD-250401-8908;01/04/2025;SEO;PACA;Mondial Relay;5;62,41;5;3;oui
+CMD-250401-9149;01/04/2025;SEA;Île-de-France;Colissimo;3;38,58;3;3;non
+CMD-250402-5629;02/04/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;1;21,08;3;4;oui
+CMD-250402-5650;02/04/2025;SEO;Île-de-France;Chronopost;1;49,16;2;4;oui
+CMD-250402-5483;02/04/2025;Email;Hauts-de-France;Mondial Relay;2;44,75;4;3;non
+CMD-250402-7352;02/04/2025;SEO;PACA;Colissimo;5;82,81;2;4;non
+CMD-250402-6659;02/04/2025;Réseaux sociaux;Grand Est;Colissimo;2;49,0;4;3;oui
+CMD-250403-5038;03/04/2025;Email;Grand Est;Chronopost;2;109,76;2;5;non
+CMD-250403-5583;03/04/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;3;85,87;1;3;oui
+CMD-250403-6212;03/04/2025;Email;Île-de-France;Colissimo;2;40,42;1;4;non
+CMD-250403-4893;03/04/2025;Direct;Grand Est;Colissimo;4;46,43;2;5;non
+CMD-250403-5509;03/04/2025;Réseaux sociaux;Bretagne;Colissimo;2;33,11;4;2;oui
+CMD-250403-4486;03/04/2025;Email;Hauts-de-France;Chronopost;1;55,03;2;3;non
+CMD-250403-8574;03/04/2025;SEO;Nouvelle-Aquitaine;Colissimo;2;31,21;2;2;oui
+CMD-250403-1793;03/04/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;2;57,16;4;2;oui
+CMD-250404-4857;04/04/2025;Email;Bretagne;Chronopost;1;11,14;2;4;non
+CMD-250404-4626;04/04/2025;SEA;Hauts-de-France;Chronopost;3;92,99;2;5;oui
+CMD-250404-4640;04/04/2025;SEA;Bretagne;Colissimo;2;67,13;5;2;oui
+CMD-250404-2414;04/04/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;2;49,14;6;2;oui
+CMD-250404-3232;04/04/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;3;86,22;2;3;non
+CMD-250404-2310;04/04/2025;SEO;Grand Est;Mondial Relay;3;47,16;3;3;oui
+CMD-250405-2337;05/04/2025;SEO;Bretagne;Chronopost;3;12,54;2;3;non
+CMD-250405-6382;05/04/2025;SEO;Nouvelle-Aquitaine;Chronopost;2;27,96;2;4;non
+CMD-250405-1128;05/04/2025;SEO;Bretagne;Colissimo;3;30,41;5;4;oui
+CMD-250405-9090;05/04/2025;Email;Île-de-France;Colissimo;2;24,53;2;3;non
+CMD-250406-4057;06/04/2025;Réseaux sociaux;Île-de-France;Colissimo;7;56,39;5;4;non
+CMD-250406-3246;06/04/2025;SEO;PACA;Chronopost;2;13,87;2;3;oui
+CMD-250406-4212;06/04/2025;Direct;Nouvelle-Aquitaine;Colissimo;4;58,89;2;2;oui
+CMD-250407-2555;07/04/2025;Réseaux sociaux;Île-de-France;Chronopost;1;50,82;1;4;oui
+CMD-250407-2927;07/04/2025;SEO;Bretagne;Colissimo;4;77,01;3;2;oui
+CMD-250407-8870;07/04/2025;Direct;Île-de-France;Colissimo;1;18,1;2;4;non
+CMD-250407-5658;07/04/2025;Email;Île-de-France;Mondial Relay;1;59,96;3;3;non
+CMD-250408-4014;08/04/2025;SEO;PACA;Colissimo;1;47,24;5;2;oui
+CMD-250408-1835;08/04/2025;Réseaux sociaux;Île-de-France;Colissimo;1;17,56;3;3;oui
+CMD-250408-1581;08/04/2025;Direct;Île-de-France;Mondial Relay;5;89,35;4;4;non
+CMD-250408-1134;08/04/2025;Direct;Occitanie;Chronopost;3;34,0;1;4;non
+CMD-250408-6388;08/04/2025;Direct;Auvergne-Rhône-Alpes;Chronopost;1;19,08;1;4;oui
+CMD-250408-6367;08/04/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;3;42,19;3;4;oui
+CMD-250408-1161;08/04/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;5;157,46;5;2;oui
+CMD-250408-1387;08/04/2025;Direct;Île-de-France;Chronopost;1;38,4;2;5;oui
+CMD-250408-8648;08/04/2025;SEO;Occitanie;Mondial Relay;3;111,07;4;4;oui
+CMD-250408-7070;08/04/2025;SEA;Île-de-France;Colissimo;5;187,05;3;4;non
+CMD-250409-8017;09/04/2025;SEA;PACA;Chronopost;1;58,92;1;5;non
+CMD-250409-7184;09/04/2025;SEO;Île-de-France;Colissimo;1;100,72;3;4;oui
+CMD-250409-7316;09/04/2025;Réseaux sociaux;Nouvelle-Aquitaine;Colissimo;3;29,87;2;4;oui
+CMD-250409-6463;09/04/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;4;78,16;2;3;oui
+CMD-250409-5835;09/04/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;1;12,19;3;3;non
+CMD-250409-4469;09/04/2025;Réseaux sociaux;Île-de-France;Colissimo;2;26,32;2;4;oui
+CMD-250409-8867;09/04/2025;Email;Occitanie;Chronopost;1;33,29;1;4;non
+CMD-250410-6013;10/04/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;3;79,72;3;4;non
+CMD-250410-6920;10/04/2025;Direct;Nouvelle-Aquitaine;Mondial Relay;2;85,51;5;4;oui
+CMD-250410-3151;10/04/2025;Réseaux sociaux;Nouvelle-Aquitaine;Colissimo;3;12,06;4;3;oui
+CMD-250410-8904;10/04/2025;Direct;Île-de-France;Mondial Relay;4;92,76;5;2;non
+CMD-250411-2657;11/04/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;3;25,37;2;4;oui
+CMD-250411-7692;11/04/2025;SEA;Bretagne;Colissimo;1;21,02;1;3;oui
+CMD-250411-5919;11/04/2025;SEO;Grand Est;Mondial Relay;2;26,28;3;4;oui
+CMD-250411-5026;11/04/2025;Email;Nouvelle-Aquitaine;Mondial Relay;1;12,66;4;2;non
+CMD-250411-3874;11/04/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;1;19,57;2;4;oui
+CMD-250411-3666;11/04/2025;SEA;Île-de-France;Colissimo;3;60,66;2;3;oui
+CMD-250412-8621;12/04/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;3;52,82;2;3;non
+CMD-250412-8666;12/04/2025;SEA;Grand Est;Colissimo;3;26,79;4;2;oui
+CMD-250412-1087;12/04/2025;Direct;Île-de-France;Colissimo;2;56,03;2;4;oui
+CMD-250412-1718;12/04/2025;SEA;Hauts-de-France;Colissimo;2;27,47;3;3;oui
+CMD-250413-8104;13/04/2025;Email;PACA;Colissimo;3;139,44;3;3;non
+CMD-250413-6258;13/04/2025;SEO;Nouvelle-Aquitaine;Chronopost;4;42,91;1;4;oui
+CMD-250413-2858;13/04/2025;SEO;Grand Est;Colissimo;3;53,85;5;3;oui
+CMD-250413-2111;13/04/2025;Email;Bretagne;Mondial Relay;2;95,57;5;2;non
+CMD-250413-3139;13/04/2025;SEA;Occitanie;Colissimo;3;81,21;3;4;non
+CMD-250413-8384;13/04/2025;Direct;Grand Est;Colissimo;3;48,19;4;3;oui
+CMD-250413-1590;13/04/2025;Direct;Île-de-France;Chronopost;2;88,07;1;4;oui
+CMD-250414-5584;14/04/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Chronopost;2;51,08;2;3;oui
+CMD-250414-7347;14/04/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;4;57,87;4;3;non
+CMD-250414-8447;14/04/2025;SEA;Hauts-de-France;Chronopost;3;23,83;2;3;non
+CMD-250414-6476;14/04/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;1;35,19;2;3;oui
+CMD-250414-4069;14/04/2025;SEO;Hauts-de-France;Mondial Relay;2;44,63;4;3;oui
+CMD-250414-8115;14/04/2025;SEO;Occitanie;Mondial Relay;4;45,65;2;5;oui
+CMD-250414-3775;14/04/2025;Réseaux sociaux;Hauts-de-France;Mondial Relay;4;71,67;4;3;non
+CMD-250415-8867;15/04/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;2;23,02;2;3;oui
+CMD-250415-3422;15/04/2025;Email;Nouvelle-Aquitaine;Colissimo;4;51,32;3;5;non
+CMD-250415-3501;15/04/2025;Direct;Île-de-France;Mondial Relay;6;76,08;1;4;non
+CMD-250415-4162;15/04/2025;SEA;Occitanie;Mondial Relay;5;17,06;4;2;non
+CMD-250415-5984;15/04/2025;Email;Auvergne-Rhône-Alpes;Chronopost;3;53,55;2;3;oui
+CMD-250416-2541;16/04/2025;SEO;PACA;Mondial Relay;3;108,85;5;2;non
+CMD-250416-3965;16/04/2025;SEA;Nouvelle-Aquitaine;Colissimo;3;76,54;4;4;oui
+CMD-250416-2393;16/04/2025;Email;Nouvelle-Aquitaine;Colissimo;1;20,88;7;3;non
+CMD-250416-4643;16/04/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;5;45,0;2;5;oui
+CMD-250416-4658;16/04/2025;SEO;Île-de-France;Mondial Relay;2;36,7;5;3;non
+CMD-250416-1807;16/04/2025;Email;Nouvelle-Aquitaine;Chronopost;2;29,26;2;5;non
+CMD-250416-1539;16/04/2025;Email;Bretagne;Mondial Relay;5;28,91;3;5;non
+CMD-250416-1132;16/04/2025;SEA;Île-de-France;Colissimo;4;33,74;3;4;oui
+CMD-250416-7953;16/04/2025;Réseaux sociaux;Grand Est;Colissimo;2;97,03;4;3;non
+CMD-250416-9112;16/04/2025;SEO;Île-de-France;Chronopost;1;52,48;1;5;oui
+CMD-250417-3405;17/04/2025;SEA;Occitanie;Colissimo;1;40,06;2;4;non
+CMD-250417-9702;17/04/2025;SEO;PACA;Colissimo;3;55,69;4;4;non
+CMD-250417-4029;17/04/2025;Réseaux sociaux;Hauts-de-France;Chronopost;1;24,84;3;4;oui
+CMD-250417-7291;17/04/2025;SEO;Île-de-France;Chronopost;4;26,86;2;3;oui
+CMD-250417-5902;17/04/2025;SEO;PACA;Colissimo;1;13,37;1;4;non
+CMD-250417-7277;17/04/2025;Email;Auvergne-Rhône-Alpes;Colissimo;2;62,59;5;2;non
+CMD-250417-5588;17/04/2025;SEO;Nouvelle-Aquitaine;Colissimo;3;16,57;3;2;non
+CMD-250417-2138;17/04/2025;SEO;Île-de-France;Colissimo;4;86,64;3;4;non
+CMD-250418-9252;18/04/2025;Direct;Île-de-France;Mondial Relay;2;31,26;3;3;oui
+CMD-250418-5926;18/04/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Chronopost;4;42,66;2;4;non
+CMD-250418-4646;18/04/2025;Email;Île-de-France;Colissimo;2;34,29;4;3;non
+CMD-250418-2150;18/04/2025;Direct;PACA;Chronopost;3;36,08;1;4;oui
+CMD-250418-2842;18/04/2025;SEO;PACA;Chronopost;2;43,85;2;4;non
+CMD-250418-3057;18/04/2025;Email;Bretagne;Colissimo;5;229,35;3;3;non
+CMD-250419-2600;19/04/2025;SEA;Île-de-France;Colissimo;1;23,24;3;3;non
+CMD-250419-9802;19/04/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;2;42,9;2;3;non
+CMD-250419-7746;19/04/2025;Email;PACA;Mondial Relay;3;38,99;3;4;non
+CMD-250419-8878;19/04/2025;SEA;Grand Est;Mondial Relay;3;107,05;4;3;non
+CMD-250419-9840;19/04/2025;Email;Hauts-de-France;Mondial Relay;2;67,84;3;3;non
+CMD-250419-2654;19/04/2025;Email;Île-de-France;Colissimo;2;52,07;3;2;non
+CMD-250419-6798;19/04/2025;Direct;Nouvelle-Aquitaine;Colissimo;1;30,15;3;5;oui
+CMD-250419-6839;19/04/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Mondial Relay;2;24,74;4;4;oui
+CMD-250420-5560;20/04/2025;Direct;PACA;Colissimo;1;75,4;3;4;oui
+CMD-250420-5209;20/04/2025;Réseaux sociaux;PACA;Mondial Relay;2;111,86;2;4;oui
+CMD-250420-1994;20/04/2025;Réseaux sociaux;Hauts-de-France;Colissimo;4;69,55;2;4;oui
+CMD-250420-3241;20/04/2025;Réseaux sociaux;Hauts-de-France;Colissimo;2;41,23;3;3;oui
+CMD-250421-2669;21/04/2025;SEA;Grand Est;Colissimo;3;62,69;2;5;non
+CMD-250421-3730;21/04/2025;SEA;Hauts-de-France;Mondial Relay;1;62,61;4;3;non
+CMD-250421-8926;21/04/2025;SEA;Île-de-France;Colissimo;3;67,5;5;3;non
+CMD-250421-8093;21/04/2025;Email;Bretagne;Chronopost;3;28,28;2;3;non
+CMD-250421-3038;21/04/2025;SEO;Hauts-de-France;Chronopost;1;91,48;3;3;oui
+CMD-250421-8745;21/04/2025;SEO;Île-de-France;Colissimo;1;36,44;3;5;non
+CMD-250421-1253;21/04/2025;Email;Bretagne;Mondial Relay;4;104,43;9;1;non
+CMD-250421-1597;21/04/2025;SEA;Île-de-France;Colissimo;1;31,1;3;4;oui
+CMD-250421-5336;21/04/2025;Email;Île-de-France;Mondial Relay;2;74,92;2;5;non
+CMD-250421-6785;21/04/2025;Direct;PACA;Colissimo;1;19,26;3;4;oui
+CMD-250421-6189;21/04/2025;Email;Hauts-de-France;Colissimo;5;29,29;5;3;non
+CMD-250422-7033;22/04/2025;SEO;PACA;Colissimo;1;28,7;3;3;oui
+CMD-250422-5454;22/04/2025;Réseaux sociaux;PACA;Chronopost;1;33,82;1;4;oui
+CMD-250423-4686;23/04/2025;SEO;PACA;Chronopost;3;32,49;1;4;non
+CMD-250423-7970;23/04/2025;SEO;Bretagne;Mondial Relay;3;39,1;6;4;non
+CMD-250423-4685;23/04/2025;SEO;PACA;Colissimo;2;20,08;1;3;oui
+CMD-250423-5532;23/04/2025;Réseaux sociaux;Île-de-France;Colissimo;3;71,92;3;4;oui
+CMD-250423-8719;23/04/2025;Email;Auvergne-Rhône-Alpes;Mondial Relay;3;58,93;3;3;non
+CMD-250423-7910;23/04/2025;SEO;Grand Est;Chronopost;1;20,07;2;4;non
+CMD-250423-8760;23/04/2025;Email;Auvergne-Rhône-Alpes;Chronopost;2;31,75;1;4;non
+CMD-250423-6101;23/04/2025;SEA;Auvergne-Rhône-Alpes;Chronopost;2;61,61;2;4;oui
+CMD-250424-6150;24/04/2025;SEA;Occitanie;Chronopost;1;56,6;2;3;oui
+CMD-250424-5178;24/04/2025;SEA;Auvergne-Rhône-Alpes;Chronopost;3;34,91;3;3;oui
+CMD-250426-4434;26/04/2025;Réseaux sociaux;PACA;Colissimo;2;20,43;5;2;oui
+CMD-250426-9758;26/04/2025;Réseaux sociaux;Occitanie;Colissimo;7;40,65;2;4;oui
+CMD-250426-4705;26/04/2025;SEO;Hauts-de-France;Colissimo;3;78,41;3;5;oui
+CMD-250426-6015;26/04/2025;SEA;Hauts-de-France;Colissimo;4;46,88;3;5;oui
+CMD-250426-4282;26/04/2025;Direct;Grand Est;Mondial Relay;3;26,73;5;3;oui
+CMD-250427-9047;27/04/2025;Email;Bretagne;Chronopost;3;13,31;2;3;non
+CMD-250427-7121;27/04/2025;SEA;Île-de-France;Colissimo;1;96,16;3;2;oui
+CMD-250427-1524;27/04/2025;SEA;Bretagne;Colissimo;3;31,99;3;3;oui
+CMD-250427-1910;27/04/2025;Direct;Bretagne;Colissimo;2;38,35;4;3;non
+CMD-250427-6619;27/04/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;4;72,11;4;4;non
+CMD-250427-5580;27/04/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;4;55,14;5;4;non
+CMD-250428-8618;28/04/2025;SEO;Île-de-France;Colissimo;3;75,93;4;5;non
+CMD-250428-6548;28/04/2025;SEO;PACA;Colissimo;2;101,5;2;4;oui
+CMD-250428-4614;28/04/2025;Email;Bretagne;Mondial Relay;1;66,08;5;3;non
+CMD-250428-9699;28/04/2025;Direct;Île-de-France;Mondial Relay;2;33,08;5;4;oui
+CMD-250428-1163;28/04/2025;Direct;Auvergne-Rhône-Alpes;Mondial Relay;2;29,54;4;3;oui
+CMD-250428-3663;28/04/2025;Email;Bretagne;Mondial Relay;5;58,31;7;1;non
+CMD-250429-7702;29/04/2025;Direct;Auvergne-Rhône-Alpes;Mondial Relay;2;54,51;6;1;oui
+CMD-250429-8287;29/04/2025;SEA;Grand Est;Colissimo;4;115,93;2;4;oui
+CMD-250429-6942;29/04/2025;SEA;Bretagne;Mondial Relay;1;53,18;2;3;oui
+CMD-250429-3773;29/04/2025;SEA;Hauts-de-France;Colissimo;1;22,74;2;3;oui
+CMD-250429-4279;29/04/2025;SEA;Grand Est;Colissimo;3;36,48;4;4;non
+CMD-250429-9893;29/04/2025;Email;PACA;Mondial Relay;2;110,45;3;4;non
+CMD-250429-6866;29/04/2025;SEA;Bretagne;Colissimo;2;55,22;5;2;oui
+CMD-250429-3034;29/04/2025;Réseaux sociaux;Nouvelle-Aquitaine;Mondial Relay;2;39,03;1;4;non
+CMD-250430-4915;30/04/2025;SEO;Île-de-France;Mondial Relay;3;68,21;3;3;non
+CMD-250430-4799;30/04/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;1;22,49;4;3;non
+CMD-250430-4595;30/04/2025;Direct;Île-de-France;Chronopost;2;62,56;2;4;non
+CMD-250430-7077;30/04/2025;SEA;Bretagne;Colissimo;3;32,59;3;5;oui
+CMD-250430-2941;30/04/2025;Réseaux sociaux;Île-de-France;Mondial Relay;2;29,23;5;4;oui
+CMD-250430-5368;30/04/2025;SEO;Île-de-France;Colissimo;3;26,79;3;5;non
+CMD-250430-2624;30/04/2025;Réseaux sociaux;Île-de-France;Mondial Relay;3;70,53;3;3;oui
+CMD-250501-9498;01/05/2025;Email;Grand Est;Colissimo;1;9,88;2;4;non
+CMD-250501-5575;01/05/2025;Réseaux sociaux;PACA;Colissimo;3;36,33;2;4;non
+CMD-250501-6168;01/05/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;2;31,06;2;4;non
+CMD-250501-1754;01/05/2025;Email;Auvergne-Rhône-Alpes;Colissimo;3;14,5;3;4;non
+CMD-250502-8594;02/05/2025;SEO;Occitanie;Colissimo;1;9,79;3;4;non
+CMD-250502-9568;02/05/2025;Email;Hauts-de-France;Mondial Relay;2;29,69;4;3;non
+CMD-250502-3564;02/05/2025;Réseaux sociaux;Nouvelle-Aquitaine;Colissimo;1;33,26;3;3;oui
+CMD-250502-9395;02/05/2025;Email;Auvergne-Rhône-Alpes;Colissimo;3;44,04;5;4;non
+CMD-250502-4936;02/05/2025;Direct;Île-de-France;Chronopost;3;42,8;2;4;oui
+CMD-250503-5188;03/05/2025;Email;Auvergne-Rhône-Alpes;Mondial Relay;4;40,86;3;4;non
+CMD-250503-5853;03/05/2025;Direct;Île-de-France;Mondial Relay;2;35,65;2;4;non
+CMD-250503-5689;03/05/2025;Direct;Île-de-France;Colissimo;1;40,45;3;5;non
+CMD-250503-9678;03/05/2025;SEO;Occitanie;Mondial Relay;4;35,22;6;2;oui
+CMD-250503-2331;03/05/2025;Direct;Nouvelle-Aquitaine;Colissimo;3;13,08;2;4;oui
+CMD-250504-5519;04/05/2025;SEA;Hauts-de-France;Chronopost;2;26,64;1;5;non
+CMD-250504-9360;04/05/2025;SEO;Île-de-France;Chronopost;3;80,22;2;4;oui
+CMD-250504-2884;04/05/2025;SEO;Hauts-de-France;Chronopost;3;15,33;1;4;oui
+CMD-250505-7111;05/05/2025;Email;Île-de-France;Chronopost;3;122,79;2;3;non
+CMD-250505-6300;05/05/2025;Direct;Île-de-France;Colissimo;3;18,64;5;4;oui
+CMD-250505-3783;05/05/2025;Direct;Île-de-France;Chronopost;2;33,56;2;4;oui
+CMD-250505-3487;05/05/2025;Direct;Île-de-France;Colissimo;4;34,04;3;5;oui
+CMD-250505-6857;05/05/2025;Direct;Grand Est;Chronopost;6;18,39;2;4;oui
+CMD-250505-5408;05/05/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;1;27,34;2;4;oui
+CMD-250505-2607;05/05/2025;SEO;Hauts-de-France;Mondial Relay;1;41,17;3;3;oui
+CMD-250505-1698;05/05/2025;Email;Nouvelle-Aquitaine;Mondial Relay;2;40,29;4;3;non
+CMD-250505-2833;05/05/2025;Réseaux sociaux;Hauts-de-France;Colissimo;1;60,15;3;4;non
+CMD-250506-8417;06/05/2025;Email;Occitanie;Colissimo;2;51,81;4;4;non
+CMD-250506-3779;06/05/2025;SEA;Auvergne-Rhône-Alpes;Chronopost;3;29,98;1;3;oui
+CMD-250506-9361;06/05/2025;Direct;Île-de-France;Colissimo;1;35,43;3;4;non
+CMD-250506-7885;06/05/2025;SEO;Hauts-de-France;Colissimo;2;126,19;4;4;oui
+CMD-250506-2487;06/05/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;2;25,87;4;3;oui
+CMD-250506-4830;06/05/2025;Direct;Bretagne;Mondial Relay;2;39,49;6;2;non
+CMD-250507-9399;07/05/2025;Direct;Île-de-France;Colissimo;2;20,63;7;2;non
+CMD-250507-4175;07/05/2025;Réseaux sociaux;Île-de-France;Colissimo;4;64,55;1;4;oui
+CMD-250507-6666;07/05/2025;SEA;Occitanie;Colissimo;2;21,1;4;3;non
+CMD-250507-8059;07/05/2025;Email;Hauts-de-France;Mondial Relay;2;27,24;7;3;non
+CMD-250507-2912;07/05/2025;Réseaux sociaux;Occitanie;Chronopost;1;28,5;2;4;non
+CMD-250507-9470;07/05/2025;SEO;Bretagne;Colissimo;3;19,11;3;3;oui
+CMD-250508-2119;08/05/2025;Direct;Île-de-France;Colissimo;1;10,32;5;4;oui
+CMD-250508-9573;08/05/2025;SEO;Grand Est;Colissimo;2;59,28;3;3;oui
+CMD-250508-5943;08/05/2025;Direct;Hauts-de-France;Colissimo;3;23,12;5;2;oui
+CMD-250508-7121;08/05/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;5;35,2;2;4;non
+CMD-250508-8826;08/05/2025;SEO;PACA;Chronopost;2;27,61;2;5;non
+CMD-250508-7148;08/05/2025;SEO;Île-de-France;Colissimo;3;44,5;4;4;oui
+CMD-250509-1267;09/05/2025;Direct;Nouvelle-Aquitaine;Colissimo;1;22,35;5;4;non
+CMD-250509-4586;09/05/2025;SEO;Bretagne;Mondial Relay;2;54,74;5;3;oui
+CMD-250509-5618;09/05/2025;SEO;PACA;Colissimo;3;34,32;4;3;non
+CMD-250509-7888;09/05/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;3;181,7;2;5;non
+CMD-250509-3884;09/05/2025;SEO;Occitanie;Colissimo;1;40,54;6;3;non
+CMD-250509-1471;09/05/2025;Réseaux sociaux;Occitanie;Colissimo;4;64,76;3;5;oui
+CMD-250509-3017;09/05/2025;SEA;PACA;Chronopost;1;12,97;3;4;non
+CMD-250509-5071;09/05/2025;SEA;Île-de-France;Colissimo;3;95,17;3;4;oui
+CMD-250509-5224;09/05/2025;SEO;Nouvelle-Aquitaine;Colissimo;3;31,57;3;3;oui
+CMD-250509-7393;09/05/2025;SEA;Occitanie;Colissimo;3;21,54;2;3;non
+CMD-250510-7887;10/05/2025;Direct;Île-de-France;Chronopost;2;23,9;2;4;oui
+CMD-250510-9799;10/05/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;2;37,43;3;3;non
+CMD-250510-3727;10/05/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;3;40,52;4;3;oui
+CMD-250510-6481;10/05/2025;SEO;Île-de-France;Colissimo;2;74,21;4;3;non
+CMD-250510-3379;10/05/2025;SEO;Île-de-France;Chronopost;4;30,97;2;4;non
+CMD-250511-2168;11/05/2025;Email;Île-de-France;Colissimo;5;50,0;3;3;non
+CMD-250511-9517;11/05/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;1;39,14;3;4;non
+CMD-250511-1175;11/05/2025;Email;Occitanie;Colissimo;1;16,84;1;4;non
+CMD-250511-7500;11/05/2025;Email;Nouvelle-Aquitaine;Colissimo;4;44,99;4;4;non
+CMD-250512-1095;12/05/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;3;26,32;5;4;oui
+CMD-250512-5884;12/05/2025;Email;Hauts-de-France;Colissimo;1;22,67;3;3;oui
+CMD-250512-5207;12/05/2025;Direct;Occitanie;Mondial Relay;1;25,7;3;2;oui
+CMD-250512-6822;12/05/2025;SEO;Occitanie;Mondial Relay;4;49,2;3;4;non
+CMD-250512-1638;12/05/2025;Email;Île-de-France;Colissimo;4;53,56;3;2;non
+CMD-250512-7154;12/05/2025;SEA;Grand Est;Colissimo;4;21,69;2;5;non
+CMD-250512-8773;12/05/2025;Email;Auvergne-Rhône-Alpes;Colissimo;4;42,48;3;3;non
+CMD-250512-1548;12/05/2025;SEO;Occitanie;Colissimo;2;26,84;4;4;oui
+CMD-250512-9624;12/05/2025;Email;Île-de-France;Colissimo;2;29,88;4;2;non
+CMD-250513-8732;13/05/2025;Direct;Bretagne;Chronopost;4;71,73;1;4;oui
+CMD-250513-4519;13/05/2025;Email;Grand Est;Colissimo;2;73,74;3;4;non
+CMD-250513-9299;13/05/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;2;32,4;1;5;oui
+CMD-250513-4329;13/05/2025;Direct;Bretagne;Colissimo;4;25,86;8;1;oui
+CMD-250513-3550;13/05/2025;Email;Île-de-France;Colissimo;1;43,5;2;4;non
+CMD-250513-6010;13/05/2025;Email;Hauts-de-France;Colissimo;4;154,01;2;4;non
+CMD-250513-2824;13/05/2025;Réseaux sociaux;Hauts-de-France;Mondial Relay;3;30,07;4;4;non
+CMD-250513-8971;13/05/2025;SEA;Bretagne;Mondial Relay;5;49,57;2;3;oui
+CMD-250514-2172;14/05/2025;Réseaux sociaux;Île-de-France;Chronopost;5;70,31;2;4;non
+CMD-250515-6562;15/05/2025;SEA;Île-de-France;Colissimo;4;36,06;3;4;oui
+CMD-250515-2646;15/05/2025;SEO;Île-de-France;Mondial Relay;2;29,41;4;3;non
+CMD-250515-9301;15/05/2025;SEO;Île-de-France;Mondial Relay;4;29,59;5;3;non
+CMD-250515-7165;15/05/2025;SEA;PACA;Mondial Relay;3;43,86;5;4;non
+CMD-250515-1497;15/05/2025;Email;Nouvelle-Aquitaine;Mondial Relay;1;25,81;4;4;non
+CMD-250515-4995;15/05/2025;SEO;Île-de-France;Colissimo;2;133,74;3;2;non
+CMD-250516-3684;16/05/2025;Email;Occitanie;Mondial Relay;2;24,15;6;2;non
+CMD-250516-1320;16/05/2025;SEO;Grand Est;Colissimo;4;42,8;3;4;non
+CMD-250516-3385;16/05/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;2;15,1;1;4;non
+CMD-250516-8574;16/05/2025;Direct;Île-de-France;Colissimo;2;15,6;4;3;non
+CMD-250516-8293;16/05/2025;Réseaux sociaux;Hauts-de-France;Colissimo;1;25,88;3;4;oui
+CMD-250517-1193;17/05/2025;Email;Île-de-France;Colissimo;4;51,94;3;3;non
+CMD-250517-8424;17/05/2025;Réseaux sociaux;Île-de-France;Colissimo;1;15,2;3;4;oui
+CMD-250517-3729;17/05/2025;SEA;PACA;Colissimo;5;87,93;3;3;oui
+CMD-250517-6322;17/05/2025;Email;Hauts-de-France;Colissimo;2;41,13;2;3;non
+CMD-250517-9314;17/05/2025;SEO;Occitanie;Colissimo;3;259,89;5;4;non
+CMD-250517-4410;17/05/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;4;69,89;3;4;oui
+CMD-250518-1731;18/05/2025;SEO;Île-de-France;Mondial Relay;3;42,95;2;5;oui
+CMD-250518-7796;18/05/2025;Réseaux sociaux;Hauts-de-France;Mondial Relay;2;49,37;2;3;non
+CMD-250518-9590;18/05/2025;Email;Auvergne-Rhône-Alpes;Colissimo;2;26,95;4;3;non
+CMD-250518-9671;18/05/2025;SEA;Occitanie;Colissimo;3;57,62;1;5;oui
+CMD-250518-8445;18/05/2025;Email;Nouvelle-Aquitaine;Mondial Relay;3;175,28;3;3;non
+CMD-250518-3270;18/05/2025;Direct;Bretagne;Colissimo;2;24,75;4;2;oui
+CMD-250519-1111;19/05/2025;SEA;Auvergne-Rhône-Alpes;Chronopost;2;22,39;1;4;oui
+CMD-250519-7018;19/05/2025;SEA;Île-de-France;Mondial Relay;2;19,72;2;4;non
+CMD-250519-7587;19/05/2025;SEO;Occitanie;Mondial Relay;2;26,92;2;4;oui
+CMD-250519-1492;19/05/2025;Direct;Grand Est;Colissimo;3;128,08;3;4;oui
+CMD-250520-1390;20/05/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;2;50,05;3;4;oui
+CMD-250520-5716;20/05/2025;Direct;Île-de-France;Colissimo;4;61,58;6;3;oui
+CMD-250520-8399;20/05/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;3;99,75;3;4;oui
+CMD-250520-5046;20/05/2025;SEO;Île-de-France;Chronopost;2;83,38;1;4;oui
+CMD-250520-2467;20/05/2025;Email;Île-de-France;Mondial Relay;4;96,73;3;5;oui
+CMD-250520-6409;20/05/2025;Email;Occitanie;Chronopost;2;34,07;1;5;non
+CMD-250521-2565;21/05/2025;SEA;Occitanie;Mondial Relay;3;20,82;3;4;oui
+CMD-250521-2537;21/05/2025;Réseaux sociaux;Île-de-France;Mondial Relay;4;82,21;6;3;non
+CMD-250521-8520;21/05/2025;Direct;Île-de-France;Colissimo;5;87,68;4;3;oui
+CMD-250521-9963;21/05/2025;Email;Bretagne;Colissimo;4;59,33;3;3;non
+CMD-250521-3290;21/05/2025;Direct;Auvergne-Rhône-Alpes;Chronopost;1;30,05;2;3;oui
+CMD-250521-4047;21/05/2025;SEA;Île-de-France;Colissimo;5;43,58;2;3;oui
+CMD-250521-5374;21/05/2025;SEO;Île-de-France;Colissimo;1;30,5;3;4;oui
+CMD-250521-3537;21/05/2025;SEA;Île-de-France;Colissimo;3;46,03;2;4;oui
+CMD-250522-1456;22/05/2025;Email;Bretagne;Colissimo;3;72,64;3;3;non
+CMD-250523-6365;23/05/2025;Email;PACA;Colissimo;2;58,0;1;5;non
+CMD-250523-6311;23/05/2025;Email;Île-de-France;Mondial Relay;3;37,17;2;4;non
+CMD-250523-9761;23/05/2025;Direct;Hauts-de-France;Colissimo;2;105,98;2;5;non
+CMD-250523-8633;23/05/2025;SEA;Grand Est;Colissimo;4;102,86;2;4;non
+CMD-250524-3479;24/05/2025;Email;Auvergne-Rhône-Alpes;Chronopost;3;67,04;2;3;non
+CMD-250524-9592;24/05/2025;Email;PACA;Mondial Relay;4;108,04;2;3;non
+CMD-250524-3718;24/05/2025;SEO;PACA;Colissimo;3;45,72;3;5;oui
+CMD-250524-6019;24/05/2025;SEA;Occitanie;Mondial Relay;6;48,67;4;4;oui
+CMD-250525-6029;25/05/2025;SEO;Nouvelle-Aquitaine;Colissimo;2;34,15;3;4;non
+CMD-250525-8976;25/05/2025;SEO;Occitanie;Chronopost;3;24,31;2;3;oui
+CMD-250525-2148;25/05/2025;SEA;Hauts-de-France;Chronopost;2;35,44;2;4;oui
+CMD-250525-2289;25/05/2025;Direct;Occitanie;Colissimo;3;23,41;4;4;oui
+CMD-250525-9453;25/05/2025;SEO;Occitanie;Colissimo;1;18,49;3;4;non
+CMD-250525-8935;25/05/2025;SEA;Île-de-France;Mondial Relay;5;80,14;5;4;oui
+CMD-250525-6586;25/05/2025;Direct;Bretagne;Colissimo;2;65,7;3;4;oui
+CMD-250525-4946;25/05/2025;Email;Occitanie;Colissimo;2;90,83;2;4;oui
+CMD-250526-3455;26/05/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;2;48,78;4;4;oui
+CMD-250526-6199;26/05/2025;SEO;Hauts-de-France;Colissimo;3;56,79;2;4;non
+CMD-250527-3267;27/05/2025;Email;Île-de-France;Colissimo;4;84,61;3;3;non
+CMD-250527-9983;27/05/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;1;19,65;2;4;oui
+CMD-250527-5122;27/05/2025;SEO;Hauts-de-France;Chronopost;3;51,03;2;4;non
+CMD-250527-8785;27/05/2025;SEO;Bretagne;Colissimo;3;27,39;3;3;oui
+CMD-250527-3091;27/05/2025;Direct;PACA;Chronopost;2;27,7;3;3;oui
+CMD-250527-9816;27/05/2025;Direct;PACA;Colissimo;3;18,18;2;4;non
+CMD-250527-7010;27/05/2025;SEA;Bretagne;Colissimo;2;18,99;6;3;oui
+CMD-250527-1751;27/05/2025;Email;Île-de-France;Colissimo;3;37,24;2;4;non
+CMD-250528-6061;28/05/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;1;22,09;2;2;non
+CMD-250528-3956;28/05/2025;SEO;Hauts-de-France;Mondial Relay;3;34,49;6;3;oui
+CMD-250528-5355;28/05/2025;SEO;Grand Est;Colissimo;3;44,32;2;3;non
+CMD-250528-9700;28/05/2025;Email;Auvergne-Rhône-Alpes;Colissimo;2;179,44;3;2;non
+CMD-250528-8474;28/05/2025;SEO;Île-de-France;Colissimo;2;32,35;2;3;oui
+CMD-250528-4049;28/05/2025;SEO;Île-de-France;Mondial Relay;3;36,6;4;3;oui
+CMD-250528-8479;28/05/2025;SEO;Nouvelle-Aquitaine;Colissimo;2;28,02;2;2;oui
+CMD-250528-7234;28/05/2025;Email;Occitanie;Colissimo;2;83,02;3;3;non
+CMD-250529-6740;29/05/2025;Direct;Bretagne;Colissimo;4;124,05;3;2;non
+CMD-250529-6838;29/05/2025;Email;Auvergne-Rhône-Alpes;Chronopost;2;39,48;1;4;non
+CMD-250529-1423;29/05/2025;SEA;Occitanie;Mondial Relay;3;41,44;5;3;non
+CMD-250529-2783;29/05/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;2;31,27;6;3;oui
+CMD-250529-1098;29/05/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Chronopost;2;85,83;2;3;oui
+CMD-250529-1125;29/05/2025;Direct;Île-de-France;Colissimo;1;37,08;2;3;non
+CMD-250529-1631;29/05/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;1;17,81;2;3;oui
+CMD-250529-6985;29/05/2025;SEO;PACA;Colissimo;1;28,15;3;2;non
+CMD-250530-1266;30/05/2025;SEO;Bretagne;Colissimo;2;15,4;4;4;oui
+CMD-250530-7855;30/05/2025;SEA;Île-de-France;Colissimo;4;39,5;5;3;non
+CMD-250530-5385;30/05/2025;SEO;Hauts-de-France;Chronopost;3;24,68;2;2;non
+CMD-250530-5031;30/05/2025;Direct;PACA;Mondial Relay;3;128,88;6;2;oui
+CMD-250530-3390;30/05/2025;Email;Hauts-de-France;Colissimo;2;99,75;5;2;non
+CMD-250530-9891;30/05/2025;Email;Nouvelle-Aquitaine;Mondial Relay;2;80,78;4;3;non
+CMD-250530-3799;30/05/2025;Direct;PACA;Colissimo;1;31,04;3;4;oui
+CMD-250530-9600;30/05/2025;Email;Grand Est;Chronopost;3;99,83;1;5;oui
+CMD-250530-3432;30/05/2025;SEO;Île-de-France;Mondial Relay;1;66,22;3;5;oui
+CMD-250531-8702;31/05/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;3;60,84;1;5;oui
+CMD-250601-5910;01/06/2025;SEA;Île-de-France;Mondial Relay;1;20,42;4;5;non
+CMD-250601-2319;01/06/2025;Réseaux sociaux;Nouvelle-Aquitaine;Colissimo;3;32,72;5;3;oui
+CMD-250601-1167;01/06/2025;Direct;Bretagne;Colissimo;2;101,88;4;3;non
+CMD-250602-2359;02/06/2025;SEA;Grand Est;Mondial Relay;1;35,08;6;4;non
+CMD-250602-2065;02/06/2025;Direct;Auvergne-Rhône-Alpes;Mondial Relay;1;30,21;2;4;non
+CMD-250603-5245;03/06/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;4;44,31;2;4;oui
+CMD-250603-6556;03/06/2025;SEO;Grand Est;Colissimo;2;36,2;1;4;oui
+CMD-250603-6539;03/06/2025;Direct;Hauts-de-France;Colissimo;2;10,72;2;4;oui
+CMD-250603-3621;03/06/2025;SEA;Occitanie;Colissimo;4;17,04;3;2;non
+CMD-250604-6626;04/06/2025;SEA;Bretagne;Mondial Relay;1;28,34;2;4;non
+CMD-250604-3449;04/06/2025;Direct;Bretagne;Colissimo;1;52,44;3;5;oui
+CMD-250604-4054;04/06/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;4;130,48;2;4;non
+CMD-250604-6220;04/06/2025;Email;Nouvelle-Aquitaine;Mondial Relay;3;28,37;6;2;non
+CMD-250604-7146;04/06/2025;Email;Hauts-de-France;Colissimo;2;95,8;3;4;non
+CMD-250605-2780;05/06/2025;SEO;Île-de-France;Colissimo;2;68,18;3;3;oui
+CMD-250605-1465;05/06/2025;Réseaux sociaux;Île-de-France;Mondial Relay;3;27,72;5;3;non
+CMD-250605-3613;05/06/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;2;55,1;2;4;non
+CMD-250605-8006;05/06/2025;SEA;Bretagne;Colissimo;2;21,86;2;4;oui
+CMD-250606-6323;06/06/2025;Email;Grand Est;Mondial Relay;2;45,04;3;3;non
+CMD-250606-6656;06/06/2025;Direct;PACA;Mondial Relay;1;19,85;2;5;oui
+CMD-250606-2443;06/06/2025;SEA;PACA;Colissimo;2;48,5;2;5;oui
+CMD-250606-6257;06/06/2025;SEO;Grand Est;Colissimo;5;48,5;3;3;oui
+CMD-250606-9574;06/06/2025;SEO;Grand Est;Colissimo;3;48,12;3;4;non
+CMD-250607-4192;07/06/2025;Email;PACA;Colissimo;2;60,67;4;4;non
+CMD-250607-1503;07/06/2025;Direct;Grand Est;Mondial Relay;7;59,99;5;3;oui
+CMD-250607-7326;07/06/2025;SEA;Bretagne;Chronopost;4;47,65;1;3;oui
+CMD-250607-6803;07/06/2025;Email;Hauts-de-France;Chronopost;3;33,41;1;4;non
+CMD-250607-4434;07/06/2025;Email;Auvergne-Rhône-Alpes;Colissimo;1;38,16;2;5;non
+CMD-250607-5301;07/06/2025;SEA;Île-de-France;Chronopost;1;25,88;1;4;oui
+CMD-250607-5007;07/06/2025;SEA;Île-de-France;Mondial Relay;2;75,8;2;4;oui
+CMD-250607-8919;07/06/2025;Réseaux sociaux;Bretagne;Chronopost;1;40,03;2;5;non
+CMD-250607-4144;07/06/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;2;26,3;3;3;oui
+CMD-250607-4870;07/06/2025;SEO;Nouvelle-Aquitaine;Chronopost;5;65,93;1;4;oui
+CMD-250608-7079;08/06/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;3;40,44;3;4;non
+CMD-250608-1617;08/06/2025;Email;PACA;Colissimo;2;68,34;4;2;non
+CMD-250608-6743;08/06/2025;SEO;Occitanie;Colissimo;3;18,37;6;3;non
+CMD-250608-3734;08/06/2025;Direct;Hauts-de-France;Colissimo;2;45,53;7;3;non
+CMD-250609-9354;09/06/2025;SEA;Hauts-de-France;Chronopost;2;26,38;1;4;non
+CMD-250609-7106;09/06/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;1;43,09;4;3;oui
+CMD-250609-2039;09/06/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;5;25,86;2;3;oui
+CMD-250609-7841;09/06/2025;SEO;Grand Est;Colissimo;3;65,9;3;4;non
+CMD-250609-2305;09/06/2025;SEO;Bretagne;Colissimo;5;84,81;4;3;non
+CMD-250609-3395;09/06/2025;Direct;PACA;Colissimo;2;14,59;3;4;oui
+CMD-250609-5426;09/06/2025;SEA;PACA;Chronopost;2;76,48;1;5;non
+CMD-250609-3109;09/06/2025;Réseaux sociaux;Grand Est;Mondial Relay;1;29,19;6;1;non
+CMD-250610-5404;10/06/2025;Réseaux sociaux;Hauts-de-France;Colissimo;4;104,24;6;2;oui
+CMD-250610-5553;10/06/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;3;37,3;4;3;non
+CMD-250610-4207;10/06/2025;Réseaux sociaux;Occitanie;Colissimo;2;17,66;4;4;oui
+CMD-250610-1613;10/06/2025;Réseaux sociaux;Île-de-France;Colissimo;3;21,91;3;3;oui
+CMD-250610-3408;10/06/2025;SEA;Bretagne;Colissimo;3;25,81;2;3;non
+CMD-250610-5384;10/06/2025;Réseaux sociaux;PACA;Chronopost;3;35,58;2;4;non
+CMD-250610-7955;10/06/2025;SEA;Île-de-France;Colissimo;3;100,79;2;4;oui
+CMD-250610-9254;10/06/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;2;48,42;5;3;non
+CMD-250610-5901;10/06/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;3;70,93;2;4;oui
+CMD-250610-4200;10/06/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;5;23,64;4;3;non
+CMD-250610-6087;10/06/2025;SEA;Occitanie;Mondial Relay;2;87,19;3;5;non
+CMD-250611-1130;11/06/2025;SEO;Île-de-France;Colissimo;2;26,84;4;4;oui
+CMD-250611-1353;11/06/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Chronopost;4;43,17;3;3;oui
+CMD-250611-6644;11/06/2025;SEO;Occitanie;Chronopost;6;32,79;1;4;oui
+CMD-250611-5265;11/06/2025;SEA;Île-de-France;Mondial Relay;2;104,79;5;3;non
+CMD-250611-5242;11/06/2025;SEO;Hauts-de-France;Chronopost;4;50,24;2;4;oui
+CMD-250611-2309;11/06/2025;Direct;Bretagne;Chronopost;3;19,62;1;3;oui
+CMD-250611-4541;11/06/2025;SEO;Île-de-France;Mondial Relay;4;39,15;6;3;oui
+CMD-250611-1162;11/06/2025;Email;Occitanie;Mondial Relay;4;27,99;2;4;oui
+CMD-250611-8661;11/06/2025;SEA;Nouvelle-Aquitaine;Colissimo;1;12,66;3;5;non
+CMD-250612-3707;12/06/2025;Direct;Île-de-France;Mondial Relay;1;17,26;3;2;non
+CMD-250612-7363;12/06/2025;Direct;Hauts-de-France;Mondial Relay;3;51,99;4;3;non
+CMD-250612-9270;12/06/2025;SEO;Hauts-de-France;Mondial Relay;3;72,6;3;5;oui
+CMD-250612-5837;12/06/2025;Email;Île-de-France;Colissimo;2;44,16;4;3;oui
+CMD-250612-8165;12/06/2025;Email;Bretagne;Mondial Relay;2;61,86;3;1;non
+CMD-250612-2909;12/06/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;2;38,92;3;4;non
+CMD-250612-5474;12/06/2025;SEA;Occitanie;Colissimo;2;41,17;2;3;oui
+CMD-250612-5390;12/06/2025;SEA;Occitanie;Mondial Relay;2;105,05;2;4;non
+CMD-250613-7230;13/06/2025;Réseaux sociaux;Île-de-France;Colissimo;2;31,66;2;4;non
+CMD-250613-7024;13/06/2025;Email;Auvergne-Rhône-Alpes;Mondial Relay;2;33,33;4;4;non
+CMD-250613-3572;13/06/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Mondial Relay;1;62,46;3;5;oui
+CMD-250613-1301;13/06/2025;SEO;Hauts-de-France;Colissimo;2;26,03;3;4;non
+CMD-250614-2108;14/06/2025;Direct;Bretagne;Colissimo;1;33,21;4;3;non
+CMD-250614-7903;14/06/2025;Réseaux sociaux;PACA;Mondial Relay;1;40,48;6;3;oui
+CMD-250614-1088;14/06/2025;SEA;Bretagne;Colissimo;4;31,21;3;3;oui
+CMD-250614-6094;14/06/2025;SEA;Nouvelle-Aquitaine;Colissimo;5;38,81;3;4;oui
+CMD-250614-3089;14/06/2025;Direct;Île-de-France;Chronopost;2;56,38;3;4;non
+CMD-250615-7409;15/06/2025;SEA;Occitanie;Colissimo;2;79,18;5;2;oui
+CMD-250615-3716;15/06/2025;SEO;PACA;Colissimo;3;20,2;3;4;oui
+CMD-250615-5268;15/06/2025;SEO;Nouvelle-Aquitaine;Colissimo;3;80,33;4;5;oui
+CMD-250615-5709;15/06/2025;Email;Hauts-de-France;Mondial Relay;4;58,73;7;2;non
+CMD-250616-9161;16/06/2025;SEA;Grand Est;Chronopost;3;87,02;1;5;non
+CMD-250616-5193;16/06/2025;Direct;Hauts-de-France;Chronopost;3;35,3;2;4;oui
+CMD-250616-8842;16/06/2025;SEO;Île-de-France;Colissimo;5;75,76;3;4;oui
+CMD-250616-9946;16/06/2025;Email;Bretagne;Chronopost;3;21,47;1;3;non
+CMD-250616-4036;16/06/2025;Direct;Nouvelle-Aquitaine;Colissimo;3;35,95;3;4;non
+CMD-250616-6702;16/06/2025;Direct;Hauts-de-France;Colissimo;6;50,55;6;3;non
+CMD-250616-2471;16/06/2025;Réseaux sociaux;Grand Est;Mondial Relay;5;78,6;3;4;oui
+CMD-250617-1097;17/06/2025;SEO;Île-de-France;Chronopost;2;34,45;2;3;non
+CMD-250617-3304;17/06/2025;SEA;Occitanie;Mondial Relay;2;35,16;4;4;oui
+CMD-250617-7980;17/06/2025;Réseaux sociaux;Grand Est;Chronopost;5;26,04;2;4;oui
+CMD-250617-4112;17/06/2025;SEO;Île-de-France;Chronopost;4;39,94;2;4;non
+CMD-250617-3163;17/06/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;2;19,34;6;2;oui
+CMD-250617-9347;17/06/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;3;27,4;6;3;non
+CMD-250617-8667;17/06/2025;SEO;Nouvelle-Aquitaine;Colissimo;2;48,8;2;4;oui
+CMD-250617-9595;17/06/2025;SEO;Île-de-France;Colissimo;2;29,49;3;3;non
+CMD-250618-4046;18/06/2025;SEO;Île-de-France;Mondial Relay;4;56,81;2;5;non
+CMD-250618-7739;18/06/2025;SEA;Nouvelle-Aquitaine;Colissimo;3;51,58;4;4;non
+CMD-250618-6790;18/06/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;3;187,43;2;4;oui
+CMD-250618-6140;18/06/2025;Direct;Île-de-France;Mondial Relay;5;29,7;4;4;oui
+CMD-250619-1082;19/06/2025;SEA;Île-de-France;Chronopost;2;28,24;2;4;oui
+CMD-250619-4405;19/06/2025;Direct;Nouvelle-Aquitaine;Colissimo;3;36,5;4;3;oui
+CMD-250619-6919;19/06/2025;SEA;Bretagne;Colissimo;1;16,93;2;5;oui
+CMD-250619-8174;19/06/2025;Email;Occitanie;Chronopost;3;53,3;1;5;oui
+CMD-250619-4140;19/06/2025;SEO;Hauts-de-France;Mondial Relay;3;85,07;1;4;oui
+CMD-250619-8359;19/06/2025;Email;PACA;Mondial Relay;1;21,56;3;4;non
+CMD-250620-8120;20/06/2025;SEO;Île-de-France;Colissimo;3;34,49;3;3;non
+CMD-250620-3399;20/06/2025;SEA;Grand Est;Mondial Relay;4;78,99;2;5;non
+CMD-250620-4449;20/06/2025;SEO;PACA;Mondial Relay;2;34,41;4;3;oui
+CMD-250620-1111;20/06/2025;Direct;Hauts-de-France;Chronopost;1;34,76;2;4;non
+CMD-250621-6531;21/06/2025;Réseaux sociaux;Hauts-de-France;Mondial Relay;2;44,23;2;3;oui
+CMD-250621-5293;21/06/2025;Email;Grand Est;Colissimo;3;39,75;2;3;non
+CMD-250621-4704;21/06/2025;Réseaux sociaux;Bretagne;Colissimo;3;20,45;4;4;non
+CMD-250622-7744;22/06/2025;SEO;Grand Est;Colissimo;3;71,69;3;4;non
+CMD-250622-1387;22/06/2025;Email;PACA;Colissimo;1;42,67;2;5;oui
+CMD-250622-3753;22/06/2025;Réseaux sociaux;Île-de-France;Colissimo;1;38,19;4;3;oui
+CMD-250622-2012;22/06/2025;SEO;PACA;Mondial Relay;4;43,25;3;4;oui
+CMD-250622-3233;22/06/2025;SEO;Nouvelle-Aquitaine;Colissimo;2;32,05;3;4;oui
+CMD-250623-9988;23/06/2025;Email;PACA;Chronopost;2;59,89;3;3;non
+CMD-250623-2603;23/06/2025;SEO;Occitanie;Mondial Relay;2;26,98;1;5;oui
+CMD-250623-7338;23/06/2025;Direct;Île-de-France;Colissimo;3;18,26;2;4;oui
+CMD-250623-3492;23/06/2025;SEA;Hauts-de-France;Colissimo;1;107,21;2;5;non
+CMD-250623-6584;23/06/2025;Réseaux sociaux;Occitanie;Colissimo;2;37,42;2;4;oui
+CMD-250623-6633;23/06/2025;SEA;Grand Est;Chronopost;3;20,45;1;4;non
+CMD-250624-4789;24/06/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;6;97,72;3;3;non
+CMD-250624-5344;24/06/2025;SEA;Occitanie;Colissimo;1;7,42;4;3;oui
+CMD-250624-4277;24/06/2025;SEA;Île-de-France;Colissimo;2;26,42;6;3;non
+CMD-250624-5769;24/06/2025;Email;PACA;Chronopost;3;78,18;2;4;non
+CMD-250625-8175;25/06/2025;Email;Île-de-France;Chronopost;1;25,71;2;3;non
+CMD-250625-3954;25/06/2025;SEA;Nouvelle-Aquitaine;Mondial Relay;3;85,2;5;2;oui
+CMD-250625-2119;25/06/2025;Email;Auvergne-Rhône-Alpes;Chronopost;3;52,93;1;5;non
+CMD-250625-9151;25/06/2025;Réseaux sociaux;Nouvelle-Aquitaine;Colissimo;2;67,03;2;4;non
+CMD-250625-4075;25/06/2025;Email;Nouvelle-Aquitaine;Mondial Relay;3;174,81;5;3;oui
+CMD-250625-1827;25/06/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;3;46,51;2;4;non
+CMD-250625-4690;25/06/2025;SEO;Grand Est;Colissimo;1;25,88;3;4;non
+CMD-250626-3596;26/06/2025;SEO;Occitanie;Mondial Relay;2;44,87;8;1;oui
+CMD-250626-6122;26/06/2025;SEO;Occitanie;Mondial Relay;2;25,16;6;3;non
+CMD-250626-4648;26/06/2025;SEO;Occitanie;Chronopost;2;29,54;2;3;non
+CMD-250626-4962;26/06/2025;Réseaux sociaux;Grand Est;Colissimo;4;62,62;3;2;oui
+CMD-250627-7824;27/06/2025;SEO;Île-de-France;Mondial Relay;6;127,58;5;2;non
+CMD-250627-8557;27/06/2025;SEA;Nouvelle-Aquitaine;Colissimo;3;80,49;3;4;oui
+CMD-250627-8912;27/06/2025;SEO;Hauts-de-France;Chronopost;1;25,16;2;3;non
+CMD-250627-6835;27/06/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;2;38,76;3;2;non
+CMD-250627-3234;27/06/2025;SEO;Occitanie;Chronopost;3;29,94;1;5;non
+CMD-250627-3834;27/06/2025;Direct;Occitanie;Mondial Relay;2;40,57;3;4;non
+CMD-250627-9580;27/06/2025;Direct;Île-de-France;Chronopost;2;27,14;3;4;non
+CMD-250627-3740;27/06/2025;SEO;PACA;Colissimo;3;15,7;4;3;non
+CMD-250628-7898;28/06/2025;SEO;Île-de-France;Colissimo;4;33,04;5;3;non
+CMD-250628-6525;28/06/2025;Réseaux sociaux;Hauts-de-France;Colissimo;1;27,46;3;4;non
+CMD-250628-7481;28/06/2025;Réseaux sociaux;Grand Est;Mondial Relay;2;20,16;3;4;oui
+CMD-250628-6244;28/06/2025;SEA;Occitanie;Mondial Relay;2;53,73;3;3;oui
+CMD-250628-9693;28/06/2025;Réseaux sociaux;Île-de-France;Chronopost;3;51,57;2;4;oui
+CMD-250628-2453;28/06/2025;Email;Auvergne-Rhône-Alpes;Chronopost;5;29,47;2;3;non
+CMD-250628-4316;28/06/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;2;20,51;2;3;non
+CMD-250628-4525;28/06/2025;Direct;Grand Est;Chronopost;2;34,04;2;4;oui
+CMD-250628-5146;28/06/2025;SEO;PACA;Colissimo;4;83,39;2;5;oui
+CMD-250628-6016;28/06/2025;Direct;Hauts-de-France;Colissimo;4;20,36;4;3;oui
+CMD-250629-8330;29/06/2025;SEO;Grand Est;Colissimo;5;44,89;2;3;oui
+CMD-250629-9203;29/06/2025;Direct;Île-de-France;Chronopost;1;44,77;3;2;oui
+CMD-250629-5747;29/06/2025;SEA;Auvergne-Rhône-Alpes;Chronopost;4;37,99;1;5;oui
+CMD-250629-3270;29/06/2025;SEA;PACA;Colissimo;2;34,81;3;4;non
+CMD-250629-2705;29/06/2025;SEO;Île-de-France;Mondial Relay;2;68,69;4;4;oui
+CMD-250629-6641;29/06/2025;SEO;Occitanie;Mondial Relay;2;22,51;4;3;oui
+CMD-250629-6799;29/06/2025;SEA;Île-de-France;Mondial Relay;3;132,15;5;3;non
+CMD-250629-5596;29/06/2025;Direct;PACA;Chronopost;2;55,61;1;4;oui
+CMD-250630-4139;30/06/2025;Direct;Hauts-de-France;Mondial Relay;3;123,52;6;2;non
+CMD-250630-9564;30/06/2025;SEO;Hauts-de-France;Colissimo;1;26,85;2;4;non
+CMD-250630-6737;30/06/2025;SEO;Grand Est;Mondial Relay;3;41,03;6;3;oui
+CMD-250630-3726;30/06/2025;SEO;Nouvelle-Aquitaine;Colissimo;2;45,38;3;4;non
+CMD-250630-2546;30/06/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;1;55,08;3;3;non
+CMD-250630-1714;30/06/2025;Direct;Hauts-de-France;Colissimo;1;17,22;1;5;oui
+CMD-250630-8188;30/06/2025;Email;Occitanie;Colissimo;1;28,4;4;4;non
+CMD-250701-5877;01/07/2025;SEA;Île-de-France;Colissimo;2;47,49;4;4;oui
+CMD-250701-4706;01/07/2025;SEO;Île-de-France;Colissimo;3;70,17;5;3;oui
+CMD-250701-7169;01/07/2025;SEO;Occitanie;Chronopost;3;48,77;3;3;oui
+CMD-250701-4208;01/07/2025;SEO;Bretagne;Colissimo;3;42,0;3;4;oui
+CMD-250702-9433;02/07/2025;SEA;Hauts-de-France;Mondial Relay;5;27,55;2;2;oui
+CMD-250702-9500;02/07/2025;SEO;Hauts-de-France;Mondial Relay;4;105,98;3;3;non
+CMD-250702-4647;02/07/2025;Réseaux sociaux;PACA;Chronopost;1;48,89;1;3;oui
+CMD-250702-1599;02/07/2025;SEA;Île-de-France;Mondial Relay;1;63,95;3;4;non
+CMD-250702-2677;02/07/2025;Email;Île-de-France;Mondial Relay;2;20,64;3;3;non
+CMD-250702-3617;02/07/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;3;25,66;4;4;oui
+CMD-250702-6369;02/07/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Chronopost;1;86,23;2;4;oui
+CMD-250702-8893;02/07/2025;Direct;PACA;Colissimo;3;11,73;6;3;oui
+CMD-250702-1493;02/07/2025;Email;Grand Est;Mondial Relay;5;53,64;5;2;non
+CMD-250703-6301;03/07/2025;Email;Nouvelle-Aquitaine;Colissimo;2;72,88;4;2;non
+CMD-250703-6074;03/07/2025;SEO;Île-de-France;Mondial Relay;2;142,38;2;4;oui
+CMD-250703-5889;03/07/2025;SEO;Hauts-de-France;Mondial Relay;1;54,06;4;2;oui
+CMD-250703-8948;03/07/2025;SEA;Occitanie;Colissimo;1;19,02;3;2;non
+CMD-250703-7976;03/07/2025;SEA;Hauts-de-France;Colissimo;4;91,66;3;4;non
+CMD-250703-4396;03/07/2025;Email;Occitanie;Colissimo;1;35,36;3;3;non
+CMD-250703-8049;03/07/2025;Réseaux sociaux;Occitanie;Colissimo;3;47,98;3;3;oui
+CMD-250703-7029;03/07/2025;Email;Île-de-France;Mondial Relay;4;34,12;5;3;non
+CMD-250704-1629;04/07/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;1;41,92;2;5;non
+CMD-250704-4557;04/07/2025;Email;Île-de-France;Colissimo;2;54,07;1;5;non
+CMD-250704-2007;04/07/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;2;114,95;3;2;oui
+CMD-250704-9374;04/07/2025;SEO;Hauts-de-France;Colissimo;4;38,37;3;4;non
+CMD-250704-9071;04/07/2025;SEO;Île-de-France;Mondial Relay;4;41,31;3;4;non
+CMD-250704-3038;04/07/2025;Email;Hauts-de-France;Colissimo;2;33,06;4;2;oui
+CMD-250704-2663;04/07/2025;Email;Hauts-de-France;Mondial Relay;2;49,02;4;4;non
+CMD-250705-3208;05/07/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;3;19,93;2;3;oui
+CMD-250705-2488;05/07/2025;SEO;Île-de-France;Mondial Relay;4;46,57;4;4;oui
+CMD-250706-3993;06/07/2025;SEO;Grand Est;Chronopost;3;44,2;2;4;non
+CMD-250706-5231;06/07/2025;Réseaux sociaux;PACA;Mondial Relay;3;121,11;4;4;non
+CMD-250706-7765;06/07/2025;Direct;PACA;Mondial Relay;5;90,44;3;4;oui
+CMD-250706-5157;06/07/2025;SEO;Île-de-France;Mondial Relay;4;36,58;3;3;non
+CMD-250706-2378;06/07/2025;SEO;Île-de-France;Chronopost;1;34,18;1;4;oui
+CMD-250706-9522;06/07/2025;Email;Auvergne-Rhône-Alpes;Colissimo;3;63,94;4;4;non
+CMD-250706-3383;06/07/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;3;11,42;1;5;non
+CMD-250706-3038;06/07/2025;Réseaux sociaux;Grand Est;Mondial Relay;1;20,42;6;3;oui
+CMD-250707-2948;07/07/2025;Réseaux sociaux;PACA;Mondial Relay;1;63,42;6;2;oui
+CMD-250707-8676;07/07/2025;Email;Île-de-France;Mondial Relay;4;41,53;2;3;oui
+CMD-250708-7874;08/07/2025;Réseaux sociaux;Île-de-France;Chronopost;1;51,33;2;4;oui
+CMD-250708-5576;08/07/2025;Réseaux sociaux;Bretagne;Colissimo;4;47,53;3;3;oui
+CMD-250708-9726;08/07/2025;SEO;Occitanie;Mondial Relay;2;113,6;2;5;oui
+CMD-250708-6099;08/07/2025;Email;Bretagne;Colissimo;4;50,63;4;3;non
+CMD-250708-3707;08/07/2025;SEO;Bretagne;Colissimo;1;19,53;2;4;non
+CMD-250708-9120;08/07/2025;Réseaux sociaux;Bretagne;Mondial Relay;6;28,79;3;3;oui
+CMD-250708-2105;08/07/2025;SEO;Île-de-France;Chronopost;2;27,43;2;3;oui
+CMD-250708-4279;08/07/2025;SEO;Île-de-France;Colissimo;3;95,88;2;4;oui
+CMD-250709-6246;09/07/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;2;71,15;4;3;non
+CMD-250709-1297;09/07/2025;Email;Occitanie;Mondial Relay;2;36,84;3;3;non
+CMD-250709-2978;09/07/2025;Email;Grand Est;Chronopost;1;29,96;2;4;non
+CMD-250709-8205;09/07/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;2;132,85;2;5;oui
+CMD-250709-5152;09/07/2025;Email;Auvergne-Rhône-Alpes;Colissimo;3;34,45;3;3;non
+CMD-250709-7124;09/07/2025;SEO;Île-de-France;Colissimo;1;39,23;5;3;non
+CMD-250709-1507;09/07/2025;SEA;PACA;Mondial Relay;3;32,44;4;2;non
+CMD-250710-4214;10/07/2025;Réseaux sociaux;Île-de-France;Mondial Relay;1;45,56;3;3;non
+CMD-250710-5394;10/07/2025;SEO;Île-de-France;Mondial Relay;1;32,62;7;3;oui
+CMD-250710-1451;10/07/2025;Email;Bretagne;Mondial Relay;5;79,76;5;3;non
+CMD-250710-5026;10/07/2025;Email;Hauts-de-France;Mondial Relay;1;11,03;7;3;non
+CMD-250710-9194;10/07/2025;SEA;Occitanie;Colissimo;3;11,89;3;3;non
+CMD-250710-9170;10/07/2025;Email;Bretagne;Colissimo;1;47,87;3;4;non
+CMD-250711-1317;11/07/2025;Direct;PACA;Chronopost;3;55,92;1;4;oui
+CMD-250711-5630;11/07/2025;Direct;Auvergne-Rhône-Alpes;Chronopost;1;22,53;1;4;oui
+CMD-250711-4893;11/07/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;3;36,02;2;4;oui
+CMD-250711-6355;11/07/2025;Réseaux sociaux;Occitanie;Colissimo;3;61,66;5;4;oui
+CMD-250711-9122;11/07/2025;Réseaux sociaux;Nouvelle-Aquitaine;Mondial Relay;3;20,99;6;3;oui
+CMD-250712-4403;12/07/2025;Direct;Nouvelle-Aquitaine;Colissimo;1;58,31;3;4;oui
+CMD-250712-8183;12/07/2025;SEO;PACA;Colissimo;3;271,33;2;5;oui
+CMD-250712-4331;12/07/2025;Email;Hauts-de-France;Colissimo;2;32,64;3;3;oui
+CMD-250713-3360;13/07/2025;SEO;Nouvelle-Aquitaine;Chronopost;1;64,82;1;4;oui
+CMD-250713-3435;13/07/2025;Direct;Hauts-de-France;Mondial Relay;4;50,3;5;3;oui
+CMD-250713-1905;13/07/2025;SEA;Bretagne;Mondial Relay;3;23,11;3;3;non
+CMD-250714-3164;14/07/2025;Réseaux sociaux;PACA;Chronopost;2;43,84;1;4;oui
+CMD-250714-4795;14/07/2025;SEA;Hauts-de-France;Mondial Relay;1;73,39;6;2;oui
+CMD-250714-1255;14/07/2025;Direct;PACA;Chronopost;1;48,19;2;4;non
+CMD-250714-3750;14/07/2025;SEO;Île-de-France;Colissimo;4;34,36;2;4;oui
+CMD-250714-2132;14/07/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;1;53,86;5;2;non
+CMD-250714-8847;14/07/2025;SEO;Hauts-de-France;Colissimo;3;26,8;2;3;non
+CMD-250715-1826;15/07/2025;SEA;Grand Est;Chronopost;2;59,56;2;3;non
+CMD-250715-8217;15/07/2025;Réseaux sociaux;Île-de-France;Chronopost;2;77,6;2;4;oui
+CMD-250715-4526;15/07/2025;SEO;Bretagne;Chronopost;1;27,64;3;3;non
+CMD-250715-3184;15/07/2025;Email;Auvergne-Rhône-Alpes;Chronopost;2;41,66;1;3;non
+CMD-250716-2271;16/07/2025;SEO;Île-de-France;Colissimo;5;62,98;2;4;non
+CMD-250716-1369;16/07/2025;Email;Île-de-France;Chronopost;3;39,22;3;4;non
+CMD-250716-2851;16/07/2025;SEO;Hauts-de-France;Mondial Relay;5;36,49;3;4;non
+CMD-250716-7762;16/07/2025;Email;Nouvelle-Aquitaine;Colissimo;5;75,79;3;4;oui
+CMD-250716-2614;16/07/2025;SEO;Île-de-France;Colissimo;3;46,31;2;5;non
+CMD-250716-9056;16/07/2025;SEA;Nouvelle-Aquitaine;Colissimo;1;13,65;2;4;oui
+CMD-250716-7835;16/07/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;1;30,55;2;3;oui
+CMD-250716-3484;16/07/2025;SEO;Île-de-France;Colissimo;3;34,05;3;3;oui
+CMD-250716-2076;16/07/2025;Email;Grand Est;Chronopost;1;11,29;2;5;non
+CMD-250716-1794;16/07/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;3;43,22;3;4;non
+CMD-250717-5947;17/07/2025;SEO;Île-de-France;Mondial Relay;2;32,4;4;2;oui
+CMD-250717-3522;17/07/2025;SEO;Île-de-France;Colissimo;3;31,28;2;4;oui
+CMD-250717-1493;17/07/2025;SEO;Île-de-France;Colissimo;2;41,19;4;3;oui
+CMD-250717-3885;17/07/2025;Email;Île-de-France;Colissimo;2;32,34;3;3;non
+CMD-250717-5047;17/07/2025;SEO;Bretagne;Mondial Relay;3;13,42;2;5;oui
+CMD-250718-4452;18/07/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;2;18,94;2;3;non
+CMD-250718-6568;18/07/2025;SEO;Île-de-France;Colissimo;1;74,97;2;3;oui
+CMD-250718-8856;18/07/2025;SEO;Bretagne;Colissimo;2;16,8;1;4;oui
+CMD-250719-2548;19/07/2025;Direct;Île-de-France;Mondial Relay;3;39,06;3;4;oui
+CMD-250719-9433;19/07/2025;Direct;Hauts-de-France;Colissimo;2;17,26;3;4;non
+CMD-250719-9803;19/07/2025;Email;Occitanie;Mondial Relay;3;98,15;5;2;non
+CMD-250719-7843;19/07/2025;Email;PACA;Chronopost;1;168,15;2;4;oui
+CMD-250719-7758;19/07/2025;Email;Île-de-France;Chronopost;2;75,96;3;5;non
+CMD-250719-3839;19/07/2025;SEO;Hauts-de-France;Colissimo;4;106,62;4;3;non
+CMD-250719-6692;19/07/2025;SEO;Nouvelle-Aquitaine;Colissimo;1;63,31;6;1;oui
+CMD-250719-9897;19/07/2025;Direct;Île-de-France;Colissimo;4;48,54;3;5;oui
+CMD-250719-1725;19/07/2025;Email;Occitanie;Mondial Relay;1;28,81;4;4;non
+CMD-250719-3444;19/07/2025;SEA;Île-de-France;Colissimo;2;28,28;4;5;oui
+CMD-250719-6495;19/07/2025;SEA;Occitanie;Mondial Relay;1;19,3;4;3;oui
+CMD-250720-5705;20/07/2025;SEO;Bretagne;Mondial Relay;3;33,0;2;5;oui
+CMD-250720-7639;20/07/2025;Email;Bretagne;Colissimo;5;65,53;4;3;non
+CMD-250720-9407;20/07/2025;Email;Auvergne-Rhône-Alpes;Mondial Relay;4;42,21;9;1;oui
+CMD-250720-2756;20/07/2025;Direct;Occitanie;Colissimo;2;25,9;2;4;oui
+CMD-250721-5448;21/07/2025;SEA;Occitanie;Mondial Relay;3;45,9;7;2;oui
+CMD-250721-5019;21/07/2025;Email;Bretagne;Colissimo;3;43,69;4;4;non
+CMD-250722-2915;22/07/2025;Direct;Île-de-France;Colissimo;4;32,91;2;3;oui
+CMD-250723-8284;23/07/2025;Réseaux sociaux;Île-de-France;Colissimo;4;18,94;4;3;oui
+CMD-250723-9945;23/07/2025;Email;Grand Est;Chronopost;1;48,41;1;5;non
+CMD-250723-5830;23/07/2025;SEA;Île-de-France;Colissimo;3;93,68;2;4;oui
+CMD-250723-9357;23/07/2025;SEO;Grand Est;Chronopost;3;24,18;1;4;non
+CMD-250724-7945;24/07/2025;SEO;PACA;Chronopost;3;49,51;1;4;non
+CMD-250724-8747;24/07/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;5;47,18;4;2;non
+CMD-250724-3205;24/07/2025;SEO;Nouvelle-Aquitaine;Chronopost;3;48,41;3;4;oui
+CMD-250725-6193;25/07/2025;SEO;Hauts-de-France;Mondial Relay;4;30,6;7;2;oui
+CMD-250725-6640;25/07/2025;Email;Île-de-France;Mondial Relay;1;51,13;4;3;non
+CMD-250725-6881;25/07/2025;Direct;PACA;Chronopost;2;53,34;1;5;oui
+CMD-250725-5807;25/07/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;2;63,39;5;3;oui
+CMD-250725-9807;25/07/2025;SEA;Île-de-France;Colissimo;4;22,17;3;3;non
+CMD-250725-3362;25/07/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;2;45,01;1;4;non
+CMD-250726-4795;26/07/2025;SEA;Occitanie;Colissimo;5;122,81;4;3;oui
+CMD-250726-9612;26/07/2025;Direct;Nouvelle-Aquitaine;Mondial Relay;1;41,86;4;4;non
+CMD-250726-5345;26/07/2025;Direct;Île-de-France;Chronopost;4;67,76;3;2;non
+CMD-250726-2977;26/07/2025;Réseaux sociaux;Hauts-de-France;Colissimo;2;93,59;3;3;non
+CMD-250727-5580;27/07/2025;SEO;Grand Est;Colissimo;3;96,79;2;3;non
+CMD-250727-6972;27/07/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;2;24,0;4;3;oui
+CMD-250727-4198;27/07/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Mondial Relay;2;49,18;4;4;non
+CMD-250728-6775;28/07/2025;SEO;Occitanie;Colissimo;1;42,16;3;3;oui
+CMD-250728-5868;28/07/2025;SEO;Bretagne;Colissimo;4;21,4;6;3;non
+CMD-250728-7462;28/07/2025;Direct;Auvergne-Rhône-Alpes;Chronopost;1;52,75;1;3;oui
+CMD-250728-3313;28/07/2025;SEA;Nouvelle-Aquitaine;Colissimo;1;77,47;3;2;non
+CMD-250728-4980;28/07/2025;Réseaux sociaux;Hauts-de-France;Colissimo;3;30,77;4;4;oui
+CMD-250728-9929;28/07/2025;SEO;Île-de-France;Colissimo;1;58,36;3;3;oui
+CMD-250728-8550;28/07/2025;SEO;Île-de-France;Colissimo;1;20,37;2;5;oui
+CMD-250728-7243;28/07/2025;SEO;Grand Est;Colissimo;4;29,54;3;4;non
+CMD-250729-2506;29/07/2025;SEA;PACA;Colissimo;1;10,21;5;4;oui
+CMD-250729-2546;29/07/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;3;65,26;2;3;non
+CMD-250729-1931;29/07/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Mondial Relay;3;47,08;2;3;non
+CMD-250729-4012;29/07/2025;Direct;Auvergne-Rhône-Alpes;Mondial Relay;3;83,7;4;4;oui
+CMD-250729-1193;29/07/2025;SEA;Grand Est;Colissimo;4;79,93;3;3;non
+CMD-250729-9659;29/07/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;1;110,95;4;3;non
+CMD-250729-5951;29/07/2025;Direct;Île-de-France;Chronopost;3;71,95;1;5;oui
+CMD-250729-2289;29/07/2025;SEA;Île-de-France;Colissimo;1;67,52;4;3;oui
+CMD-250729-2771;29/07/2025;SEA;Nouvelle-Aquitaine;Mondial Relay;1;43,89;3;3;oui
+CMD-250730-8676;30/07/2025;SEA;Île-de-France;Mondial Relay;3;49,97;7;2;oui
+CMD-250730-6117;30/07/2025;Réseaux sociaux;Occitanie;Mondial Relay;2;31,9;3;4;oui
+CMD-250730-8527;30/07/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;1;14,03;2;4;oui
+CMD-250730-8563;30/07/2025;SEA;PACA;Chronopost;2;80,53;1;4;non
+CMD-250730-6336;30/07/2025;SEO;Hauts-de-France;Colissimo;1;45,2;3;4;oui
+CMD-250730-1572;30/07/2025;SEO;Nouvelle-Aquitaine;Colissimo;5;43,76;2;4;oui
+CMD-250731-2999;31/07/2025;SEA;PACA;Chronopost;2;26,66;2;4;oui
+CMD-250731-7995;31/07/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;3;79,5;2;4;non
+CMD-250731-3102;31/07/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;5;28,42;3;4;non
+CMD-250801-6807;01/08/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;1;9,62;1;5;oui
+CMD-250801-5540;01/08/2025;Direct;Occitanie;Chronopost;5;49,78;1;4;non
+CMD-250801-2966;01/08/2025;SEO;Occitanie;Colissimo;1;37,98;4;3;non
+CMD-250801-7182;01/08/2025;SEA;Nouvelle-Aquitaine;Mondial Relay;2;19,88;5;4;oui
+CMD-250801-1509;01/08/2025;SEO;Île-de-France;Chronopost;4;39,38;2;4;oui
+CMD-250801-4369;01/08/2025;Réseaux sociaux;Nouvelle-Aquitaine;Mondial Relay;3;27,94;4;5;oui
+CMD-250802-2797;02/08/2025;SEO;PACA;Colissimo;4;66,72;4;3;oui
+CMD-250802-6490;02/08/2025;SEO;Île-de-France;Mondial Relay;3;49,35;7;3;oui
+CMD-250802-4453;02/08/2025;Email;Bretagne;Colissimo;2;36,59;4;3;oui
+CMD-250802-8893;02/08/2025;Email;Auvergne-Rhône-Alpes;Mondial Relay;3;91,12;2;4;non
+CMD-250802-8332;02/08/2025;Direct;PACA;Chronopost;5;50,08;3;2;non
+CMD-250803-9054;03/08/2025;SEA;PACA;Colissimo;5;69,51;1;5;oui
+CMD-250803-2391;03/08/2025;Direct;Hauts-de-France;Chronopost;1;40,22;1;4;non
+CMD-250803-1458;03/08/2025;Email;Auvergne-Rhône-Alpes;Colissimo;5;58,78;3;3;non
+CMD-250803-3671;03/08/2025;SEO;Grand Est;Colissimo;2;28,98;2;4;oui
+CMD-250803-5020;03/08/2025;Email;Hauts-de-France;Colissimo;1;52,28;3;3;non
+CMD-250804-5535;04/08/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;2;40,21;6;3;oui
+CMD-250804-4754;04/08/2025;SEO;Nouvelle-Aquitaine;Colissimo;3;40,27;4;2;non
+CMD-250804-6032;04/08/2025;Réseaux sociaux;Île-de-France;Mondial Relay;3;56,08;7;2;oui
+CMD-250804-4692;04/08/2025;Direct;Occitanie;Chronopost;5;26,48;1;5;oui
+CMD-250804-2789;04/08/2025;SEO;Grand Est;Chronopost;2;30,34;1;2;non
+CMD-250804-2129;04/08/2025;SEA;Occitanie;Mondial Relay;1;46,68;5;4;non
+CMD-250804-1557;04/08/2025;SEO;Grand Est;Mondial Relay;3;57,57;3;4;oui
+CMD-250804-1567;04/08/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;4;56,18;1;4;non
+CMD-250804-2061;04/08/2025;Réseaux sociaux;PACA;Colissimo;1;36,69;5;3;non
+CMD-250804-1177;04/08/2025;Email;Grand Est;Chronopost;1;74,12;3;3;non
+CMD-250805-7060;05/08/2025;Réseaux sociaux;Grand Est;Colissimo;3;47,32;4;4;non
+CMD-250805-5223;05/08/2025;Réseaux sociaux;Bretagne;Colissimo;1;28,89;4;3;oui
+CMD-250805-3367;05/08/2025;Direct;Hauts-de-France;Mondial Relay;3;21,2;4;3;oui
+CMD-250805-5551;05/08/2025;Email;Île-de-France;Mondial Relay;1;98,17;3;4;non
+CMD-250805-1932;05/08/2025;Direct;Île-de-France;Colissimo;2;103,52;3;3;oui
+CMD-250805-8368;05/08/2025;Direct;Hauts-de-France;Colissimo;4;34,91;4;3;non
+CMD-250805-3579;05/08/2025;Email;Nouvelle-Aquitaine;Mondial Relay;3;30,84;3;4;oui
+CMD-250806-2173;06/08/2025;SEO;Île-de-France;Colissimo;1;34,4;3;3;non
+CMD-250806-3978;06/08/2025;Email;Auvergne-Rhône-Alpes;Colissimo;3;18,71;3;4;non
+CMD-250806-2035;06/08/2025;Réseaux sociaux;Grand Est;Mondial Relay;2;20,31;6;2;non
+CMD-250807-7115;07/08/2025;SEO;Île-de-France;Mondial Relay;4;34,83;4;3;oui
+CMD-250807-3126;07/08/2025;Email;Grand Est;Chronopost;4;93,49;1;5;non
+CMD-250807-8145;07/08/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;3;31,68;3;4;non
+CMD-250807-6523;07/08/2025;SEA;Île-de-France;Mondial Relay;3;62,32;3;5;oui
+CMD-250808-4995;08/08/2025;SEA;Île-de-France;Colissimo;1;34,2;3;3;non
+CMD-250808-5632;08/08/2025;SEO;Île-de-France;Colissimo;3;20,81;4;3;oui
+CMD-250808-3614;08/08/2025;SEA;Île-de-France;Mondial Relay;2;104,11;2;3;non
+CMD-250809-9884;09/08/2025;SEO;Bretagne;Mondial Relay;3;66,63;5;3;oui
+CMD-250810-6819;10/08/2025;SEO;Grand Est;Mondial Relay;3;39,41;3;4;oui
+CMD-250810-4242;10/08/2025;Réseaux sociaux;Occitanie;Chronopost;2;40,45;1;3;non
+CMD-250810-8491;10/08/2025;SEO;PACA;Mondial Relay;3;16,54;3;5;non
+CMD-250810-9329;10/08/2025;SEO;PACA;Colissimo;2;37,03;3;4;non
+CMD-250810-9756;10/08/2025;Email;Nouvelle-Aquitaine;Colissimo;3;40,74;2;3;non
+CMD-250810-1504;10/08/2025;SEA;Grand Est;Colissimo;2;39,43;4;3;non
+CMD-250810-3914;10/08/2025;Email;Bretagne;Colissimo;1;78,93;5;4;oui
+CMD-250811-7945;11/08/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;2;40,07;4;4;oui
+CMD-250811-4622;11/08/2025;Email;Île-de-France;Mondial Relay;5;44,57;3;4;non
+CMD-250811-9581;11/08/2025;Email;Nouvelle-Aquitaine;Mondial Relay;3;27,21;3;4;non
+CMD-250811-2907;11/08/2025;SEA;PACA;Colissimo;3;27,85;1;5;non
+CMD-250811-7226;11/08/2025;Email;Nouvelle-Aquitaine;Mondial Relay;2;27,82;4;5;non
+CMD-250813-8669;13/08/2025;Email;PACA;Chronopost;1;141,49;2;5;non
+CMD-250813-2670;13/08/2025;Email;Bretagne;Mondial Relay;4;21,46;3;3;non
+CMD-250813-7882;13/08/2025;SEA;Île-de-France;Mondial Relay;2;19,62;2;4;oui
+CMD-250813-4005;13/08/2025;SEO;Grand Est;Chronopost;2;30,07;3;3;oui
+CMD-250813-7480;13/08/2025;Email;Nouvelle-Aquitaine;Mondial Relay;4;82,43;4;2;non
+CMD-250814-8298;14/08/2025;Email;Nouvelle-Aquitaine;Colissimo;5;22,2;4;4;non
+CMD-250814-3988;14/08/2025;SEO;PACA;Mondial Relay;2;93,59;6;3;non
+CMD-250814-6309;14/08/2025;Email;Île-de-France;Mondial Relay;4;22,6;6;4;non
+CMD-250814-1200;14/08/2025;Email;Grand Est;Mondial Relay;3;54,98;4;4;non
+CMD-250814-6252;14/08/2025;Direct;Île-de-France;Colissimo;3;34,61;2;4;oui
+CMD-250815-3443;15/08/2025;Direct;Occitanie;Chronopost;3;56,85;2;5;oui
+CMD-250815-1664;15/08/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;2;42,64;3;4;non
+CMD-250815-5317;15/08/2025;Email;Grand Est;Chronopost;5;36,21;2;4;oui
+CMD-250815-7459;15/08/2025;SEA;Hauts-de-France;Chronopost;2;34,33;2;3;oui
+CMD-250815-9298;15/08/2025;Réseaux sociaux;Nouvelle-Aquitaine;Mondial Relay;3;52,72;3;5;non
+CMD-250815-5906;15/08/2025;SEO;Grand Est;Colissimo;2;21,95;3;2;oui
+CMD-250815-3282;15/08/2025;Email;Grand Est;Mondial Relay;4;114,96;3;5;non
+CMD-250816-2036;16/08/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;4;63,02;5;3;oui
+CMD-250816-6626;16/08/2025;SEA;Île-de-France;Chronopost;3;30,17;2;5;non
+CMD-250816-9524;16/08/2025;Direct;Nouvelle-Aquitaine;Mondial Relay;4;133,45;4;3;oui
+CMD-250816-9000;16/08/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;4;30,95;4;4;non
+CMD-250816-9421;16/08/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;4;70,44;3;4;non
+CMD-250816-7078;16/08/2025;SEO;Île-de-France;Colissimo;3;46,48;4;4;non
+CMD-250816-1865;16/08/2025;SEO;Île-de-France;Colissimo;2;25,34;5;2;oui
+CMD-250817-3813;17/08/2025;Direct;Île-de-France;Colissimo;4;31,22;3;4;oui
+CMD-250817-2579;17/08/2025;Direct;Nouvelle-Aquitaine;Colissimo;1;29,33;6;3;non
+CMD-250817-6008;17/08/2025;Direct;Bretagne;Mondial Relay;2;60,12;4;3;oui
+CMD-250817-9652;17/08/2025;SEA;Hauts-de-France;Chronopost;5;30,96;2;3;oui
+CMD-250817-2937;17/08/2025;Réseaux sociaux;Île-de-France;Colissimo;4;39,37;4;3;non
+CMD-250818-2235;18/08/2025;SEO;Occitanie;Mondial Relay;5;45,93;5;3;non
+CMD-250818-2078;18/08/2025;Email;Hauts-de-France;Colissimo;5;87,34;3;3;non
+CMD-250818-4937;18/08/2025;SEA;Grand Est;Colissimo;2;109,37;4;4;non
+CMD-250818-4747;18/08/2025;SEO;Grand Est;Chronopost;3;63,21;1;4;non
+CMD-250818-3261;18/08/2025;SEA;Grand Est;Colissimo;4;33,02;2;4;oui
+CMD-250818-2971;18/08/2025;Direct;PACA;Mondial Relay;1;18,06;3;3;oui
+CMD-250819-4966;19/08/2025;SEO;Île-de-France;Mondial Relay;2;38,55;5;2;oui
+CMD-250819-5539;19/08/2025;Email;Île-de-France;Chronopost;3;38,36;3;4;non
+CMD-250819-9795;19/08/2025;Réseaux sociaux;Hauts-de-France;Colissimo;2;78,18;3;3;non
+CMD-250819-9599;19/08/2025;Email;Île-de-France;Colissimo;1;23,09;2;4;non
+CMD-250819-1515;19/08/2025;SEO;Île-de-France;Mondial Relay;3;48,38;3;3;non
+CMD-250819-4797;19/08/2025;SEA;Île-de-France;Colissimo;1;21,08;4;3;non
+CMD-250820-9485;20/08/2025;SEA;Grand Est;Mondial Relay;3;30,61;4;3;non
+CMD-250820-5215;20/08/2025;SEO;Hauts-de-France;Mondial Relay;2;26,75;3;3;non
+CMD-250820-8185;20/08/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;3;71,23;8;3;oui
+CMD-250820-9266;20/08/2025;Réseaux sociaux;Île-de-France;Colissimo;2;52,0;4;4;non
+CMD-250821-7493;21/08/2025;SEA;Nouvelle-Aquitaine;Colissimo;1;43,19;2;3;non
+CMD-250821-5652;21/08/2025;Email;Occitanie;Colissimo;1;38,28;4;3;non
+CMD-250821-6673;21/08/2025;SEA;Nouvelle-Aquitaine;Mondial Relay;5;33,58;3;2;oui
+CMD-250821-3148;21/08/2025;Email;Île-de-France;Mondial Relay;3;32,38;5;2;non
+CMD-250822-2980;22/08/2025;Direct;Île-de-France;Mondial Relay;6;17,01;5;3;non
+CMD-250822-2710;22/08/2025;SEA;Île-de-France;Colissimo;4;86,08;3;3;non
+CMD-250822-3102;22/08/2025;SEO;Île-de-France;Chronopost;2;66,6;1;4;oui
+CMD-250822-9520;22/08/2025;SEA;Nouvelle-Aquitaine;Chronopost;4;41,51;2;4;non
+CMD-250822-6822;22/08/2025;SEO;Hauts-de-France;Colissimo;1;41,79;5;3;non
+CMD-250823-5481;23/08/2025;SEO;Grand Est;Chronopost;1;20,39;2;4;oui
+CMD-250823-2466;23/08/2025;Réseaux sociaux;Hauts-de-France;Colissimo;2;20,02;4;3;non
+CMD-250823-6169;23/08/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;2;84,5;3;2;oui
+CMD-250824-9002;24/08/2025;SEO;PACA;Chronopost;2;99,83;1;5;non
+CMD-250824-4069;24/08/2025;SEO;Occitanie;Colissimo;4;26,91;2;4;oui
+CMD-250824-5091;24/08/2025;Email;Nouvelle-Aquitaine;Mondial Relay;1;38,76;5;4;non
+CMD-250824-9513;24/08/2025;SEO;Bretagne;Colissimo;4;39,84;2;2;oui
+CMD-250824-5126;24/08/2025;Réseaux sociaux;Île-de-France;Mondial Relay;2;47,16;2;4;oui
+CMD-250824-6042;24/08/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;2;25,67;2;5;non
+CMD-250825-3102;25/08/2025;Email;Nouvelle-Aquitaine;Mondial Relay;3;32,2;3;4;non
+CMD-250825-4707;25/08/2025;Réseaux sociaux;Nouvelle-Aquitaine;Chronopost;3;138,69;2;4;oui
+CMD-250825-3226;25/08/2025;Réseaux sociaux;Île-de-France;Mondial Relay;4;48,27;6;3;oui
+CMD-250825-1115;25/08/2025;SEA;PACA;Colissimo;2;34,0;3;4;non
+CMD-250825-1282;25/08/2025;Email;Nouvelle-Aquitaine;Colissimo;2;59,61;4;3;non
+CMD-250825-4455;25/08/2025;Email;PACA;Mondial Relay;1;101,54;5;2;non
+CMD-250826-5689;26/08/2025;SEA;Île-de-France;Mondial Relay;4;43,99;3;5;oui
+CMD-250826-5365;26/08/2025;SEO;Île-de-France;Mondial Relay;5;27,11;1;4;oui
+CMD-250826-8948;26/08/2025;SEO;PACA;Colissimo;1;24,96;3;4;non
+CMD-250826-5692;26/08/2025;Email;Île-de-France;Colissimo;4;46,7;3;5;non
+CMD-250826-5773;26/08/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;1;53,55;2;5;oui
+CMD-250826-2568;26/08/2025;SEO;Bretagne;Chronopost;5;48,81;3;4;non
+CMD-250827-8252;27/08/2025;SEO;Grand Est;Mondial Relay;2;21,14;3;3;non
+CMD-250827-2443;27/08/2025;Email;PACA;Chronopost;4;32,3;3;5;non
+CMD-250827-4275;27/08/2025;SEO;Occitanie;Mondial Relay;3;24,8;4;3;non
+CMD-250827-5738;27/08/2025;Email;Nouvelle-Aquitaine;Mondial Relay;2;34,69;10;1;non
+CMD-250827-8869;27/08/2025;Email;Hauts-de-France;Mondial Relay;2;56,18;2;4;non
+CMD-250827-7773;27/08/2025;SEO;Bretagne;Chronopost;3;76,99;1;5;oui
+CMD-250828-3693;28/08/2025;SEA;PACA;Colissimo;6;38,3;2;4;oui
+CMD-250828-2606;28/08/2025;Réseaux sociaux;Occitanie;Mondial Relay;4;37,76;6;3;non
+CMD-250828-2028;28/08/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;4;51,81;3;5;oui
+CMD-250829-1969;29/08/2025;SEA;PACA;Mondial Relay;6;20,62;6;3;non
+CMD-250829-1065;29/08/2025;SEA;Île-de-France;Colissimo;1;43,13;3;4;non
+CMD-250831-1598;31/08/2025;Email;PACA;Mondial Relay;3;24,65;4;3;non
+CMD-250831-4727;31/08/2025;Email;PACA;Chronopost;2;160,02;1;5;non
+CMD-250831-9638;31/08/2025;SEO;PACA;Mondial Relay;1;20,98;2;3;oui
+CMD-250831-1205;31/08/2025;SEA;Occitanie;Colissimo;2;14,77;4;4;oui
+CMD-250831-6352;31/08/2025;SEA;Grand Est;Colissimo;2;70,25;2;5;non
+CMD-250831-2218;31/08/2025;SEA;Hauts-de-France;Chronopost;2;19,56;1;5;oui
+CMD-250901-7994;01/09/2025;Direct;Bretagne;Colissimo;3;91,88;6;2;oui
+CMD-250901-3732;01/09/2025;Direct;Auvergne-Rhône-Alpes;Mondial Relay;3;29,55;4;2;oui
+CMD-250901-1163;01/09/2025;SEA;PACA;Mondial Relay;2;26,52;3;2;non
+CMD-250901-9857;01/09/2025;SEA;Auvergne-Rhône-Alpes;Chronopost;1;81,0;2;2;non
+CMD-250901-5692;01/09/2025;SEA;Auvergne-Rhône-Alpes;Chronopost;2;44,5;2;4;non
+CMD-250901-9080;01/09/2025;SEA;Île-de-France;Colissimo;4;44,41;2;3;non
+CMD-250901-5721;01/09/2025;SEA;Île-de-France;Colissimo;1;28,05;1;5;non
+CMD-250902-8867;02/09/2025;SEO;Hauts-de-France;Colissimo;2;61,55;3;4;non
+CMD-250902-8091;02/09/2025;Réseaux sociaux;PACA;Colissimo;1;62,84;4;5;non
+CMD-250902-9368;02/09/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;1;20,42;2;4;oui
+CMD-250902-7552;02/09/2025;Direct;Grand Est;Colissimo;2;45,83;3;4;oui
+CMD-250902-7376;02/09/2025;Direct;Nouvelle-Aquitaine;Colissimo;2;20,48;3;3;non
+CMD-250902-6914;02/09/2025;Direct;Île-de-France;Colissimo;4;40,92;2;3;oui
+CMD-250902-7393;02/09/2025;Réseaux sociaux;Bretagne;Chronopost;1;27,44;1;4;non
+CMD-250903-5750;03/09/2025;Email;PACA;Colissimo;4;28,54;3;4;non
+CMD-250903-6625;03/09/2025;Email;Île-de-France;Chronopost;2;20,4;2;4;non
+CMD-250903-1944;03/09/2025;SEO;Île-de-France;Colissimo;3;23,05;4;3;oui
+CMD-250904-1575;04/09/2025;Email;Occitanie;Colissimo;1;76,39;3;4;non
+CMD-250904-2095;04/09/2025;Email;Île-de-France;Colissimo;2;12,63;2;3;non
+CMD-250904-1380;04/09/2025;SEO;Bretagne;Colissimo;3;17,51;2;3;oui
+CMD-250904-1382;04/09/2025;SEO;Occitanie;Colissimo;3;35,62;2;4;oui
+CMD-250904-3370;04/09/2025;Direct;Île-de-France;Mondial Relay;3;49,66;2;4;non
+CMD-250904-2245;04/09/2025;SEA;Île-de-France;Mondial Relay;2;53,42;4;3;oui
+CMD-250904-6753;04/09/2025;Direct;Hauts-de-France;Mondial Relay;3;29,99;6;2;non
+CMD-250904-5230;04/09/2025;Réseaux sociaux;Hauts-de-France;Colissimo;3;29,9;2;5;non
+CMD-250904-8252;04/09/2025;Direct;PACA;Colissimo;1;32,21;4;3;oui
+CMD-250904-1503;04/09/2025;Direct;Bretagne;Mondial Relay;2;44,92;2;4;non
+CMD-250904-5279;04/09/2025;SEA;Île-de-France;Colissimo;4;23,68;2;3;non
+CMD-250905-1148;05/09/2025;SEO;Île-de-France;Chronopost;1;24,62;3;3;oui
+CMD-250905-3735;05/09/2025;SEA;Île-de-France;Mondial Relay;3;31,62;6;2;oui
+CMD-250905-8743;05/09/2025;SEO;Île-de-France;Chronopost;4;49,89;1;4;non
+CMD-250905-6222;05/09/2025;SEA;Grand Est;Chronopost;2;39,55;1;4;non
+CMD-250906-8444;06/09/2025;SEA;PACA;Colissimo;1;14,75;5;4;non
+CMD-250906-1452;06/09/2025;SEO;Île-de-France;Colissimo;4;47,2;5;2;non
+CMD-250906-6078;06/09/2025;SEA;Île-de-France;Mondial Relay;3;83,8;4;5;oui
+CMD-250906-2305;06/09/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;4;48,0;4;4;oui
+CMD-250906-2243;06/09/2025;SEO;PACA;Colissimo;4;23,07;2;4;oui
+CMD-250907-4251;07/09/2025;SEO;Occitanie;Chronopost;6;33,46;3;3;non
+CMD-250907-9511;07/09/2025;SEA;Grand Est;Chronopost;3;46,11;2;5;oui
+CMD-250907-9358;07/09/2025;Réseaux sociaux;Grand Est;Chronopost;4;31,1;1;4;oui
+CMD-250907-9202;07/09/2025;SEO;Nouvelle-Aquitaine;Chronopost;5;24,18;2;4;non
+CMD-250907-4752;07/09/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;2;42,2;9;2;non
+CMD-250908-8200;08/09/2025;Réseaux sociaux;PACA;Colissimo;1;37,24;4;3;non
+CMD-250908-5130;08/09/2025;Email;Hauts-de-France;Colissimo;2;46,58;5;4;non
+CMD-250908-7288;08/09/2025;SEO;Île-de-France;Mondial Relay;2;62,29;6;3;non
+CMD-250908-8947;08/09/2025;SEO;Île-de-France;Colissimo;2;37,98;3;4;non
+CMD-250908-1956;08/09/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;2;59,69;4;4;oui
+CMD-250908-8155;08/09/2025;SEO;Île-de-France;Colissimo;2;29,35;2;3;oui
+CMD-250908-4581;08/09/2025;SEO;PACA;Colissimo;3;20,37;4;1;non
+CMD-250909-1769;09/09/2025;SEO;PACA;Colissimo;3;68,81;2;4;non
+CMD-250909-1918;09/09/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;3;123,62;4;3;oui
+CMD-250909-7890;09/09/2025;Email;Grand Est;Chronopost;1;145,36;2;3;non
+CMD-250909-6779;09/09/2025;SEO;Île-de-France;Colissimo;6;39,51;1;3;oui
+CMD-250909-5860;09/09/2025;Email;Hauts-de-France;Colissimo;1;38,95;2;3;non
+CMD-250909-9020;09/09/2025;SEO;Grand Est;Chronopost;1;36,93;1;5;oui
+CMD-250909-9752;09/09/2025;SEO;Grand Est;Mondial Relay;4;158,47;4;3;non
+CMD-250909-2433;09/09/2025;Email;Nouvelle-Aquitaine;Mondial Relay;2;39,31;3;3;non
+CMD-250909-8277;09/09/2025;SEO;Bretagne;Colissimo;2;33,92;3;4;oui
+CMD-250909-6072;09/09/2025;Email;Hauts-de-France;Colissimo;3;106,08;6;2;non
+CMD-250909-3882;09/09/2025;Email;Auvergne-Rhône-Alpes;Chronopost;5;17,65;2;4;oui
+CMD-250910-6654;10/09/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;3;116,26;2;3;oui
+CMD-250910-9335;10/09/2025;Direct;Île-de-France;Chronopost;2;37,0;2;3;non
+CMD-250910-2334;10/09/2025;Direct;Hauts-de-France;Colissimo;2;35,38;2;4;oui
+CMD-250910-2271;10/09/2025;SEA;Île-de-France;Chronopost;2;38,8;1;4;non
+CMD-250910-7152;10/09/2025;SEO;Grand Est;Colissimo;2;45,09;4;2;oui
+CMD-250911-5493;11/09/2025;Email;Île-de-France;Colissimo;2;55,81;2;4;non
+CMD-250911-7315;11/09/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;3;26,46;2;3;oui
+CMD-250911-3683;11/09/2025;SEO;Hauts-de-France;Chronopost;2;16,8;2;5;oui
+CMD-250912-6647;12/09/2025;Direct;Auvergne-Rhône-Alpes;Mondial Relay;3;25,34;1;4;oui
+CMD-250912-8274;12/09/2025;SEA;Grand Est;Colissimo;2;30,13;3;4;non
+CMD-250912-3077;12/09/2025;SEA;Hauts-de-France;Mondial Relay;5;91,99;3;5;oui
+CMD-250912-8405;12/09/2025;Email;Occitanie;Mondial Relay;2;26,7;4;3;non
+CMD-250912-2409;12/09/2025;SEO;PACA;Mondial Relay;1;45,94;5;4;non
+CMD-250912-6135;12/09/2025;SEA;Grand Est;Mondial Relay;3;43,94;5;2;oui
+CMD-250912-3362;12/09/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;2;23,32;1;4;non
+CMD-250912-4207;12/09/2025;Réseaux sociaux;Île-de-France;Colissimo;3;80,16;2;5;non
+CMD-250912-5595;12/09/2025;Email;Auvergne-Rhône-Alpes;Chronopost;4;62,52;2;4;non
+CMD-250913-5078;13/09/2025;SEA;Nouvelle-Aquitaine;Mondial Relay;2;14,6;2;4;oui
+CMD-250913-5406;13/09/2025;Direct;Nouvelle-Aquitaine;Colissimo;3;44,9;2;4;oui
+CMD-250913-9427;13/09/2025;SEO;PACA;Colissimo;1;26,93;3;4;oui
+CMD-250913-1816;13/09/2025;Direct;Île-de-France;Colissimo;5;142,6;5;3;non
+CMD-250914-2074;14/09/2025;SEA;Occitanie;Mondial Relay;3;60,21;6;3;non
+CMD-250914-6035;14/09/2025;Direct;Île-de-France;Mondial Relay;3;43,78;3;5;oui
+CMD-250914-5267;14/09/2025;Réseaux sociaux;Île-de-France;Colissimo;3;37,22;6;4;oui
+CMD-250914-7411;14/09/2025;Direct;Bretagne;Chronopost;1;61,39;2;4;oui
+CMD-250914-2030;14/09/2025;Email;Auvergne-Rhône-Alpes;Colissimo;4;116,85;2;4;non
+CMD-250915-1220;15/09/2025;SEA;PACA;Colissimo;2;38,63;2;3;oui
+CMD-250915-3574;15/09/2025;Email;Île-de-France;Colissimo;2;23,7;3;3;oui
+CMD-250915-3494;15/09/2025;SEA;PACA;Chronopost;1;43,65;3;3;oui
+CMD-250915-2451;15/09/2025;Email;Île-de-France;Mondial Relay;2;59,67;10;3;non
+CMD-250916-9298;16/09/2025;Direct;PACA;Chronopost;3;45,13;2;3;oui
+CMD-250916-4748;16/09/2025;Réseaux sociaux;Occitanie;Mondial Relay;3;31,43;2;4;oui
+CMD-250916-3417;16/09/2025;SEO;Hauts-de-France;Mondial Relay;2;87,04;5;2;oui
+CMD-250916-9550;16/09/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;1;41,14;3;3;oui
+CMD-250916-3863;16/09/2025;SEO;Hauts-de-France;Colissimo;4;66,54;3;3;non
+CMD-250916-1833;16/09/2025;SEA;Île-de-France;Mondial Relay;1;59,29;5;3;non
+CMD-250916-7646;16/09/2025;Email;Nouvelle-Aquitaine;Chronopost;2;25,26;2;4;non
+CMD-250916-1032;16/09/2025;Direct;PACA;Mondial Relay;3;48,23;4;3;oui
+CMD-250917-2516;17/09/2025;SEA;Île-de-France;Mondial Relay;3;90,84;9;2;non
+CMD-250917-4366;17/09/2025;Email;Île-de-France;Chronopost;1;39,33;3;5;non
+CMD-250918-7285;18/09/2025;Email;Grand Est;Chronopost;1;41,12;1;5;non
+CMD-250918-4104;18/09/2025;Email;Hauts-de-France;Mondial Relay;5;51,07;3;4;non
+CMD-250918-2377;18/09/2025;SEO;Grand Est;Colissimo;3;44,09;2;4;oui
+CMD-250918-1362;18/09/2025;Email;Île-de-France;Colissimo;2;42,99;2;4;oui
+CMD-250918-4741;18/09/2025;SEO;Hauts-de-France;Colissimo;1;33,94;3;3;non
+CMD-250918-9832;18/09/2025;SEA;Île-de-France;Colissimo;1;38,63;3;4;oui
+CMD-250918-2856;18/09/2025;SEA;Grand Est;Colissimo;5;30,26;3;4;oui
+CMD-250918-7541;18/09/2025;Email;Nouvelle-Aquitaine;Colissimo;3;75,38;4;4;non
+CMD-250918-3605;18/09/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;2;60,67;2;3;oui
+CMD-250919-7212;19/09/2025;SEO;PACA;Colissimo;2;68,44;2;5;non
+CMD-250919-9530;19/09/2025;Direct;Nouvelle-Aquitaine;Chronopost;1;46,18;1;4;oui
+CMD-250919-6901;19/09/2025;Direct;PACA;Mondial Relay;2;74,17;4;4;non
+CMD-250919-1332;19/09/2025;SEA;Bretagne;Colissimo;2;22,88;3;3;non
+CMD-250919-1317;19/09/2025;SEA;Bretagne;Colissimo;2;35,12;2;4;oui
+CMD-250919-8464;19/09/2025;Réseaux sociaux;PACA;Colissimo;3;22,64;2;4;oui
+CMD-250920-4431;20/09/2025;SEO;Occitanie;Chronopost;4;27,82;1;4;oui
+CMD-250920-1681;20/09/2025;SEO;Île-de-France;Colissimo;2;31,27;4;3;non
+CMD-250920-9241;20/09/2025;Direct;Grand Est;Colissimo;2;46,7;3;3;oui
+CMD-250920-8156;20/09/2025;SEA;Grand Est;Colissimo;1;31,63;2;5;non
+CMD-250920-7160;20/09/2025;Email;Bretagne;Colissimo;3;32,02;5;3;non
+CMD-250921-9459;21/09/2025;Direct;Île-de-France;Colissimo;3;23,9;3;4;oui
+CMD-250921-5982;21/09/2025;Direct;Île-de-France;Mondial Relay;4;51,19;4;3;non
+CMD-250921-3726;21/09/2025;Direct;Auvergne-Rhône-Alpes;Mondial Relay;3;52,71;3;3;oui
+CMD-250922-2463;22/09/2025;SEO;Hauts-de-France;Chronopost;1;63,46;2;4;non
+CMD-250922-8435;22/09/2025;SEA;Hauts-de-France;Colissimo;3;78,7;2;4;oui
+CMD-250922-4890;22/09/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;4;100,99;5;4;oui
+CMD-250922-9752;22/09/2025;SEA;PACA;Colissimo;3;30,88;4;3;oui
+CMD-250922-4509;22/09/2025;Réseaux sociaux;Nouvelle-Aquitaine;Mondial Relay;1;30,25;5;3;oui
+CMD-250922-9073;22/09/2025;SEA;Île-de-France;Colissimo;1;44,81;2;5;non
+CMD-250923-5111;23/09/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;3;61,74;3;4;non
+CMD-250923-5153;23/09/2025;Email;PACA;Chronopost;5;60,93;1;4;non
+CMD-250923-7884;23/09/2025;SEA;Nouvelle-Aquitaine;Colissimo;2;32,82;4;3;oui
+CMD-250924-7048;24/09/2025;SEA;Hauts-de-France;Chronopost;3;25,46;1;3;oui
+CMD-250924-1450;24/09/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;2;62,35;3;3;non
+CMD-250924-4183;24/09/2025;SEA;Nouvelle-Aquitaine;Mondial Relay;3;34,06;5;2;oui
+CMD-250924-5944;24/09/2025;Direct;Île-de-France;Colissimo;3;97,53;3;3;oui
+CMD-250924-4338;24/09/2025;Réseaux sociaux;PACA;Colissimo;1;74,8;3;4;oui
+CMD-250924-2629;24/09/2025;SEO;Hauts-de-France;Mondial Relay;4;22,1;2;5;oui
+CMD-250925-8372;25/09/2025;SEO;PACA;Colissimo;1;48,77;3;4;non
+CMD-250925-5949;25/09/2025;Direct;Bretagne;Colissimo;2;33,85;3;3;oui
+CMD-250925-3382;25/09/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;3;34,71;1;4;non
+CMD-250926-2826;26/09/2025;Email;Auvergne-Rhône-Alpes;Mondial Relay;3;20,51;6;3;oui
+CMD-250926-5863;26/09/2025;Direct;Grand Est;Mondial Relay;3;112,75;6;3;non
+CMD-250926-2314;26/09/2025;Email;Île-de-France;Colissimo;4;58,03;3;4;non
+CMD-250926-4376;26/09/2025;SEO;Grand Est;Chronopost;2;39,37;2;4;non
+CMD-250927-1002;27/09/2025;SEO;Île-de-France;Colissimo;1;17,72;5;3;oui
+CMD-250927-5275;27/09/2025;Direct;Occitanie;Colissimo;5;74,93;2;4;non
+CMD-250927-7663;27/09/2025;Réseaux sociaux;Île-de-France;Colissimo;3;30,09;6;4;oui
+CMD-250927-4466;27/09/2025;SEO;Nouvelle-Aquitaine;Chronopost;2;75,49;2;4;oui
+CMD-250927-9795;27/09/2025;SEA;Occitanie;Colissimo;2;36,77;1;2;non
+CMD-250928-2443;28/09/2025;Email;Hauts-de-France;Colissimo;3;35,5;1;5;non
+CMD-250928-9798;28/09/2025;SEO;Nouvelle-Aquitaine;Chronopost;1;35,26;2;5;oui
+CMD-250928-6411;28/09/2025;Réseaux sociaux;Île-de-France;Chronopost;3;30,96;2;5;oui
+CMD-250928-9049;28/09/2025;SEA;Hauts-de-France;Mondial Relay;3;50,44;4;3;non
+CMD-250928-7148;28/09/2025;SEA;Hauts-de-France;Colissimo;5;37,02;2;4;oui
+CMD-250929-8120;29/09/2025;SEO;Grand Est;Chronopost;5;43,82;2;5;oui
+CMD-250929-4454;29/09/2025;Direct;Occitanie;Mondial Relay;3;66,0;2;3;oui
+CMD-250929-5623;29/09/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;5;82,37;8;2;non
+CMD-250929-2812;29/09/2025;SEA;Nouvelle-Aquitaine;Colissimo;5;101,33;3;3;non
+CMD-250929-2760;29/09/2025;Réseaux sociaux;Bretagne;Colissimo;1;16,46;3;4;non
+CMD-250930-2421;30/09/2025;SEO;Bretagne;Colissimo;3;34,88;6;3;oui
+CMD-250930-1453;30/09/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;3;46,97;4;4;oui
+CMD-250930-4765;30/09/2025;Direct;PACA;Mondial Relay;2;94,33;4;5;oui
+CMD-250930-5077;30/09/2025;SEO;Grand Est;Mondial Relay;2;12,94;4;4;oui
+CMD-250930-7298;30/09/2025;Email;Nouvelle-Aquitaine;Chronopost;2;123,85;1;3;non
+CMD-251001-1861;01/10/2025;SEO;Grand Est;Chronopost;2;53,1;2;3;non
+CMD-251001-5662;01/10/2025;Email;Île-de-France;Mondial Relay;2;34,03;6;2;non
+CMD-251001-8406;01/10/2025;SEA;Île-de-France;Chronopost;2;39,47;1;4;oui
+CMD-251002-5825;02/10/2025;Email;PACA;Chronopost;5;53,81;2;3;non
+CMD-251002-6206;02/10/2025;Réseaux sociaux;Grand Est;Mondial Relay;1;33,93;4;4;oui
+CMD-251002-1591;02/10/2025;SEO;Hauts-de-France;Chronopost;2;11,63;2;4;oui
+CMD-251002-7474;02/10/2025;SEO;Bretagne;Colissimo;1;46,82;2;4;non
+CMD-251002-3537;02/10/2025;SEA;Occitanie;Mondial Relay;6;46,76;6;2;non
+CMD-251002-1765;02/10/2025;SEA;Bretagne;Mondial Relay;2;50,86;3;3;oui
+CMD-251002-4638;02/10/2025;SEA;Île-de-France;Colissimo;3;38,87;1;4;non
+CMD-251002-1026;02/10/2025;SEO;PACA;Colissimo;4;35,67;2;4;oui
+CMD-251003-5180;03/10/2025;Direct;PACA;Mondial Relay;4;40,18;8;2;oui
+CMD-251003-3569;03/10/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;3;39,33;1;5;oui
+CMD-251003-6650;03/10/2025;Direct;Hauts-de-France;Mondial Relay;3;32,23;6;2;oui
+CMD-251003-6415;03/10/2025;SEO;Bretagne;Chronopost;5;41,24;2;4;non
+CMD-251003-9253;03/10/2025;Réseaux sociaux;Bretagne;Chronopost;5;10,74;1;3;oui
+CMD-251003-3784;03/10/2025;SEO;Bretagne;Colissimo;2;42,35;3;4;non
+CMD-251003-7331;03/10/2025;Réseaux sociaux;Bretagne;Mondial Relay;1;42,72;2;3;non
+CMD-251004-8784;04/10/2025;SEA;Île-de-France;Colissimo;3;104,03;2;5;oui
+CMD-251004-9381;04/10/2025;SEO;Île-de-France;Colissimo;2;21,14;3;4;non
+CMD-251005-2151;05/10/2025;SEA;Île-de-France;Colissimo;4;28,67;3;3;non
+CMD-251005-5686;05/10/2025;Direct;PACA;Mondial Relay;2;32,14;9;2;oui
+CMD-251005-9318;05/10/2025;SEO;Occitanie;Mondial Relay;2;16,41;4;3;non
+CMD-251005-1148;05/10/2025;Email;Occitanie;Colissimo;2;85,17;4;3;non
+CMD-251005-1024;05/10/2025;Direct;Occitanie;Mondial Relay;4;29,48;5;2;oui
+CMD-251005-6618;05/10/2025;Email;Auvergne-Rhône-Alpes;Colissimo;2;46,59;5;4;non
+CMD-251006-9584;06/10/2025;Réseaux sociaux;Grand Est;Colissimo;2;15,72;2;3;non
+CMD-251006-5619;06/10/2025;Email;Auvergne-Rhône-Alpes;Colissimo;4;42,44;2;4;non
+CMD-251006-9229;06/10/2025;Réseaux sociaux;Île-de-France;Colissimo;2;65,52;3;3;oui
+CMD-251006-1753;06/10/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;2;25,97;5;4;oui
+CMD-251006-2242;06/10/2025;Réseaux sociaux;Île-de-France;Colissimo;2;48,19;4;3;oui
+CMD-251006-2384;06/10/2025;SEO;Grand Est;Colissimo;3;33,06;3;4;non
+CMD-251007-5811;07/10/2025;Direct;Nouvelle-Aquitaine;Mondial Relay;2;102,61;4;3;oui
+CMD-251007-3902;07/10/2025;Direct;Nouvelle-Aquitaine;Mondial Relay;5;63,36;5;4;oui
+CMD-251007-7189;07/10/2025;Email;Île-de-France;Colissimo;4;45,14;2;3;non
+CMD-251007-1179;07/10/2025;Direct;Occitanie;Mondial Relay;2;119,91;4;3;non
+CMD-251007-2722;07/10/2025;SEO;Hauts-de-France;Chronopost;2;48,4;1;4;oui
+CMD-251007-8005;07/10/2025;SEO;Île-de-France;Mondial Relay;2;36,58;2;5;oui
+CMD-251007-5796;07/10/2025;SEO;Île-de-France;Chronopost;4;32,75;1;5;oui
+CMD-251007-4089;07/10/2025;SEO;Hauts-de-France;Chronopost;1;122,97;2;4;oui
+CMD-251007-3925;07/10/2025;Direct;Occitanie;Colissimo;1;53,85;5;4;oui
+CMD-251008-2494;08/10/2025;SEA;Occitanie;Mondial Relay;2;42,86;4;2;oui
+CMD-251008-7603;08/10/2025;Direct;Bretagne;Colissimo;4;48,01;4;5;non
+CMD-251008-9765;08/10/2025;SEA;Île-de-France;Mondial Relay;1;29,67;3;4;non
+CMD-251008-1400;08/10/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;2;67,32;5;3;oui
+CMD-251008-2982;08/10/2025;Réseaux sociaux;Bretagne;Mondial Relay;5;61,11;5;2;non
+CMD-251008-6421;08/10/2025;Email;Hauts-de-France;Colissimo;5;70,89;2;4;non
+CMD-251009-9590;09/10/2025;Email;Auvergne-Rhône-Alpes;Chronopost;3;63,06;1;5;non
+CMD-251009-4383;09/10/2025;Email;PACA;Chronopost;2;44,4;2;3;non
+CMD-251009-7795;09/10/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;4;54,15;2;4;non
+CMD-251009-1740;09/10/2025;Email;Hauts-de-France;Colissimo;1;35,1;5;3;non
+CMD-251010-8396;10/10/2025;Email;Île-de-France;Mondial Relay;1;43,11;3;3;non
+CMD-251010-5056;10/10/2025;Email;Hauts-de-France;Chronopost;1;39,17;1;5;oui
+CMD-251010-1263;10/10/2025;Direct;PACA;Chronopost;9;58,2;1;4;oui
+CMD-251010-8689;10/10/2025;SEA;Hauts-de-France;Colissimo;5;24,03;4;4;oui
+CMD-251010-1900;10/10/2025;SEA;Île-de-France;Colissimo;2;25,58;3;3;oui
+CMD-251010-4363;10/10/2025;SEA;Grand Est;Colissimo;2;26,92;1;4;non
+CMD-251010-6215;10/10/2025;Email;Île-de-France;Colissimo;4;37,97;2;3;non
+CMD-251011-6706;11/10/2025;Direct;PACA;Colissimo;2;20,58;3;2;oui
+CMD-251011-2257;11/10/2025;SEO;PACA;Mondial Relay;1;22,37;3;3;oui
+CMD-251011-6653;11/10/2025;SEA;PACA;Colissimo;2;43,51;2;3;oui
+CMD-251011-4214;11/10/2025;Email;Île-de-France;Mondial Relay;4;28,95;4;4;non
+CMD-251011-5581;11/10/2025;SEA;Hauts-de-France;Chronopost;1;36,91;2;5;oui
+CMD-251012-6462;12/10/2025;SEA;Hauts-de-France;Colissimo;2;31,25;4;3;oui
+CMD-251012-1599;12/10/2025;Email;Auvergne-Rhône-Alpes;Mondial Relay;1;55,17;5;4;oui
+CMD-251012-5332;12/10/2025;SEA;Grand Est;Mondial Relay;2;30,34;3;4;oui
+CMD-251012-7208;12/10/2025;SEO;Île-de-France;Colissimo;9;41,12;3;4;non
+CMD-251012-9211;12/10/2025;Direct;Île-de-France;Chronopost;3;32,03;1;5;oui
+CMD-251012-9206;12/10/2025;SEO;Grand Est;Colissimo;2;54,4;3;4;non
+CMD-251013-7058;13/10/2025;SEA;Hauts-de-France;Mondial Relay;1;81,9;3;2;non
+CMD-251013-4535;13/10/2025;SEA;Occitanie;Colissimo;3;49,52;3;4;oui
+CMD-251013-3276;13/10/2025;Email;Île-de-France;Mondial Relay;2;29,87;4;3;non
+CMD-251013-1259;13/10/2025;SEO;PACA;Mondial Relay;3;46,62;9;3;oui
+CMD-251014-8755;14/10/2025;SEO;Bretagne;Mondial Relay;6;56,41;4;3;non
+CMD-251014-3302;14/10/2025;Réseaux sociaux;PACA;Colissimo;1;48,62;4;2;non
+CMD-251014-1350;14/10/2025;SEO;Île-de-France;Colissimo;3;16,73;3;4;oui
+CMD-251014-5585;14/10/2025;Email;Île-de-France;Mondial Relay;4;26,2;5;2;non
+CMD-251014-6704;14/10/2025;Réseaux sociaux;Nouvelle-Aquitaine;Colissimo;2;65,79;2;3;non
+CMD-251014-3213;14/10/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;4;41,98;3;4;oui
+CMD-251015-3897;15/10/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;2;67,39;4;3;non
+CMD-251015-7091;15/10/2025;SEO;Grand Est;Colissimo;2;7,35;3;3;oui
+CMD-251015-1918;15/10/2025;Réseaux sociaux;Île-de-France;Mondial Relay;1;6,6;3;4;oui
+CMD-251015-5404;15/10/2025;Direct;Île-de-France;Colissimo;4;22,67;4;3;oui
+CMD-251015-7273;15/10/2025;Réseaux sociaux;Occitanie;Colissimo;1;18,0;3;4;non
+CMD-251016-6874;16/10/2025;SEA;Bretagne;Chronopost;3;14,69;2;4;oui
+CMD-251016-1495;16/10/2025;Réseaux sociaux;Île-de-France;Mondial Relay;4;32,35;8;2;non
+CMD-251016-1495;16/10/2025;Réseaux sociaux;Hauts-de-France;Colissimo;1;36,6;2;4;oui
+CMD-251016-8877;16/10/2025;SEA;Occitanie;Chronopost;5;97,27;2;3;non
+CMD-251016-9085;16/10/2025;Direct;PACA;Colissimo;2;43,6;2;5;oui
+CMD-251016-3066;16/10/2025;SEA;Grand Est;Mondial Relay;3;22,96;4;4;oui
+CMD-251016-8625;16/10/2025;Direct;Bretagne;Colissimo;4;23,62;2;5;non
+CMD-251016-1307;16/10/2025;Email;Nouvelle-Aquitaine;Mondial Relay;5;45,66;2;5;oui
+CMD-251017-7024;17/10/2025;Email;Île-de-France;Colissimo;2;23,12;2;5;non
+CMD-251017-3078;17/10/2025;SEO;Île-de-France;Colissimo;3;26,68;4;3;non
+CMD-251017-4903;17/10/2025;SEO;Bretagne;Mondial Relay;1;16,64;4;3;non
+CMD-251017-4156;17/10/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;1;45,89;3;3;oui
+CMD-251018-7460;18/10/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;3;36,28;3;4;oui
+CMD-251018-8520;18/10/2025;Direct;Occitanie;Chronopost;4;25,94;2;4;non
+CMD-251018-5037;18/10/2025;Direct;Île-de-France;Mondial Relay;2;109,24;4;3;non
+CMD-251018-6306;18/10/2025;SEA;Occitanie;Colissimo;1;27,3;3;4;non
+CMD-251018-5016;18/10/2025;Email;Bretagne;Chronopost;4;69,99;2;3;non
+CMD-251018-8921;18/10/2025;SEO;Occitanie;Mondial Relay;3;25,9;1;5;oui
+CMD-251018-5355;18/10/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;4;88,97;3;5;oui
+CMD-251018-4536;18/10/2025;Direct;Île-de-France;Colissimo;3;44,32;5;2;non
+CMD-251019-1391;19/10/2025;SEO;Occitanie;Mondial Relay;2;22,9;3;3;oui
+CMD-251019-7904;19/10/2025;Réseaux sociaux;PACA;Colissimo;3;92,33;4;4;oui
+CMD-251019-3930;19/10/2025;SEO;Grand Est;Mondial Relay;2;21,51;10;1;non
+CMD-251019-5267;19/10/2025;SEO;Île-de-France;Colissimo;1;60,46;5;2;non
+CMD-251020-7111;20/10/2025;SEO;Île-de-France;Mondial Relay;4;119,36;5;3;oui
+CMD-251020-5569;20/10/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;2;43,36;4;3;non
+CMD-251020-7063;20/10/2025;SEO;Grand Est;Colissimo;1;49,26;2;5;non
+CMD-251020-7297;20/10/2025;Direct;PACA;Chronopost;4;31,57;2;4;non
+CMD-251021-2548;21/10/2025;SEA;Occitanie;Mondial Relay;2;27,39;2;3;non
+CMD-251021-2051;21/10/2025;Direct;Île-de-France;Colissimo;2;28,87;3;4;non
+CMD-251021-3727;21/10/2025;Email;Occitanie;Mondial Relay;3;119,18;5;4;non
+CMD-251021-7673;21/10/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;2;91,58;5;4;non
+CMD-251021-2248;21/10/2025;SEA;Île-de-France;Mondial Relay;6;47,49;2;4;non
+CMD-251021-6611;21/10/2025;Email;Nouvelle-Aquitaine;Colissimo;7;133,47;3;3;non
+CMD-251022-2695;22/10/2025;SEO;PACA;Chronopost;1;49,07;2;5;oui
+CMD-251022-2701;22/10/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;2;43,9;5;3;non
+CMD-251022-9129;22/10/2025;Email;Île-de-France;Colissimo;2;27,87;3;3;non
+CMD-251023-7025;23/10/2025;Email;Nouvelle-Aquitaine;Colissimo;4;88,63;2;5;non
+CMD-251023-8629;23/10/2025;Réseaux sociaux;Hauts-de-France;Colissimo;1;18,25;2;3;oui
+CMD-251023-2336;23/10/2025;SEO;PACA;Chronopost;2;25,52;1;4;oui
+CMD-251023-5627;23/10/2025;Email;Île-de-France;Chronopost;2;23,27;2;4;non
+CMD-251023-3674;23/10/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;4;82,78;2;5;oui
+CMD-251023-7108;23/10/2025;SEA;Île-de-France;Colissimo;2;39,19;3;3;oui
+CMD-251023-9029;23/10/2025;Réseaux sociaux;Hauts-de-France;Mondial Relay;5;134,65;3;4;non
+CMD-251024-4327;24/10/2025;SEO;Nouvelle-Aquitaine;Colissimo;3;40,95;2;3;non
+CMD-251024-4060;24/10/2025;Direct;Île-de-France;Colissimo;3;41,75;5;3;non
+CMD-251024-2986;24/10/2025;SEA;PACA;Colissimo;4;41,22;6;2;oui
+CMD-251024-6592;24/10/2025;SEO;Île-de-France;Colissimo;1;24,07;4;4;oui
+CMD-251024-2738;24/10/2025;SEA;Bretagne;Chronopost;4;15,55;2;3;oui
+CMD-251025-8973;25/10/2025;SEA;PACA;Mondial Relay;2;36,86;6;4;oui
+CMD-251025-1594;25/10/2025;Email;Île-de-France;Chronopost;4;110,34;2;4;oui
+CMD-251025-3794;25/10/2025;Direct;Île-de-France;Colissimo;3;57,93;4;3;oui
+CMD-251025-9433;25/10/2025;Direct;Île-de-France;Mondial Relay;3;92,12;4;4;non
+CMD-251025-6541;25/10/2025;SEA;Bretagne;Colissimo;3;45,24;3;3;oui
+CMD-251026-7023;26/10/2025;SEO;PACA;Mondial Relay;2;58,97;3;4;oui
+CMD-251026-5927;26/10/2025;SEA;PACA;Colissimo;4;190,94;3;3;oui
+CMD-251026-8684;26/10/2025;Email;Bretagne;Mondial Relay;2;45,98;3;3;non
+CMD-251026-1812;26/10/2025;SEO;Occitanie;Mondial Relay;1;33,3;4;3;oui
+CMD-251026-4358;26/10/2025;Direct;Occitanie;Chronopost;4;18,01;2;4;non
+CMD-251026-8547;26/10/2025;Email;Île-de-France;Colissimo;2;55,54;2;4;non
+CMD-251026-1535;26/10/2025;Direct;Île-de-France;Colissimo;2;60,05;2;5;non
+CMD-251026-4264;26/10/2025;Direct;Île-de-France;Colissimo;2;85,87;2;5;oui
+CMD-251027-2363;27/10/2025;Réseaux sociaux;Hauts-de-France;Colissimo;2;65,41;6;3;oui
+CMD-251027-2536;27/10/2025;SEO;Grand Est;Mondial Relay;2;26,08;5;3;oui
+CMD-251027-8448;27/10/2025;SEO;Hauts-de-France;Colissimo;2;61,59;2;4;oui
+CMD-251027-6500;27/10/2025;Email;Auvergne-Rhône-Alpes;Colissimo;1;68,75;3;3;non
+CMD-251027-2471;27/10/2025;Réseaux sociaux;Grand Est;Chronopost;2;125,19;1;4;non
+CMD-251027-2947;27/10/2025;SEO;Île-de-France;Colissimo;2;38,22;3;4;oui
+CMD-251028-3098;28/10/2025;SEO;Île-de-France;Chronopost;3;33,4;3;3;oui
+CMD-251028-8471;28/10/2025;Email;Grand Est;Chronopost;6;37,83;3;3;non
+CMD-251028-6570;28/10/2025;SEA;Île-de-France;Colissimo;5;53,05;3;4;non
+CMD-251028-5509;28/10/2025;SEO;Bretagne;Mondial Relay;4;26,35;1;4;oui
+CMD-251028-2806;28/10/2025;Réseaux sociaux;Île-de-France;Mondial Relay;2;29,0;5;4;oui
+CMD-251028-1984;28/10/2025;SEO;PACA;Chronopost;1;28,32;1;4;oui
+CMD-251028-4967;28/10/2025;SEA;Île-de-France;Colissimo;4;28,37;2;3;non
+CMD-251028-1881;28/10/2025;SEO;Île-de-France;Colissimo;5;26,41;3;2;oui
+CMD-251029-6550;29/10/2025;Email;Grand Est;Colissimo;2;47,37;4;4;non
+CMD-251029-5296;29/10/2025;Email;PACA;Mondial Relay;1;46,62;3;2;non
+CMD-251029-6543;29/10/2025;SEA;Hauts-de-France;Colissimo;1;30,71;4;2;oui
+CMD-251029-2530;29/10/2025;SEO;Hauts-de-France;Colissimo;1;57,96;4;2;oui
+CMD-251030-3408;30/10/2025;Email;Bretagne;Chronopost;3;37,63;1;5;non
+CMD-251030-7918;30/10/2025;SEA;Île-de-France;Mondial Relay;3;37,33;2;4;oui
+CMD-251030-1732;30/10/2025;SEA;Bretagne;Colissimo;1;22,22;9;2;non
+CMD-251030-2414;30/10/2025;Réseaux sociaux;PACA;Mondial Relay;1;103,34;3;3;oui
+CMD-251030-4048;30/10/2025;SEO;Île-de-France;Chronopost;1;11,75;1;3;oui
+CMD-251031-4130;31/10/2025;Direct;Île-de-France;Colissimo;1;12,17;2;4;non
+CMD-251031-7517;31/10/2025;Email;Bretagne;Colissimo;3;94,82;3;2;non
+CMD-251031-8369;31/10/2025;Réseaux sociaux;Île-de-France;Mondial Relay;1;15,24;4;3;oui
+CMD-251031-9969;31/10/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;4;21,12;4;2;non
+CMD-251031-9143;31/10/2025;SEO;PACA;Chronopost;4;27,83;2;3;non
+CMD-251031-8415;31/10/2025;SEO;Occitanie;Colissimo;2;33,33;3;4;non
+CMD-251031-5250;31/10/2025;Direct;PACA;Mondial Relay;6;106,1;2;3;oui
+CMD-251031-5203;31/10/2025;Réseaux sociaux;Île-de-France;Mondial Relay;5;33,22;3;5;oui
+CMD-251101-6939;01/11/2025;SEO;PACA;Colissimo;3;31,05;4;2;oui
+CMD-251101-6029;01/11/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;5;37,59;2;2;non
+CMD-251101-6412;01/11/2025;SEO;Nouvelle-Aquitaine;Colissimo;2;20,26;4;4;oui
+CMD-251101-9616;01/11/2025;Direct;Auvergne-Rhône-Alpes;Chronopost;2;15,96;1;5;non
+CMD-251101-9398;01/11/2025;SEO;Occitanie;Mondial Relay;2;27,2;3;5;non
+CMD-251101-9563;01/11/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;1;69,17;5;4;non
+CMD-251102-8381;02/11/2025;Réseaux sociaux;Grand Est;Mondial Relay;3;70,22;3;5;oui
+CMD-251102-6102;02/11/2025;SEO;Occitanie;Colissimo;4;51,53;3;3;oui
+CMD-251102-8468;02/11/2025;SEO;PACA;Colissimo;2;91,36;3;4;non
+CMD-251102-6635;02/11/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Mondial Relay;1;42,56;5;3;non
+CMD-251102-7322;02/11/2025;SEO;Grand Est;Colissimo;4;16,62;3;3;non
+CMD-251102-1778;02/11/2025;SEA;Hauts-de-France;Colissimo;4;28,97;4;2;non
+CMD-251102-6952;02/11/2025;Direct;Occitanie;Chronopost;3;27,27;1;5;oui
+CMD-251103-4125;03/11/2025;SEA;Auvergne-Rhône-Alpes;Chronopost;1;38,12;1;4;oui
+CMD-251103-4089;03/11/2025;Direct;Île-de-France;Mondial Relay;3;68,38;3;4;non
+CMD-251103-4475;03/11/2025;SEO;Île-de-France;Colissimo;3;88,14;4;4;oui
+CMD-251103-5611;03/11/2025;SEA;PACA;Mondial Relay;3;54,01;5;3;non
+CMD-251103-4470;03/11/2025;SEO;Grand Est;Colissimo;1;55,77;4;3;non
+CMD-251103-1352;03/11/2025;Réseaux sociaux;Hauts-de-France;Mondial Relay;1;23,63;5;1;non
+CMD-251104-6127;04/11/2025;SEA;Île-de-France;Chronopost;2;35,11;2;5;oui
+CMD-251104-2562;04/11/2025;Direct;PACA;Colissimo;2;34,86;2;3;non
+CMD-251104-2948;04/11/2025;Réseaux sociaux;Grand Est;Colissimo;3;109,33;4;3;oui
+CMD-251104-7506;04/11/2025;SEA;PACA;Colissimo;2;30,36;2;4;non
+CMD-251104-5572;04/11/2025;SEO;Occitanie;Colissimo;1;21,85;3;3;oui
+CMD-251105-2760;05/11/2025;Email;Auvergne-Rhône-Alpes;Colissimo;3;43,35;3;3;non
+CMD-251105-4945;05/11/2025;Réseaux sociaux;Île-de-France;Chronopost;2;40,85;1;3;non
+CMD-251105-6107;05/11/2025;Direct;Bretagne;Chronopost;3;42,8;2;3;oui
+CMD-251105-8420;05/11/2025;SEO;Occitanie;Mondial Relay;4;41,95;8;3;non
+CMD-251105-6049;05/11/2025;Réseaux sociaux;Grand Est;Mondial Relay;2;16,61;4;3;oui
+CMD-251106-9547;06/11/2025;SEO;PACA;Colissimo;3;104,14;6;3;non
+CMD-251106-3274;06/11/2025;SEA;Auvergne-Rhône-Alpes;Chronopost;3;43,47;1;4;oui
+CMD-251106-7215;06/11/2025;SEA;PACA;Colissimo;3;27,85;3;4;oui
+CMD-251106-9208;06/11/2025;Réseaux sociaux;Île-de-France;Chronopost;2;69,03;1;4;oui
+CMD-251107-1286;07/11/2025;Réseaux sociaux;PACA;Colissimo;3;31,87;4;2;non
+CMD-251107-3450;07/11/2025;Réseaux sociaux;Île-de-France;Chronopost;3;87,32;3;3;non
+CMD-251107-2523;07/11/2025;SEA;Occitanie;Chronopost;4;35,91;2;4;oui
+CMD-251107-7457;07/11/2025;SEO;Bretagne;Mondial Relay;3;25,25;4;2;oui
+CMD-251107-6758;07/11/2025;SEA;Occitanie;Mondial Relay;3;42,1;4;3;non
+CMD-251107-5744;07/11/2025;SEO;Île-de-France;Mondial Relay;1;25,07;2;4;non
+CMD-251107-6769;07/11/2025;Email;Île-de-France;Colissimo;2;45,27;4;5;non
+CMD-251107-1017;07/11/2025;Réseaux sociaux;PACA;Mondial Relay;3;62,34;5;2;non
+CMD-251108-7046;08/11/2025;Réseaux sociaux;Île-de-France;Chronopost;2;48,24;3;3;non
+CMD-251108-8183;08/11/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;3;110,95;1;4;oui
+CMD-251108-8301;08/11/2025;SEO;Île-de-France;Mondial Relay;2;82,12;2;5;oui
+CMD-251108-6131;08/11/2025;Direct;Île-de-France;Mondial Relay;3;51,07;4;3;oui
+CMD-251108-8574;08/11/2025;Réseaux sociaux;Nouvelle-Aquitaine;Colissimo;3;36,53;2;3;oui
+CMD-251109-6696;09/11/2025;Réseaux sociaux;Île-de-France;Mondial Relay;2;44,58;4;5;oui
+CMD-251109-7898;09/11/2025;SEO;PACA;Chronopost;2;16,13;1;5;oui
+CMD-251109-5584;09/11/2025;Réseaux sociaux;Île-de-France;Mondial Relay;4;28,56;4;4;non
+CMD-251109-4098;09/11/2025;Email;Grand Est;Mondial Relay;2;31,34;4;2;non
+CMD-251109-8324;09/11/2025;Email;Nouvelle-Aquitaine;Mondial Relay;1;103,54;5;4;non
+CMD-251109-9785;09/11/2025;SEA;Île-de-France;Colissimo;3;30,58;4;5;non
+CMD-251109-3085;09/11/2025;Email;PACA;Chronopost;2;47,99;2;4;non
+CMD-251109-1476;09/11/2025;SEO;Île-de-France;Mondial Relay;3;37,88;2;4;non
+CMD-251110-6929;10/11/2025;Direct;PACA;Mondial Relay;1;39,11;4;4;oui
+CMD-251110-4068;10/11/2025;SEO;Hauts-de-France;Mondial Relay;3;59,75;6;3;non
+CMD-251110-6546;10/11/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;4;44,26;3;3;oui
+CMD-251111-4808;11/11/2025;Email;Hauts-de-France;Colissimo;2;75,02;4;4;non
+CMD-251111-6405;11/11/2025;SEA;PACA;Colissimo;3;41,67;3;3;non
+CMD-251111-5494;11/11/2025;SEA;Nouvelle-Aquitaine;Chronopost;3;44,41;2;4;non
+CMD-251111-2894;11/11/2025;Réseaux sociaux;PACA;Mondial Relay;2;37,81;4;3;oui
+CMD-251111-1487;11/11/2025;SEA;PACA;Colissimo;1;28,48;2;4;non
+CMD-251111-4219;11/11/2025;SEO;Grand Est;Mondial Relay;1;20,62;1;4;oui
+CMD-251111-8546;11/11/2025;SEO;Hauts-de-France;Chronopost;3;30,45;2;4;non
+CMD-251112-8725;12/11/2025;SEA;Nouvelle-Aquitaine;Chronopost;2;74,16;2;3;oui
+CMD-251112-5381;12/11/2025;Email;PACA;Colissimo;3;55,43;2;5;non
+CMD-251112-2536;12/11/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;2;15,21;3;4;oui
+CMD-251112-7347;12/11/2025;SEA;PACA;Mondial Relay;2;18,17;5;3;oui
+CMD-251113-8694;13/11/2025;SEO;PACA;Colissimo;4;83,8;2;4;oui
+CMD-251113-8768;13/11/2025;SEA;Île-de-France;Mondial Relay;3;55,69;4;3;oui
+CMD-251114-5399;14/11/2025;Réseaux sociaux;Bretagne;Mondial Relay;1;34,79;3;4;oui
+CMD-251114-5361;14/11/2025;Direct;PACA;Colissimo;3;35,08;6;3;non
+CMD-251114-8655;14/11/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;2;29,83;5;3;non
+CMD-251114-2694;14/11/2025;SEO;Île-de-France;Mondial Relay;2;91,19;4;4;non
+CMD-251114-1354;14/11/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;4;20,57;3;3;oui
+CMD-251114-2349;14/11/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;6;56,7;4;4;non
+CMD-251114-6704;14/11/2025;SEO;Occitanie;Chronopost;1;53,96;2;4;oui
+CMD-251114-5641;14/11/2025;Email;Île-de-France;Chronopost;3;34,13;1;5;oui
+CMD-251115-6001;15/11/2025;SEO;Hauts-de-France;Chronopost;5;42,94;1;3;oui
+CMD-251115-3958;15/11/2025;SEO;Occitanie;Colissimo;3;65,15;4;3;non
+CMD-251115-2432;15/11/2025;Email;Hauts-de-France;Mondial Relay;1;141,96;4;4;oui
+CMD-251115-1243;15/11/2025;Direct;Auvergne-Rhône-Alpes;Mondial Relay;3;35,96;3;4;non
+CMD-251115-5314;15/11/2025;SEO;Grand Est;Colissimo;3;61,49;3;4;non
+CMD-251115-7949;15/11/2025;Email;Bretagne;Colissimo;1;37,12;3;3;non
+CMD-251116-7626;16/11/2025;SEO;Occitanie;Mondial Relay;1;53,95;5;3;oui
+CMD-251116-9694;16/11/2025;SEO;PACA;Colissimo;2;29,07;2;5;non
+CMD-251116-1491;16/11/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;2;36,33;3;2;oui
+CMD-251116-1606;16/11/2025;SEO;Île-de-France;Mondial Relay;2;25,82;4;3;non
+CMD-251116-4305;16/11/2025;SEA;Nouvelle-Aquitaine;Colissimo;2;26,7;2;3;non
+CMD-251116-2666;16/11/2025;Email;Île-de-France;Colissimo;1;21,2;3;4;non
+CMD-251117-2453;17/11/2025;SEA;Île-de-France;Mondial Relay;5;44,82;4;4;oui
+CMD-251117-9652;17/11/2025;SEO;Hauts-de-France;Chronopost;3;84,79;1;5;oui
+CMD-251117-2976;17/11/2025;Réseaux sociaux;Hauts-de-France;Mondial Relay;7;71,43;6;2;oui
+CMD-251117-8485;17/11/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;1;79,68;5;2;non
+CMD-251117-7583;17/11/2025;SEO;PACA;Colissimo;4;38,85;4;4;oui
+CMD-251117-2087;17/11/2025;Email;Bretagne;Chronopost;5;56,96;1;3;non
+CMD-251118-4303;18/11/2025;SEO;Occitanie;Colissimo;4;45,84;4;5;oui
+CMD-251118-6145;18/11/2025;SEO;Occitanie;Colissimo;2;22,93;4;4;oui
+CMD-251118-9006;18/11/2025;Réseaux sociaux;Grand Est;Chronopost;1;42,86;3;2;oui
+CMD-251118-4003;18/11/2025;SEO;Occitanie;Colissimo;2;51,51;2;5;non
+CMD-251118-1303;18/11/2025;Direct;Auvergne-Rhône-Alpes;Mondial Relay;1;41,13;3;3;oui
+CMD-251119-4971;19/11/2025;SEO;Île-de-France;Chronopost;2;23,55;2;4;oui
+CMD-251119-8802;19/11/2025;Direct;Île-de-France;Mondial Relay;2;16,54;2;3;oui
+CMD-251120-5582;20/11/2025;Email;Bretagne;Colissimo;4;36,48;3;4;non
+CMD-251120-3522;20/11/2025;SEO;Hauts-de-France;Colissimo;2;46,23;2;5;oui
+CMD-251120-3772;20/11/2025;SEA;Bretagne;Mondial Relay;1;18,46;4;3;non
+CMD-251120-1849;20/11/2025;SEO;Île-de-France;Colissimo;1;12,6;4;3;oui
+CMD-251120-2794;20/11/2025;Direct;Grand Est;Colissimo;2;80,09;3;4;non
+CMD-251120-3236;20/11/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;3;49,63;2;3;oui
+CMD-251121-9938;21/11/2025;Email;Occitanie;Colissimo;1;37,51;5;4;non
+CMD-251121-3701;21/11/2025;SEO;Île-de-France;Mondial Relay;1;38,18;7;3;oui
+CMD-251121-2978;21/11/2025;Email;PACA;Colissimo;1;29,06;6;4;non
+CMD-251121-3868;21/11/2025;SEA;PACA;Chronopost;4;31,01;1;4;non
+CMD-251121-8706;21/11/2025;SEO;Bretagne;Mondial Relay;2;61,85;4;3;non
+CMD-251121-3875;21/11/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;4;65,03;3;3;oui
+CMD-251121-7763;21/11/2025;Direct;Hauts-de-France;Mondial Relay;4;37,5;4;4;oui
+CMD-251122-3645;22/11/2025;SEO;Île-de-France;Colissimo;1;26,46;3;3;non
+CMD-251122-8615;22/11/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;2;44,84;7;2;non
+CMD-251122-9631;22/11/2025;Email;Bretagne;Colissimo;2;51,46;4;3;non
+CMD-251122-8129;22/11/2025;Email;Grand Est;Mondial Relay;2;58,72;3;4;non
+CMD-251123-2156;23/11/2025;Réseaux sociaux;Île-de-France;Colissimo;2;19,26;4;3;non
+CMD-251123-1256;23/11/2025;Direct;Hauts-de-France;Colissimo;2;8,17;2;4;non
+CMD-251123-4728;23/11/2025;SEA;PACA;Colissimo;3;72,65;5;2;non
+CMD-251123-3276;23/11/2025;Direct;Grand Est;Chronopost;2;35,17;2;4;non
+CMD-251124-3584;24/11/2025;Email;Île-de-France;Chronopost;2;26,53;1;4;oui
+CMD-251124-5934;24/11/2025;Réseaux sociaux;Île-de-France;Colissimo;3;22,42;2;4;non
+CMD-251124-3147;24/11/2025;Email;Île-de-France;Colissimo;2;84,26;3;4;non
+CMD-251124-3481;24/11/2025;SEO;Nouvelle-Aquitaine;Colissimo;3;46,96;2;3;oui
+CMD-251125-8612;25/11/2025;Réseaux sociaux;Île-de-France;Mondial Relay;3;79,83;4;3;oui
+CMD-251125-1930;25/11/2025;Direct;Auvergne-Rhône-Alpes;Chronopost;3;108,91;1;4;oui
+CMD-251125-8212;25/11/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;2;31,75;2;4;non
+CMD-251125-2805;25/11/2025;SEA;Grand Est;Mondial Relay;2;68,57;5;1;non
+CMD-251125-9912;25/11/2025;Direct;Île-de-France;Colissimo;3;62,54;5;2;oui
+CMD-251125-1091;25/11/2025;Email;Île-de-France;Mondial Relay;1;17,16;7;2;non
+CMD-251125-7953;25/11/2025;Direct;Île-de-France;Mondial Relay;4;57,65;1;5;non
+CMD-251125-5514;25/11/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;2;44,68;2;5;oui
+CMD-251126-1696;26/11/2025;Direct;Île-de-France;Colissimo;1;26,42;3;4;oui
+CMD-251126-7773;26/11/2025;SEA;Île-de-France;Colissimo;2;31,18;4;4;non
+CMD-251126-5975;26/11/2025;Email;Nouvelle-Aquitaine;Mondial Relay;2;45,45;4;3;non
+CMD-251126-5825;26/11/2025;Email;PACA;Colissimo;2;45,56;3;4;non
+CMD-251126-5242;26/11/2025;Direct;Occitanie;Colissimo;3;36,94;3;3;oui
+CMD-251127-6732;27/11/2025;SEO;Occitanie;Colissimo;2;30,15;2;4;oui
+CMD-251127-2073;27/11/2025;Direct;Occitanie;Colissimo;3;91,17;3;4;non
+CMD-251127-2236;27/11/2025;Email;Bretagne;Colissimo;4;70,13;3;4;non
+CMD-251127-9002;27/11/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;2;18,38;3;4;non
+CMD-251127-2918;27/11/2025;Direct;Nouvelle-Aquitaine;Mondial Relay;2;40,78;2;4;oui
+CMD-251127-7231;27/11/2025;SEO;Hauts-de-France;Chronopost;3;27,05;1;4;oui
+CMD-251127-9221;27/11/2025;Email;Bretagne;Mondial Relay;3;52,65;3;4;non
+CMD-251128-7173;28/11/2025;SEO;Hauts-de-France;Mondial Relay;2;95,62;3;5;non
+CMD-251128-7587;28/11/2025;SEO;Bretagne;Colissimo;2;28,98;3;4;oui
+CMD-251128-8336;28/11/2025;Réseaux sociaux;Île-de-France;Mondial Relay;3;31,97;4;3;oui
+CMD-251128-8795;28/11/2025;SEO;PACA;Colissimo;2;84,41;2;5;non
+CMD-251128-8635;28/11/2025;SEA;Grand Est;Mondial Relay;3;59,25;4;3;oui
+CMD-251128-1524;28/11/2025;Direct;Occitanie;Chronopost;4;31,92;2;4;non
+CMD-251128-5986;28/11/2025;SEA;Île-de-France;Chronopost;1;27,68;1;5;non
+CMD-251128-4164;28/11/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;3;40,09;5;3;non
+CMD-251129-6791;29/11/2025;Email;Île-de-France;Colissimo;4;47,0;5;3;non
+CMD-251129-3572;29/11/2025;Email;Île-de-France;Colissimo;1;29,56;5;3;oui
+CMD-251129-7399;29/11/2025;Direct;Auvergne-Rhône-Alpes;Colissimo;1;83,61;3;4;non
+CMD-251129-3143;29/11/2025;Réseaux sociaux;Nouvelle-Aquitaine;Mondial Relay;2;35,83;3;4;non
+CMD-251129-7585;29/11/2025;Réseaux sociaux;Nouvelle-Aquitaine;Mondial Relay;1;16,75;3;4;non
+CMD-251130-4204;30/11/2025;Email;Occitanie;Colissimo;3;21,03;3;3;non
+CMD-251130-2139;30/11/2025;SEO;Île-de-France;Colissimo;2;15,93;3;3;non
+CMD-251130-3245;30/11/2025;SEA;PACA;Colissimo;3;40,76;5;3;non
+CMD-251201-1197;01/12/2025;SEO;PACA;Mondial Relay;1;39,83;2;4;non
+CMD-251201-7295;01/12/2025;Direct;Île-de-France;Colissimo;2;34,56;3;3;oui
+CMD-251202-2660;02/12/2025;SEO;PACA;Mondial Relay;3;41,03;2;5;non
+CMD-251202-6012;02/12/2025;SEO;Île-de-France;Chronopost;1;27,52;2;5;non
+CMD-251203-6392;03/12/2025;Email;PACA;Colissimo;3;89,81;2;4;non
+CMD-251203-2690;03/12/2025;SEO;Nouvelle-Aquitaine;Chronopost;1;8,31;1;4;non
+CMD-251203-7700;03/12/2025;Direct;Occitanie;Colissimo;4;99,18;2;4;oui
+CMD-251203-2943;03/12/2025;Réseaux sociaux;Bretagne;Colissimo;1;42,73;4;3;oui
+CMD-251203-8133;03/12/2025;Réseaux sociaux;PACA;Colissimo;2;53,95;4;2;oui
+CMD-251203-9291;03/12/2025;SEA;Auvergne-Rhône-Alpes;Chronopost;3;34,59;1;5;non
+CMD-251203-3317;03/12/2025;Direct;Occitanie;Colissimo;3;68,73;3;4;non
+CMD-251203-1376;03/12/2025;SEA;Île-de-France;Colissimo;2;60,92;3;3;non
+CMD-251204-4893;04/12/2025;Réseaux sociaux;Île-de-France;Chronopost;2;21,55;2;3;non
+CMD-251204-3557;04/12/2025;Email;Grand Est;Colissimo;2;40,29;3;2;non
+CMD-251204-6953;04/12/2025;Direct;Île-de-France;Chronopost;1;30,13;1;4;oui
+CMD-251204-9429;04/12/2025;SEA;Bretagne;Mondial Relay;2;75,0;2;4;non
+CMD-251204-1547;04/12/2025;SEA;Grand Est;Colissimo;2;49,91;4;4;oui
+CMD-251204-6036;04/12/2025;Direct;Île-de-France;Chronopost;1;55,2;2;3;oui
+CMD-251204-8884;04/12/2025;SEO;Occitanie;Mondial Relay;3;20,76;2;4;oui
+CMD-251205-3857;05/12/2025;SEO;Auvergne-Rhône-Alpes;Colissimo;3;75,14;3;5;oui
+CMD-251205-2788;05/12/2025;SEO;Nouvelle-Aquitaine;Mondial Relay;4;28,0;4;4;oui
+CMD-251205-5458;05/12/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Mondial Relay;1;18,56;3;2;oui
+CMD-251205-1357;05/12/2025;Email;Occitanie;Colissimo;2;116,45;4;4;oui
+CMD-251206-3962;06/12/2025;SEA;Hauts-de-France;Mondial Relay;3;19,46;4;3;oui
+CMD-251206-1286;06/12/2025;SEO;PACA;Colissimo;2;40,01;2;4;non
+CMD-251206-5240;06/12/2025;SEO;PACA;Chronopost;2;15,79;1;5;non
+CMD-251206-5789;06/12/2025;Réseaux sociaux;Hauts-de-France;Chronopost;2;16,9;1;5;oui
+CMD-251206-5785;06/12/2025;SEA;Nouvelle-Aquitaine;Mondial Relay;2;16,43;4;4;oui
+CMD-251207-2079;07/12/2025;SEO;Grand Est;Mondial Relay;1;23,85;3;4;non
+CMD-251207-9019;07/12/2025;SEA;Île-de-France;Colissimo;2;41,44;2;4;oui
+CMD-251207-8630;07/12/2025;Email;Grand Est;Chronopost;1;39,41;3;4;non
+CMD-251207-7935;07/12/2025;SEA;Île-de-France;Colissimo;2;52,86;3;4;oui
+CMD-251207-8561;07/12/2025;SEA;Nouvelle-Aquitaine;Mondial Relay;4;30,89;3;4;non
+CMD-251208-7878;08/12/2025;SEO;Grand Est;Mondial Relay;2;64,94;5;4;oui
+CMD-251208-3448;08/12/2025;SEA;Hauts-de-France;Colissimo;1;23,57;4;4;oui
+CMD-251208-2488;08/12/2025;SEO;Hauts-de-France;Colissimo;2;78,24;2;5;non
+CMD-251209-4156;09/12/2025;SEA;Bretagne;Colissimo;4;24,63;3;4;oui
+CMD-251209-1060;09/12/2025;Réseaux sociaux;Occitanie;Colissimo;5;33,25;2;4;oui
+CMD-251209-5682;09/12/2025;SEA;Île-de-France;Colissimo;3;19,5;1;4;non
+CMD-251209-7729;09/12/2025;SEO;Île-de-France;Colissimo;2;25,3;2;4;oui
+CMD-251209-5682;09/12/2025;SEA;Bretagne;Chronopost;2;20,78;1;5;non
+CMD-251209-8711;09/12/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;2;158,82;2;4;oui
+CMD-251209-8029;09/12/2025;Email;PACA;Colissimo;1;39,04;3;5;non
+CMD-251210-5528;10/12/2025;SEO;PACA;Colissimo;2;32,0;7;2;non
+CMD-251210-9738;10/12/2025;Direct;Île-de-France;Chronopost;4;101,63;1;4;oui
+CMD-251210-3484;10/12/2025;SEA;PACA;Colissimo;5;37,61;2;4;oui
+CMD-251210-6488;10/12/2025;Email;Grand Est;Colissimo;4;93,47;3;3;non
+CMD-251211-5787;11/12/2025;SEA;PACA;Colissimo;1;28,18;4;3;oui
+CMD-251211-9278;11/12/2025;SEO;Auvergne-Rhône-Alpes;Chronopost;4;68,74;3;4;oui
+CMD-251211-4342;11/12/2025;Email;Nouvelle-Aquitaine;Chronopost;1;22,87;1;3;non
+CMD-251211-5855;11/12/2025;SEO;Île-de-France;Mondial Relay;2;17,02;3;3;oui
+CMD-251211-1734;11/12/2025;SEA;Nouvelle-Aquitaine;Chronopost;2;53,88;1;5;oui
+CMD-251211-7051;11/12/2025;SEA;PACA;Colissimo;1;66,95;4;4;non
+CMD-251212-5754;12/12/2025;SEO;Bretagne;Colissimo;3;97,88;4;2;non
+CMD-251212-7567;12/12/2025;Email;PACA;Colissimo;7;19,74;3;4;non
+CMD-251212-6241;12/12/2025;Email;Île-de-France;Colissimo;3;74,2;2;3;non
+CMD-251212-2833;12/12/2025;SEA;PACA;Chronopost;3;24,22;2;4;non
+CMD-251212-9750;12/12/2025;Email;Grand Est;Colissimo;2;40,24;1;4;oui
+CMD-251212-9495;12/12/2025;SEA;Bretagne;Colissimo;5;89,19;1;4;oui
+CMD-251213-8510;13/12/2025;SEO;Île-de-France;Colissimo;3;203,45;3;3;oui
+CMD-251213-4699;13/12/2025;SEO;Hauts-de-France;Chronopost;6;20,79;2;3;non
+CMD-251213-1245;13/12/2025;SEA;Occitanie;Mondial Relay;3;27,67;2;2;oui
+CMD-251213-8661;13/12/2025;SEA;Bretagne;Colissimo;1;36,7;5;3;oui
+CMD-251213-4215;13/12/2025;SEO;Nouvelle-Aquitaine;Chronopost;1;52,56;2;4;non
+CMD-251214-9501;14/12/2025;Direct;Grand Est;Mondial Relay;6;38,89;4;2;non
+CMD-251214-1670;14/12/2025;Direct;Île-de-France;Chronopost;1;46,52;2;4;non
+CMD-251214-9527;14/12/2025;SEA;Hauts-de-France;Mondial Relay;3;39,53;3;3;non
+CMD-251214-5440;14/12/2025;Réseaux sociaux;Nouvelle-Aquitaine;Colissimo;5;14,66;7;2;non
+CMD-251214-1462;14/12/2025;Email;PACA;Colissimo;1;73,48;3;4;non
+CMD-251215-4052;15/12/2025;Email;Auvergne-Rhône-Alpes;Colissimo;3;188,82;8;1;non
+CMD-251215-1251;15/12/2025;Réseaux sociaux;Île-de-France;Mondial Relay;4;71,78;4;2;non
+CMD-251215-6178;15/12/2025;SEA;Occitanie;Colissimo;1;32,48;5;3;oui
+CMD-251216-9913;16/12/2025;Réseaux sociaux;Île-de-France;Colissimo;7;124,96;2;5;oui
+CMD-251216-6072;16/12/2025;SEO;Île-de-France;Colissimo;4;116,28;2;3;oui
+CMD-251216-6333;16/12/2025;Email;Grand Est;Chronopost;2;29,78;1;3;non
+CMD-251216-2878;16/12/2025;SEA;Hauts-de-France;Chronopost;1;23,45;1;4;oui
+CMD-251216-9918;16/12/2025;Réseaux sociaux;Île-de-France;Colissimo;4;15,05;5;2;non
+CMD-251216-6646;16/12/2025;Réseaux sociaux;Île-de-France;Colissimo;1;25,45;3;4;non
+CMD-251217-7234;17/12/2025;SEO;Île-de-France;Colissimo;3;31,07;4;3;oui
+CMD-251217-2083;17/12/2025;Réseaux sociaux;Nouvelle-Aquitaine;Mondial Relay;5;34,58;2;3;non
+CMD-251217-1355;17/12/2025;SEA;Auvergne-Rhône-Alpes;Mondial Relay;4;112,74;4;3;oui
+CMD-251217-8274;17/12/2025;Réseaux sociaux;Île-de-France;Colissimo;4;98,3;4;4;oui
+CMD-251217-1078;17/12/2025;SEO;Nouvelle-Aquitaine;Colissimo;2;53,32;3;5;non
+CMD-251218-1229;18/12/2025;Email;Île-de-France;Chronopost;1;94,72;1;4;non
+CMD-251218-1490;18/12/2025;Direct;Nouvelle-Aquitaine;Colissimo;1;24,16;3;4;non
+CMD-251218-8449;18/12/2025;Réseaux sociaux;Occitanie;Colissimo;2;48,65;4;3;oui
+CMD-251218-7255;18/12/2025;SEO;Grand Est;Mondial Relay;3;20,33;2;4;non
+CMD-251218-1744;18/12/2025;SEO;Nouvelle-Aquitaine;Colissimo;1;85,3;2;4;non
+CMD-251218-6572;18/12/2025;SEO;Grand Est;Colissimo;2;56,07;4;4;oui
+CMD-251218-3800;18/12/2025;SEO;Grand Est;Chronopost;2;59,03;1;4;oui
+CMD-251219-6159;19/12/2025;SEA;Île-de-France;Colissimo;3;77,86;3;4;non
+CMD-251219-7136;19/12/2025;SEO;Grand Est;Chronopost;4;39,4;2;4;oui
+CMD-251219-1540;19/12/2025;Email;Occitanie;Colissimo;4;53,4;3;3;non
+CMD-251219-6983;19/12/2025;Direct;Occitanie;Chronopost;2;54,12;1;5;oui
+CMD-251219-6078;19/12/2025;SEA;Hauts-de-France;Colissimo;2;119,71;4;3;non
+CMD-251219-4043;19/12/2025;SEO;Hauts-de-France;Colissimo;2;45,64;4;4;oui
+CMD-251219-3531;19/12/2025;SEO;Grand Est;Colissimo;3;49,09;3;4;non
+CMD-251220-3968;20/12/2025;SEO;Île-de-France;Mondial Relay;2;73,4;4;4;non
+CMD-251220-9845;20/12/2025;SEO;Hauts-de-France;Colissimo;4;39,62;5;4;non
+CMD-251220-5872;20/12/2025;Email;Nouvelle-Aquitaine;Colissimo;2;19,61;4;3;non
+CMD-251220-9664;20/12/2025;SEA;Bretagne;Mondial Relay;1;14,07;3;4;non
+CMD-251221-2833;21/12/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Colissimo;2;16,99;4;3;non
+CMD-251221-8901;21/12/2025;Réseaux sociaux;Hauts-de-France;Mondial Relay;1;68,27;5;3;non
+CMD-251221-9101;21/12/2025;SEA;Île-de-France;Colissimo;1;69,4;3;5;non
+CMD-251221-5295;21/12/2025;Direct;Île-de-France;Colissimo;2;27,63;5;3;oui
+CMD-251221-9271;21/12/2025;Direct;PACA;Mondial Relay;3;25,84;4;2;non
+CMD-251221-3216;21/12/2025;Réseaux sociaux;Hauts-de-France;Mondial Relay;3;26,68;2;3;oui
+CMD-251221-7223;21/12/2025;SEA;Hauts-de-France;Colissimo;2;39,04;2;4;non
+CMD-251221-9935;21/12/2025;SEA;Hauts-de-France;Colissimo;2;33,36;4;4;oui
+CMD-251222-8777;22/12/2025;SEA;Nouvelle-Aquitaine;Colissimo;3;73,93;1;4;non
+CMD-251222-6948;22/12/2025;SEO;PACA;Mondial Relay;2;38,49;7;2;non
+CMD-251222-5467;22/12/2025;SEA;Nouvelle-Aquitaine;Chronopost;3;51,2;2;4;oui
+CMD-251223-2185;23/12/2025;SEO;PACA;Colissimo;3;58,95;5;3;non
+CMD-251223-4278;23/12/2025;SEA;PACA;Colissimo;4;44,41;2;4;oui
+CMD-251223-3881;23/12/2025;SEA;PACA;Mondial Relay;2;28,1;6;2;non
+CMD-251223-7098;23/12/2025;SEO;PACA;Mondial Relay;3;40,52;4;3;non
+CMD-251223-2852;23/12/2025;SEO;PACA;Chronopost;2;50,75;3;2;oui
+CMD-251223-5904;23/12/2025;SEO;Hauts-de-France;Mondial Relay;3;36,81;5;3;non
+CMD-251223-2294;23/12/2025;SEA;Île-de-France;Mondial Relay;2;270,44;3;3;oui
+CMD-251223-8950;23/12/2025;Réseaux sociaux;Auvergne-Rhône-Alpes;Mondial Relay;2;51,01;3;4;oui
+CMD-251223-4782;23/12/2025;SEO;PACA;Colissimo;1;25,36;3;4;oui
+CMD-251223-2978;23/12/2025;Email;Occitanie;Chronopost;3;89,33;2;5;non
+CMD-251224-4974;24/12/2025;Email;Bretagne;Mondial Relay;2;88,48;2;4;non
+CMD-251224-8099;24/12/2025;Direct;Île-de-France;Colissimo;5;24,61;2;3;oui
+CMD-251224-7483;24/12/2025;Réseaux sociaux;PACA;Chronopost;3;48,18;2;4;oui
+CMD-251224-6135;24/12/2025;Réseaux sociaux;Bretagne;Colissimo;3;32,41;5;2;oui
+CMD-251224-1349;24/12/2025;SEO;Île-de-France;Chronopost;2;39,8;1;5;non
+CMD-251224-8660;24/12/2025;SEA;Occitanie;Chronopost;3;26,55;1;4;oui
+CMD-251225-8013;25/12/2025;SEO;PACA;Mondial Relay;2;26,64;4;3;oui
+CMD-251225-7409;25/12/2025;Email;Auvergne-Rhône-Alpes;Colissimo;4;46,7;2;4;non
+CMD-251225-8660;25/12/2025;Email;Nouvelle-Aquitaine;Chronopost;3;106,66;2;5;non
+CMD-251226-9922;26/12/2025;SEA;PACA;Chronopost;2;38,15;3;4;oui
+CMD-251226-8711;26/12/2025;SEA;Occitanie;Colissimo;2;18,95;7;2;non
+CMD-251226-8558;26/12/2025;SEA;Île-de-France;Mondial Relay;3;106,02;3;3;non
+CMD-251226-8389;26/12/2025;Direct;Bretagne;Mondial Relay;2;14,98;3;3;oui
+CMD-251226-9193;26/12/2025;SEA;Grand Est;Mondial Relay;2;21,9;4;2;non
+CMD-251226-7407;26/12/2025;SEO;Occitanie;Mondial Relay;2;38,99;4;4;non
+CMD-251227-1343;27/12/2025;Direct;Île-de-France;Chronopost;1;25,61;1;4;non
+CMD-251227-6073;27/12/2025;SEO;Île-de-France;Colissimo;2;59,43;1;5;non
+CMD-251227-9305;27/12/2025;SEO;Bretagne;Mondial Relay;4;22,09;2;3;non
+CMD-251227-1731;27/12/2025;Réseaux sociaux;Bretagne;Colissimo;1;13,96;3;3;non
+CMD-251227-6054;27/12/2025;Direct;Hauts-de-France;Colissimo;3;50,23;3;3;oui
+CMD-251227-6834;27/12/2025;Réseaux sociaux;Hauts-de-France;Colissimo;2;17,95;3;3;oui
+CMD-251228-5367;28/12/2025;SEO;Grand Est;Colissimo;3;32,9;1;4;non
+CMD-251228-5452;28/12/2025;SEA;Île-de-France;Chronopost;4;75,56;2;4;non
+CMD-251229-4580;29/12/2025;SEA;PACA;Chronopost;4;34,21;1;3;non
+CMD-251229-4851;29/12/2025;Réseaux sociaux;PACA;Colissimo;2;45,01;5;2;oui
+CMD-251230-1778;30/12/2025;SEA;Hauts-de-France;Colissimo;2;63,03;2;3;non
+CMD-251230-7838;30/12/2025;SEO;Hauts-de-France;Mondial Relay;3;16,76;3;4;oui
+CMD-251230-1301;30/12/2025;Direct;Hauts-de-France;Colissimo;2;112,09;6;2;oui
+CMD-251230-8774;30/12/2025;SEA;Grand Est;Colissimo;3;31,75;3;4;non
+CMD-251230-7461;30/12/2025;SEO;Grand Est;Colissimo;1;47,78;3;3;non
+CMD-251230-8443;30/12/2025;Email;Nouvelle-Aquitaine;Colissimo;1;17,84;2;3;non
+CMD-251230-3266;30/12/2025;SEO;Île-de-France;Colissimo;5;35,02;3;4;oui
+CMD-251230-8109;30/12/2025;Email;Île-de-France;Chronopost;2;58,19;1;3;oui
+CMD-251230-4754;30/12/2025;Email;Hauts-de-France;Chronopost;4;37,17;2;4;non
+CMD-251231-6685;31/12/2025;SEA;PACA;Colissimo;2;60,52;3;4;non
+CMD-251231-8882;31/12/2025;SEO;Nouvelle-Aquitaine;Colissimo;1;80,87;4;2;oui
+CMD-251231-3906;31/12/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;3;18,58;3;3;non
+CMD-251231-3448;31/12/2025;SEA;Auvergne-Rhône-Alpes;Colissimo;5;127,21;4;2;oui
+CMD-251231-6255;31/12/2025;Réseaux sociaux;Île-de-France;Mondial Relay;2;15,53;3;5;non
+CMD-251231-4119;31/12/2025;SEO;Auvergne-Rhône-Alpes;Mondial Relay;2;34,48;3;3;non
+CMD-260101-8786;01/01/2026;SEO;Île-de-France;Colissimo;4;78,42;3;5;non
+CMD-260101-1358;01/01/2026;Email;Occitanie;Colissimo;3;31,59;4;4;non
+CMD-260102-3095;02/01/2026;SEO;PACA;Mondial Relay;3;54,25;2;4;oui
+CMD-260102-7269;02/01/2026;SEA;Occitanie;Colissimo;3;36,32;2;3;oui
+CMD-260102-6758;02/01/2026;Email;Île-de-France;Colissimo;4;108,64;5;3;oui
+CMD-260102-8919;02/01/2026;Email;Hauts-de-France;Chronopost;1;28,11;2;5;non
+CMD-260103-4608;03/01/2026;SEO;Île-de-France;Chronopost;3;30,5;1;4;oui
+CMD-260103-5337;03/01/2026;Email;Occitanie;Colissimo;3;65,03;6;3;non
+CMD-260103-2707;03/01/2026;Email;PACA;Colissimo;7;67,51;5;3;non
+CMD-260103-7911;03/01/2026;Direct;Grand Est;Mondial Relay;2;69,28;3;3;oui
+CMD-260103-2373;03/01/2026;SEO;PACA;Colissimo;2;39,61;2;3;oui
+CMD-260103-9741;03/01/2026;SEO;Auvergne-Rhône-Alpes;Colissimo;1;19,14;5;2;non
+CMD-260104-6557;04/01/2026;Email;Nouvelle-Aquitaine;Mondial Relay;2;52,21;2;4;non
+CMD-260104-5193;04/01/2026;SEA;Bretagne;Mondial Relay;2;53,55;4;4;oui
+CMD-260104-9426;04/01/2026;SEA;Occitanie;Colissimo;3;21,79;2;4;non
+CMD-260104-2299;04/01/2026;SEO;PACA;Colissimo;2;26,38;2;4;oui
+CMD-260104-1790;04/01/2026;Email;Bretagne;Colissimo;1;55,42;2;3;non
+CMD-260104-3723;04/01/2026;Direct;Hauts-de-France;Colissimo;2;28,24;2;3;oui
