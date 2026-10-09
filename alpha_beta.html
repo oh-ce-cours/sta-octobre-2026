@@ -84,6 +84,13 @@ canvas{display:block;width:100%;height:auto}
 .say p{margin:0 0 6px;max-width:80ch}
 .say p:last-child{margin:0}
 .say b{font-weight:500}
+.say.verdict{border-left-color:var(--samp)}
+.say.verdict .ok{color:var(--dist);font-weight:500}
+.say.verdict .ko{color:var(--bad);font-weight:500}
+.controls.draw{border-color:var(--samp-soft)}
+.radios{display:flex;flex-wrap:wrap;gap:4px 14px}
+.radios label{font-size:14px;color:var(--ink);display:inline-flex;gap:5px;align-items:center}
+.btn.primary{background:var(--samp);border-color:var(--samp);color:#fff}
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
 </style>
 
@@ -108,6 +115,23 @@ canvas{display:block;width:100%;height:auto}
     </div>
   </div>
 
+  <div class="controls draw">
+    <div class="ctl">
+      <label>Dans la vraie vie, le médicament…</label>
+      <div class="radios">
+        <label><input type="radio" name="monde" value="h0"> ne fait rien</label>
+        <label><input type="radio" name="monde" value="h1"> baisse la fièvre de l'effet choisi</label>
+        <label><input type="radio" name="monde" value="cache" checked> on ne vous le dit pas</label>
+      </div>
+    </div>
+    <div class="btnrow">
+      <button class="btn primary" id="tirer">Tirer une étude</button>
+      <button class="btn" id="tirer100">Tirer 100 études</button>
+      <button class="btn" id="reveler" hidden>Révéler la vérité</button>
+      <button class="btn" id="effacer">Effacer les études</button>
+    </div>
+  </div>
+
   <div class="grid">
     <div class="panel">
       <h2>Ce que donnerait l'écart de moyennes, dans les deux mondes</h2>
@@ -119,8 +143,10 @@ canvas{display:block;width:100%;height:auto}
         <span><i class="sw" style="background:var(--h0-soft)"></i>α : faux positifs</span>
         <span><i class="sw" style="background:var(--h1-soft)"></i>β : faux négatifs</span>
         <span><i class="sw line" style="background:var(--bad)"></i>seuil S</span>
+        <span><i class="sw line" style="background:var(--samp)"></i>écart observé dans l'étude tirée</span>
       </div>
       <div class="say" id="say"></div>
+      <div class="say verdict" id="verdict" hidden></div>
     </div>
 
     <div class="panel">
@@ -132,6 +158,14 @@ canvas{display:block;width:100%;height:auto}
         <div class="tile b"><div class="k">puissance 1 − β</div><div class="v" id="power">–</div></div>
         <div class="tile"><div class="k">erreur standard de l'écart</div><div class="v" id="se">–</div></div>
         <div class="tile big"><div class="k">pour α = 5 % et 80 % de puissance, il faudrait</div><div class="v" id="need">–</div></div>
+      </div>
+      <h2 style="margin-top:14px">Les études tirées</h2>
+      <p class="hint">Chaque étude tire vraiment n patients par groupe. Déplacez S : les décisions se recalculent.</p>
+      <div class="tiles">
+        <div class="tile a"><div class="k">études où il ne faisait rien</div><div class="v" id="cH0">0</div></div>
+        <div class="tile a"><div class="k">dont faux positifs (théorie : α)</div><div class="v" id="cFP">–</div></div>
+        <div class="tile b"><div class="k">études où il marchait</div><div class="v" id="cH1">0</div></div>
+        <div class="tile b"><div class="k">dont faux négatifs (théorie : β)</div><div class="v" id="cFN">–</div></div>
       </div>
     </div>
   </div>
@@ -153,6 +187,22 @@ canvas{display:block;width:100%;height:auto}
 
   const P = () => ({ n: +$('n').value, d: +$('d').value, s: +$('s').value, S: +$('S').value });
   const se = p => p.s * Math.sqrt(2 / p.n);
+
+  // études tirées : { ecart, h1 (vérité), mPl, mMed, revele }
+  let draws = [];
+  const randn = () => { let u = 0, v = 0; while (u === 0) u = Math.random(); while (v === 0) v = Math.random(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); };
+  const monde = () => document.querySelector('input[name=monde]:checked').value;
+  function tirer(k) {
+    const p = P();
+    for (let i = 0; i < k; i++) {
+      const m = monde(); const h1 = m === 'h1' ? true : m === 'h0' ? false : Math.random() < 0.5;
+      let sPl = 0, sMed = 0;
+      for (let j = 0; j < p.n; j++) { sPl += 38.9 + p.s * randn(); sMed += 38.9 - (h1 ? p.d : 0) + p.s * randn(); }
+      const mPl = sPl / p.n, mMed = sMed / p.n;
+      draws.push({ ecart: mPl - mMed, h1, mPl, mMed, revele: m !== 'cache' });
+    }
+    render();
+  }
 
   function compute() {
     const p = P(); const e = se(p);
@@ -201,6 +251,47 @@ canvas{display:block;width:100%;height:auto}
     ctx.fillText('H₀', X(0), Y(pdf(0, 0, c.e)) - 8); ctx.fillText('H₁', X(c.d), Y(pdf(0, 0, c.e)) - 8);
     ctx.fillStyle = css('--ink-3'); ctx.font = '12px "IBM Plex Sans", sans-serif';
     ctx.fillText('« rien vu »', (X(xmin) + X(c.S)) / 2, padT + 12); ctx.fillText('« il marche »', (X(c.S) + X(xmax)) / 2, padT + 12);
+
+    // études tirées : un trait par étude sur l'axe, le dernier en évidence
+    const y0 = Y(0);
+    draws.slice(-300).forEach(dr => {
+      ctx.strokeStyle = dr.revele ? (dr.h1 ? css('--h1') : css('--h0')) : css('--ink-3');
+      ctx.globalAlpha = 0.55; ctx.lineWidth = 1.5;
+      ctx.beginPath(); ctx.moveTo(X(dr.ecart), y0 + 2); ctx.lineTo(X(dr.ecart), y0 + 14); ctx.stroke();
+      ctx.globalAlpha = 1;
+    });
+    const last = draws[draws.length - 1];
+    if (last) {
+      ctx.strokeStyle = css('--samp'); ctx.lineWidth = 3;
+      ctx.beginPath(); ctx.moveTo(X(last.ecart), padT + 22); ctx.lineTo(X(last.ecart), y0 + 14); ctx.stroke();
+      ctx.fillStyle = css('--samp'); ctx.beginPath(); ctx.arc(X(last.ecart), y0, 5, 0, 2 * Math.PI); ctx.fill();
+      ctx.font = '13px "IBM Plex Sans", sans-serif'; ctx.textAlign = last.ecart > c.S ? 'left' : 'right';
+      ctx.fillText('observé ' + fr(last.ecart).replace('-', '−') + ' °C', X(last.ecart) + (last.ecart > c.S ? 8 : -8), y0 - 10);
+    }
+  }
+
+  function verdict(c) {
+    const box = $('verdict'); const last = draws[draws.length - 1];
+    const h0 = draws.filter(d => d.revele && !d.h1), h1 = draws.filter(d => d.revele && d.h1);
+    const fp = h0.filter(d => d.ecart > c.S).length, fn = h1.filter(d => d.ecart <= c.S).length;
+    $('cH0').textContent = h0.length; $('cH1').textContent = h1.length;
+    $('cFP').textContent = h0.length ? `${fp} (${pct(fp / h0.length)})` : '–';
+    $('cFN').textContent = h1.length ? `${fn} (${pct(fn / h1.length)})` : '–';
+    $('reveler').hidden = !draws.some(d => !d.revele);
+    if (!last) { box.hidden = true; return; }
+    box.hidden = false;
+    const rejette = last.ecart > c.S;
+    const pval = 1 - Phi(last.ecart / c.e);
+    let t = `<p>Étude tirée : placebo ${fr(last.mPl)} °C, médicament ${fr(last.mMed)} °C, soit un écart de <b>${fr(last.ecart).replace('-', '−')} °C</b> (p = ${pval < 0.001 ? '< 0,001' : fr(pval, 3)}). `;
+    const e3 = fr(last.ecart, 3).replace('-', '−');
+    t += rejette ? `${e3} > S = ${fr(c.S)} : on conclut <b>« il marche »</b>.</p>` : `${e3} ≤ S = ${fr(c.S)} : on conclut <b>« rien vu »</b>.</p>`;
+    if (!last.revele) t += `<p>La vérité est cachée : vous avez décidé comme on décide toujours, sans la connaître. Cliquez « Révéler la vérité ».</p>`;
+    else if (last.h1 && rejette) t += `<p>Vérité : il marche. <span class="ok">Décision correcte</span> (vrai positif).</p>`;
+    else if (!last.h1 && !rejette) t += `<p>Vérité : il ne fait rien. <span class="ok">Décision correcte</span> (vrai négatif).</p>`;
+    else if (!last.h1 && rejette) t += `<p>Vérité : il ne fait rien. <span class="ko">Faux positif</span> : le hasard du tirage a produit un écart au-delà de S. C'est le risque α, ${pct(c.alpha)} des études de ce type.</p>`;
+    else t += `<p>Vérité : il marche de ${fr(c.d)} °C. <span class="ko">Faux négatif</span> : l'effet existe mais cette étude ne l'a pas vu. C'est le risque β, ${pct(c.beta)} des études de ce type. Absence de preuve, pas preuve d'absence.</p>`;
+    if (h0.length + h1.length >= 20) t += `<p>Sur ${h0.length + h1.length} études révélées : ${pct(h0.length ? fp / h0.length : 0)} de faux positifs (théorie α = ${pct(c.alpha)}) et ${pct(h1.length ? fn / h1.length : 0)} de faux négatifs (théorie β = ${pct(c.beta)}).</p>`;
+    box.innerHTML = t;
   }
 
   function say(c) {
@@ -217,14 +308,19 @@ canvas{display:block;width:100%;height:auto}
     $('alpha').textContent = pct(c.alpha); $('beta').textContent = pct(c.beta); $('power').textContent = pct(1 - c.beta);
     $('se').innerHTML = fr(c.e) + ' <small>°C = σ·√(2/n)</small>';
     $('need').innerHTML = c.need.toLocaleString('fr-FR') + ' <small>patients par groupe</small>';
-    draw(c); say(c);
+    draw(c); say(c); verdict(c);
   }
 
   const setAlpha = a => { const p = P(); $('S').value = (PhiInv(1 - a) * se(p)).toFixed(2); render(); };
   $('set5').addEventListener('click', () => setAlpha(0.05));
   $('set1').addEventListener('click', () => setAlpha(0.01));
-  $('reset').addEventListener('click', () => { $('n').value = 20; $('d').value = 0.5; $('s').value = 0.5; $('S').value = 0.31; render(); });
-  ['n', 'd', 's', 'S'].forEach(id => $(id).addEventListener('input', render));
+  $('reset').addEventListener('click', () => { $('n').value = 20; $('d').value = 0.5; $('s').value = 0.5; $('S').value = 0.31; draws = []; render(); });
+  $('S').addEventListener('input', render);
+  ['n', 'd', 's'].forEach(id => $(id).addEventListener('input', () => { draws = []; render(); }));   // les études tirées ne valent que pour ces paramètres
+  $('tirer').addEventListener('click', () => tirer(1));
+  $('tirer100').addEventListener('click', () => tirer(100));
+  $('reveler').addEventListener('click', () => { draws.forEach(d => d.revele = true); render(); });
+  $('effacer').addEventListener('click', () => { draws = []; render(); });
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change', render);
   render();
 })();
