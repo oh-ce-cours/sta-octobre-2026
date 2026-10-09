@@ -143,6 +143,9 @@ table.t td.dim{color:var(--ink-3)}
     requestAnimationFrame(frame);
   }
 
+  // garantit qu'un monde a bien ses N études (on peut sauter directement à une étape)
+  const ensure = h1 => { if (pts.filter(p => p.h1 === h1).length < st.N) { pts = pts.filter(p => p.h1 !== h1); launch(h1, st.N); } };
+
   function frame(now) {
     let moving = false;
     pts.forEach(p => {
@@ -209,15 +212,15 @@ table.t td.dim{color:var(--ink-3)}
       run() { pts = []; showS = false; dimH0 = false; highlight = null; lastSingle = null; launch(false, st.N); },
       text() { return `<p>Refaisons l'étude ${st.N} fois, toujours avec un médicament qui ne fait rien. Chaque point est une étude complète de 40 patients.</p><p>Les écarts s'empilent autour de 0, mais ils s'étalent : la largeur de la pile, c'est l'erreur standard, ${fr(se())} °C ici. Quelques études tombent loin, à 0,3 ou 0,4 °C, <b>sans qu'il y ait quoi que ce soit à trouver</b>.</p>`; } },
     { title: '3. Le seuil et les faux positifs',
-      run() { showS = true; dimH0 = false; highlight = 'fp'; lastSingle = null; if (!pts.some(p => !p.h1)) launch(false, st.N); else draw(); },
+      run() { showS = true; dimH0 = false; highlight = 'fp'; lastSingle = null; ensure(false); draw(); },
       table: true,
       text() { const c = counts(); return `<p>Il faut bien décider. On fixe un seuil : au-delà de S = ${fr(st.S)} °C, on dira « il marche ».</p><p>Problème : dans ce monde où il ne fait rien, ${c.fp} études sur ${c.nA} passent quand même le seuil (en rouge). On y conclura « il marche » à tort : ce sont les <b>faux positifs</b>, et leur part est le risque <b>α</b> : ${pct(c.fp / c.nA)} observé, ${pct(alpha())} en théorie.</p><p>α, c'est le prix d'avoir un seuil : on ne peut pas le mettre à 0 sans ne plus jamais rien conclure.</p>`; } },
     { title: '4. Le monde où il marche',
-      run() { showS = true; dimH0 = true; highlight = 'fn'; lastSingle = null; if (!pts.some(p => p.h1)) launch(true, st.N); else draw(); },
+      run() { showS = true; dimH0 = true; highlight = 'fn'; lastSingle = null; ensure(false); ensure(true); draw(); },
       table: true,
       text() { const c = counts(); return `<p>Même expérience dans l'autre monde : le médicament baisse vraiment la fièvre de ${fr(st.d)} °C. Les écarts s'empilent autour de ${fr(st.d)}.</p><p>Mais une partie des études tombe <b>sous</b> le seuil (en violet) : ${c.fn} sur ${c.nB}. On y conclura « rien vu » alors que l'effet existe : ce sont les <b>faux négatifs</b>, et leur part est le risque <b>β</b> : ${pct(c.fn / c.nB)} observé, ${pct(beta())} en théorie.</p><p>« Rien vu » n'est pas « il n'y a rien » : absence de preuve n'est pas preuve d'absence.</p>`; } },
     { title: '5. Bouger le seuil',
-      run() { showS = true; dimH0 = false; highlight = 'both'; lastSingle = null; if (!pts.some(p => !p.h1)) launch(false, st.N); if (!pts.some(p => p.h1)) launch(true, st.N); draw(); },
+      run() { showS = true; dimH0 = false; highlight = 'both'; lastSingle = null; ensure(false); ensure(true); draw(); },
       text() { const c = counts(); return `<p>Les deux mondes ensemble. Déplacez le seuil.</p><p>Vers la droite : moins de faux positifs (α baisse), plus de faux négatifs (β monte). Vers la gauche : l'inverse. <b>À données égales, l'un se paie avec l'autre.</b></p><p>Pour S = ${fr(st.S)} : α ≈ ${pct(alpha())} (${c.fp} sur ${c.nA}), β ≈ ${pct(beta())} (${c.fn} sur ${c.nB}). D'habitude on fixe α à 5 % et on regarde ce que ça laisse comme β.</p>`; },
       ctl: ['S'], table: true },
     { title: '6. Plus de patients',
@@ -225,7 +228,7 @@ table.t td.dim{color:var(--ink-3)}
       text() { const c = counts(); return `<p>La seule façon de faire baisser les deux risques en même temps : <b>plus de patients</b>. Les piles se resserrent (erreur standard ${fr(se())} °C avec ${st.n} patients par groupe) et se chevauchent moins.</p><p>Au même seuil S = ${fr(st.S)} : α ≈ ${pct(alpha())}, β ≈ ${pct(beta())}. Avec 80 patients par groupe, les deux piles ne se touchent presque plus : le seuil tranche sans se tromper.</p><p>C'est pour cela qu'on calcule le nombre de patients <b>avant</b> l'étude : on choisit α, la puissance 1 − β qu'on veut, le plus petit effet qui compte, et le nombre en découle.</p>`; },
       ctl: ['n'], table: true },
     { title: '7. Le tableau',
-      run() { showS = true; dimH0 = false; highlight = 'both'; lastSingle = null; if (!pts.some(p => !p.h1)) launch(false, st.N); if (!pts.some(p => p.h1)) launch(true, st.N); draw(); },
+      run() { showS = true; dimH0 = false; highlight = 'both'; lastSingle = null; ensure(false); ensure(true); draw(); },
       text() { return `<p>Tout tient dans un tableau à quatre cases, à lire <b>par colonne</b> : chaque colonne est un monde, et dans chaque monde on se trompe une partie du temps.</p><p>On ne sait jamais dans quelle colonne on est : c'est justement ce qu'on cherche. Ce qu'on contrôle, c'est α (par le seuil) et β (par le nombre de patients et la taille de l'effet qu'on veut voir).</p><p>Les trois curseurs sont libres : un gros effet ou beaucoup de patients écartent les deux piles, un seuil déplacé fait passer l'erreur d'une case à l'autre.</p>`; },
       ctl: ['S', 'n', 'd'], table: true },
   ];
