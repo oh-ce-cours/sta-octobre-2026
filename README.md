@@ -19,6 +19,7 @@ Ce dossier est mis à jour en continu pendant les deux jours : `git pull` (ou Co
 | `echantillonnage.html` | une animation à ouvrir dans un navigateur, hors ligne : la moyenne d'un échantillon, mille fois | jour 1 après-midi |
 | `risques.html` | une seconde animation, même principe : mille médicaments testés, faux positifs et faux négatifs | jour 2 matin |
 | `alpha_beta.html` | le seuil de décision et les deux risques, avec le nombre de patients et la variabilité | jour 2 matin |
+| `alpha_beta_explique.html` | les risques Î± et Î² expliquÃ©s en sept Ã©tapes, chaque point qui tombe est une Ã©tude | jour 2 matin, avant les deux autres |
 
 Les corrections sont ajoutées dans ce dossier à la fin de la formation.
 

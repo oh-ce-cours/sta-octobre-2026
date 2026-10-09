@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Faux positifs, faux négatifs</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --bg:#f5f6f3; --surface:#fdfdfb; --line:#e3e6df; --line-2:#cfd4cb;
+  --ink:#171d19; --ink-2:#4d564f; --ink-3:#7d867e;
+  --pop:#2a78d6; --samp:#eb6834; --dist:#1baf7a; --bad:#e34948;
+  --h0:#171d19; --h0-soft:rgba(23,29,25,.18);
+  --h1:#2a78d6; --h1-soft:rgba(42,120,214,.2);
+  --focus:#2a78d6;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#151816; --surface:#1c201d; --line:#2b312d; --line-2:#3a423c;
+    --ink:#f2f4f0; --ink-2:#c1c7c0; --ink-3:#8a938c;
+    --pop:#3987e5; --samp:#e8683a; --dist:#22b982; --bad:#e66767;
+    --h0:#f2f4f0; --h0-soft:rgba(242,244,240,.2);
+    --h1:#3987e5; --h1-soft:rgba(57,135,229,.24);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#151816; --surface:#1c201d; --line:#2b312d; --line-2:#3a423c;
+  --ink:#f2f4f0; --ink-2:#c1c7c0; --ink-3:#8a938c;
+  --pop:#3987e5; --samp:#e8683a; --dist:#22b982; --bad:#e66767;
+  --h0:#f2f4f0; --h0-soft:rgba(242,244,240,.2);
+  --h1:#3987e5; --h1-soft:rgba(57,135,229,.24);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:15px;line-height:1.45}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 16px 40px}
+h1{font-family:"Sora",sans-serif;font-weight:600;font-size:clamp(22px,3vw,30px);margin:0;letter-spacing:-.01em}
+.sub{color:var(--ink-2);margin:6px 0 16px;max-width:70ch}
+.tag{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:14px}
+@media (max-width:860px){.grid{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-width:0}
+canvas{display:block;width:100%;height:auto}
+.steps{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.step{font-family:"IBM Plex Mono",monospace;font-size:12px;padding:4px 9px;border-radius:999px;border:1px solid var(--line-2);color:var(--ink-3);background:var(--bg);cursor:pointer}
+.step.on{background:var(--pop);border-color:var(--pop);color:#fff}
+.step.done{color:var(--ink)}
+.story h2{font-family:"Sora",sans-serif;font-weight:600;font-size:17px;margin:0 0 8px}
+.story p{margin:0 0 8px;max-width:60ch}
+.story b{font-weight:500}
+.btn{appearance:none;font:inherit;font-weight:500;border:1px solid var(--line-2);background:var(--bg);color:var(--ink);border-radius:8px;padding:7px 12px;cursor:pointer}
+.btn.primary{background:var(--pop);border-color:var(--pop);color:#fff}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+button:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.ctl{margin-top:10px}
+.ctl label{display:flex;justify-content:space-between;color:var(--ink-2);font-size:14px}
+.ctl output{font-family:"IBM Plex Mono",monospace;color:var(--ink)}
+input[type=range]{width:100%;accent-color:var(--pop)}
+table.t{border-collapse:collapse;width:100%;margin-top:10px;font-size:14px}
+table.t th,table.t td{border:1px solid var(--line);padding:7px 8px;text-align:center;vertical-align:top}
+table.t th{font-weight:500;color:var(--ink-2);background:var(--bg)}
+table.t td .v{font-family:"IBM Plex Mono",monospace;font-size:18px}
+table.t td.ok{color:var(--dist)} table.t td.ko{color:var(--bad)}
+table.t td.dim{color:var(--ink-3)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--ink-2);margin-top:8px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:11px;height:11px;border-radius:50%;display:inline-block}
+.sw.line{height:2px;width:16px;border-radius:1px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="tag">Tests d'hypothèses · α et β · en sept étapes</div>
+  <h1>Faux positifs, faux négatifs</h1>
+  <p class="sub">Un médicament contre la fièvre, deux groupes de 20 patients, et une seule question : l'écart entre les deux moyennes est-il assez grand pour conclure ? Suivez les étapes, chaque point qui tombe est une étude complète.</p>
+
+  <div class="grid">
+    <div class="panel">
+      <div class="steps" id="steps"></div>
+      <canvas id="c" width="760" height="380" role="img" aria-label="Des points représentant des études tombent et s'empilent le long d'un axe d'écart de température, avec un seuil vertical"></canvas>
+      <div class="legend">
+        <span><i class="sw" style="background:var(--h0)"></i>étude faite dans un monde où le médicament ne fait rien</span>
+        <span><i class="sw" style="background:var(--h1)"></i>étude faite dans un monde où il marche</span>
+        <span><i class="sw line" style="background:var(--bad)"></i>seuil S</span>
+      </div>
+    </div>
+
+    <div class="panel story">
+      <div id="story"></div>
+      <div class="ctl" id="ctlS" hidden><label for="S">Seuil S (°C d'écart) <output id="SOut"></output></label><input type="range" id="S" min="0" max="0.9" step="0.01"></div>
+      <div class="ctl" id="ctlN" hidden><label for="n">Patients par groupe <output id="nOut"></output></label><input type="range" id="n" min="5" max="120" step="5"></div>
+      <table class="t" id="tbl" hidden>
+        <tr><th></th><th>il ne fait rien</th><th>il marche</th></tr>
+        <tr><th>« rien vu »</th><td id="t00"></td><td id="t01"></td></tr>
+        <tr><th>« il marche »</th><td id="t10"></td><td id="t11"></td></tr>
+      </table>
+      <div class="btnrow">
+        <button class="btn" id="prev">Précédent</button>
+        <button class="btn primary" id="next">Suivant</button>
+        <button class="btn" id="replay">Rejouer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const cv = $('c'), ctx = cv.getContext('2d');
+  const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+  const fr = (x, d = 2) => x.toLocaleString('fr-FR', { minimumFractionDigits: d, maximumFractionDigits: d });
+  const pct = x => (100 * x).toLocaleString('fr-FR', { maximumFractionDigits: 1 }) + ' %';
+  const erf = x => { const t = 1 / (1 + 0.3275911 * Math.abs(x)); const y = 1 - (((((1.061405429 * t - 1.453152027) * t) + 1.421413741) * t - 0.284496736) * t + 0.254829592) * t * Math.exp(-x * x); return x < 0 ? -y : y; };
+  const Phi = z => 0.5 * (1 + erf(z / Math.SQRT2));
+  const randn = () => { let u = 0, v = 0; while (u === 0) u = Math.random(); while (v === 0) v = Math.random(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); };
+
+  // paramètres de l'histoire
+  const st = { n: 20, s: 0.5, d: 0.5, S: 0.26, N: 150 };
+  const se = () => st.s * Math.sqrt(2 / st.n);
+
+  // une étude : n patients par groupe, renvoie l'écart placebo - médicament
+  const etude = h1 => { let a = 0, b = 0; for (let j = 0; j < st.n; j++) { a += st.s * randn(); b += (h1 ? -st.d : 0) + st.s * randn(); } return a / st.n - b / st.n; };
+
+  // points animés : { x (écart), h1, y0 (hauteur de départ), t0 (départ), landed }
+  let pts = [], showS = false, dimH0 = false, highlight = null, lastSingle = null;
+  const xmin = -0.9, xmax = 1.4, bin = 0.04;
+  const W = cv.width, H = cv.height, padL = 30, padR = 16, padB = 40, r = 3.5, step = 2 * r + 0.5;
+  const X = x => padL + (x - xmin) / (xmax - xmin) * (W - padL - padR);
+  const y0 = H - padB;
+
+  // chaque point connaît sa place dans la pile dès le départ (une pile par bac, les deux mondes mélangés)
+  function launch(h1, count, delay = 12) {
+    const t = performance.now();
+    for (let i = 0; i < count; i++) pts.push({ x: etude(h1), h1, t0: t + i * delay, landed: false, stack: 0 });
+    const piles = {};
+    pts.slice().sort((a, b) => a.t0 - b.t0).forEach(p => { const k = Math.floor((p.x - xmin) / bin); piles[k] = (piles[k] || 0) + 1; p.stack = piles[k]; });
+    requestAnimationFrame(frame);
+  }
+
+  function frame(now) {
+    let moving = false;
+    pts.forEach(p => {
+      if (p.landed) return;
+      if (now < p.t0) { moving = true; return; }
+      if (now - p.t0 > 450) p.landed = true; else moving = true;
+    });
+    draw(now);
+    if (moving) requestAnimationFrame(frame);
+  }
+
+  function draw(now = performance.now()) {
+    ctx.clearRect(0, 0, W, H);
+    // axe
+    ctx.strokeStyle = css('--line-2'); ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(padL, y0); ctx.lineTo(W - padR, y0); ctx.stroke();
+    ctx.fillStyle = css('--ink-3'); ctx.font = '12px "IBM Plex Mono", monospace'; ctx.textAlign = 'center';
+    for (let x = -0.5; x <= 1.0; x += 0.5) { ctx.fillText(fr(x, 1).replace('-', '−'), X(x), y0 + 16); }
+    ctx.font = '12px "IBM Plex Sans", sans-serif';
+    ctx.fillText('écart observé placebo − médicament (°C) : 0 = aucune différence', (padL + W - padR) / 2, H - 6);
+
+    // seuil
+    if (showS) {
+      ctx.strokeStyle = css('--bad'); ctx.lineWidth = 2; ctx.setLineDash([6, 4]);
+      ctx.beginPath(); ctx.moveTo(X(st.S), 18); ctx.lineTo(X(st.S), y0); ctx.stroke(); ctx.setLineDash([]);
+      ctx.fillStyle = css('--bad'); ctx.font = '13px "IBM Plex Sans", sans-serif'; ctx.textAlign = 'left';
+      ctx.fillText('S = ' + fr(st.S) + ' °C', X(st.S) + 6, 14);
+      ctx.fillStyle = css('--ink-3'); ctx.font = '12px "IBM Plex Sans", sans-serif'; ctx.textAlign = 'center';
+      ctx.fillText('← « rien vu »', X(st.S) - 60, 32); ctx.fillText('« il marche » →', X(st.S) + 70, 32);
+    }
+
+    // points
+    const h0c = css('--h0'), h1c = css('--h1'), bad = css('--bad');
+    pts.forEach(p => {
+      if (now < p.t0) return;
+      const yEnd = y0 - r - 1 - (p.stack - 1) * step;
+      let y = yEnd;
+      if (!p.landed) { const k = Math.min(1, (now - p.t0) / 450); y = 20 + (yEnd - 20) * (k * k); }
+      const dim = dimH0 && !p.h1;
+      const wrong = !dim && showS && highlight && ((highlight === 'fp' && !p.h1 && p.x > st.S) || (highlight === 'fn' && p.h1 && p.x <= st.S) || (highlight === 'both' && ((!p.h1 && p.x > st.S) || (p.h1 && p.x <= st.S))));
+      ctx.beginPath(); ctx.arc(X(p.x), y, r, 0, 2 * Math.PI);
+      ctx.fillStyle = wrong ? bad : (p.h1 ? h1c : h0c); ctx.globalAlpha = dim ? 0.12 : wrong ? 1 : 0.85; ctx.fill(); ctx.globalAlpha = 1;
+    });
+    if (lastSingle !== null) {
+      ctx.fillStyle = css('--samp'); ctx.font = '13px "IBM Plex Sans", sans-serif'; ctx.textAlign = 'center';
+      ctx.fillText('cette étude : ' + fr(lastSingle).replace('-', '−') + ' °C', X(lastSingle), y0 - 30);
+    }
+  }
+
+  // comptes
+  const counts = () => {
+    const a = pts.filter(p => !p.h1), b = pts.filter(p => p.h1);
+    return { nA: a.length, fp: a.filter(p => p.x > st.S).length, nB: b.length, fn: b.filter(p => p.x <= st.S).length };
+  };
+  const alpha = () => 1 - Phi(st.S / se()), beta = () => Phi((st.S - st.d) / se());
+
+  // ---- les étapes ----
+  const steps = [
+    { title: '1. Une étude, c\'est un tirage',
+      run() { pts = []; showS = false; dimH0 = false; highlight = null; lastSingle = etude(false); pts.push({ x: lastSingle, h1: false, t0: performance.now(), landed: false, stack: 0 }); requestAnimationFrame(frame); },
+      text() { return `<p>On tire 20 patients pour le placebo, 20 pour le médicament, on mesure la fièvre le lendemain et on fait la différence des deux moyennes. Ici, le médicament <b>ne fait rien</b> : la vraie différence est 0.</p><p>Et pourtant l'écart observé n'est pas 0 : ${fr(lastSingle).replace('-', '−')} °C. C'est le hasard du tirage : ces 40 patients-là, pas d'autres.</p><p>Cliquez « Rejouer » plusieurs fois : l'écart change à chaque étude.</p>`; } },
+    { title: '2. Le monde où il ne fait rien',
+      run() { pts = []; showS = false; dimH0 = false; highlight = null; lastSingle = null; launch(false, st.N); },
+      text() { return `<p>Refaisons l'étude ${st.N} fois, toujours avec un médicament qui ne fait rien. Chaque point est une étude complète de 40 patients.</p><p>Les écarts s'empilent autour de 0, mais ils s'étalent : la largeur de la pile, c'est l'erreur standard, ${fr(se())} °C ici. Quelques études tombent loin, à 0,3 ou 0,4 °C, <b>sans qu'il y ait quoi que ce soit à trouver</b>.</p>`; } },
+    { title: '3. Le seuil et les faux positifs',
+      run() { showS = true; dimH0 = false; highlight = 'fp'; lastSingle = null; if (!pts.some(p => !p.h1)) launch(false, st.N); else draw(); },
+      text() { const c = counts(); return `<p>Il faut bien décider. On fixe un seuil : au-delà de S = ${fr(st.S)} °C, on dira « il marche ».</p><p>Problème : dans ce monde où il ne fait rien, ${c.fp} études sur ${c.nA} passent quand même le seuil (en rouge). On y conclura « il marche » à tort : ce sont les <b>faux positifs</b>, et leur part est le risque <b>α</b> : ${pct(c.fp / c.nA)} observé, ${pct(alpha())} en théorie.</p><p>α, c'est le prix d'avoir un seuil : on ne peut pas le mettre à 0 sans ne plus jamais rien conclure.</p>`; } },
+    { title: '4. Le monde où il marche',
+      run() { showS = true; dimH0 = true; highlight = 'fn'; lastSingle = null; if (!pts.some(p => p.h1)) launch(true, st.N); else draw(); },
+      text() { const c = counts(); return `<p>Même expérience dans l'autre monde : le médicament baisse vraiment la fièvre de ${fr(st.d)} °C. Les écarts s'empilent autour de ${fr(st.d)}.</p><p>Mais une partie des études tombe <b>sous</b> le seuil (en rouge) : ${c.fn} sur ${c.nB}. On y conclura « rien vu » alors que l'effet existe : ce sont les <b>faux négatifs</b>, et leur part est le risque <b>β</b> : ${pct(c.fn / c.nB)} observé, ${pct(beta())} en théorie.</p><p>« Rien vu » n'est pas « il n'y a rien » : absence de preuve n'est pas preuve d'absence.</p>`; } },
+    { title: '5. Bouger le seuil',
+      run() { showS = true; dimH0 = false; highlight = 'both'; lastSingle = null; if (!pts.some(p => !p.h1)) launch(false, st.N); if (!pts.some(p => p.h1)) launch(true, st.N); draw(); },
+      text() { const c = counts(); return `<p>Les deux mondes ensemble. Déplacez le seuil.</p><p>Vers la droite : moins de faux positifs (α baisse), plus de faux négatifs (β monte). Vers la gauche : l'inverse. <b>À données égales, l'un se paie avec l'autre.</b></p><p>Pour S = ${fr(st.S)} : α ≈ ${pct(alpha())} (${c.fp} sur ${c.nA}), β ≈ ${pct(beta())} (${c.fn} sur ${c.nB}). D'habitude on fixe α à 5 % et on regarde ce que ça laisse comme β.</p>`; },
+      ctl: 'S' },
+    { title: '6. Plus de patients',
+      run() { showS = true; dimH0 = false; highlight = 'both'; lastSingle = null; pts = []; launch(false, st.N, 6); launch(true, st.N, 6); },
+      text() { const c = counts(); return `<p>La seule façon de faire baisser les deux risques en même temps : <b>plus de patients</b>. Les piles se resserrent (erreur standard ${fr(se())} °C avec ${st.n} patients par groupe) et se chevauchent moins.</p><p>Au même seuil S = ${fr(st.S)} : α ≈ ${pct(alpha())}, β ≈ ${pct(beta())}. Avec 80 patients par groupe, les deux piles ne se touchent presque plus : le seuil tranche sans se tromper.</p><p>C'est pour cela qu'on calcule le nombre de patients <b>avant</b> l'étude : on choisit α, la puissance 1 − β qu'on veut, le plus petit effet qui compte, et le nombre en découle.</p>`; },
+      ctl: 'n' },
+    { title: '7. Le tableau',
+      run() { showS = true; dimH0 = false; highlight = 'both'; lastSingle = null; if (!pts.some(p => !p.h1)) launch(false, st.N); if (!pts.some(p => p.h1)) launch(true, st.N); draw(); },
+      text() { return `<p>Tout tient dans un tableau à quatre cases, à lire <b>par colonne</b> : chaque colonne est un monde, et dans chaque monde on se trompe une partie du temps.</p><p>On ne sait jamais dans quelle colonne on est : c'est justement ce qu'on cherche. Ce qu'on contrôle, c'est α (par le seuil) et β (par le nombre de patients et la taille de l'effet qu'on veut voir).</p>`; },
+      table: true },
+  ];
+
+  let cur = 0;
+  function show(i) {
+    cur = Math.max(0, Math.min(steps.length - 1, i));
+    const s = steps[cur]; s.run(); render();
+  }
+  function render() {
+    const s = steps[cur];
+    $('steps').innerHTML = steps.map((x, i) => `<button class="step ${i === cur ? 'on' : i < cur ? 'done' : ''}" data-i="${i}">${i + 1}</button>`).join('');
+    $('steps').querySelectorAll('.step').forEach(b => b.addEventListener('click', () => show(+b.dataset.i)));
+    $('story').innerHTML = `<h2>${s.title}</h2>` + s.text();
+    $('ctlS').hidden = s.ctl !== 'S'; $('ctlN').hidden = s.ctl !== 'n';
+    $('S').value = st.S; $('SOut').value = fr(st.S); $('n').value = st.n; $('nOut').value = st.n;
+    $('tbl').hidden = !s.table;
+    if (s.table) {
+      const c = counts();
+      $('t00').innerHTML = `<div class="v">${c.nA - c.fp}</div>correct<br><span class="dim">1 − α</span>`;
+      $('t10').innerHTML = `<div class="v">${c.fp}</div>faux positif<br><span class="dim">α = ${pct(alpha())}</span>`;
+      $('t01').innerHTML = `<div class="v">${c.fn}</div>faux négatif<br><span class="dim">β = ${pct(beta())}</span>`;
+      $('t11').innerHTML = `<div class="v">${c.nB - c.fn}</div>correct<br><span class="dim">puissance 1 − β</span>`;
+      $('t10').className = 'ko'; $('t01').className = 'ko'; $('t00').className = 'ok'; $('t11').className = 'ok';
+    }
+    $('prev').disabled = cur === 0; $('next').disabled = cur === steps.length - 1;
+  }
+  const refreshText = () => { $('story').innerHTML = `<h2>${steps[cur].title}</h2>` + steps[cur].text(); if (steps[cur].table) render(); };
+
+  $('S').addEventListener('input', () => { st.S = +$('S').value; $('SOut').value = fr(st.S); draw(); refreshText(); });
+  $('n').addEventListener('input', () => { st.n = +$('n').value; $('nOut').value = st.n; pts = []; launch(false, st.N, 2); launch(true, st.N, 2); refreshText(); });
+  $('prev').addEventListener('click', () => show(cur - 1));
+  $('next').addEventListener('click', () => show(cur + 1));
+  $('replay').addEventListener('click', () => { pts = []; show(cur); });
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => draw());
+  show(0);
+})();
+</script>
+</body>
+</html>
