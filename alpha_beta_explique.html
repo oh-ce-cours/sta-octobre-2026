@@ -10,7 +10,7 @@
   color-scheme: light;
   --bg:#f5f6f3; --surface:#fdfdfb; --line:#e3e6df; --line-2:#cfd4cb;
   --ink:#171d19; --ink-2:#4d564f; --ink-3:#7d867e;
-  --pop:#2a78d6; --samp:#eb6834; --dist:#1baf7a; --bad:#e34948;
+  --pop:#2a78d6; --samp:#eb6834; --dist:#1baf7a; --bad:#e34948; --fp:#e34948; --fn:#8e44ad;
   --h0:#171d19; --h0-soft:rgba(23,29,25,.18);
   --h1:#2a78d6; --h1-soft:rgba(42,120,214,.2);
   --focus:#2a78d6;
@@ -20,7 +20,7 @@
     color-scheme: dark;
     --bg:#151816; --surface:#1c201d; --line:#2b312d; --line-2:#3a423c;
     --ink:#f2f4f0; --ink-2:#c1c7c0; --ink-3:#8a938c;
-    --pop:#3987e5; --samp:#e8683a; --dist:#22b982; --bad:#e66767;
+    --pop:#3987e5; --samp:#e8683a; --dist:#22b982; --bad:#e66767; --fp:#e66767; --fn:#b07cd6;
     --h0:#f2f4f0; --h0-soft:rgba(242,244,240,.2);
     --h1:#3987e5; --h1-soft:rgba(57,135,229,.24);
   }
@@ -29,7 +29,7 @@
   color-scheme: dark;
   --bg:#151816; --surface:#1c201d; --line:#2b312d; --line-2:#3a423c;
   --ink:#f2f4f0; --ink-2:#c1c7c0; --ink-3:#8a938c;
-  --pop:#3987e5; --samp:#e8683a; --dist:#22b982; --bad:#e66767;
+  --pop:#3987e5; --samp:#e8683a; --dist:#22b982; --bad:#e66767; --fp:#e66767; --fn:#b07cd6;
   --h0:#f2f4f0; --h0-soft:rgba(242,244,240,.2);
   --h1:#3987e5; --h1-soft:rgba(57,135,229,.24);
 }
@@ -62,7 +62,7 @@ table.t{border-collapse:collapse;width:100%;margin-top:10px;font-size:14px}
 table.t th,table.t td{border:1px solid var(--line);padding:7px 8px;text-align:center;vertical-align:top}
 table.t th{font-weight:500;color:var(--ink-2);background:var(--bg)}
 table.t td .v{font-family:"IBM Plex Mono",monospace;font-size:18px}
-table.t td.ok{color:var(--dist)} table.t td.ko{color:var(--bad)}
+table.t td.ok{color:var(--dist)} table.t td.fp{color:var(--fp)} table.t td.fn{color:var(--fn)}
 table.t td.dim{color:var(--ink-3)}
 .legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--ink-2);margin-top:8px}
 .legend span{display:inline-flex;align-items:center;gap:6px}
@@ -85,6 +85,8 @@ table.t td.dim{color:var(--ink-3)}
         <span><i class="sw" style="background:var(--h0)"></i>étude faite dans un monde où le médicament ne fait rien</span>
         <span><i class="sw" style="background:var(--h1)"></i>étude faite dans un monde où il marche</span>
         <span><i class="sw line" style="background:var(--bad)"></i>seuil S</span>
+        <span><i class="sw" style="background:var(--fp)"></i>faux positif (risque α, de type I)</span>
+        <span><i class="sw" style="background:var(--fn)"></i>faux négatif (risque β, de type II)</span>
       </div>
     </div>
 
@@ -92,6 +94,7 @@ table.t td.dim{color:var(--ink-3)}
       <div id="story"></div>
       <div class="ctl" id="ctlS" hidden><label for="S">Seuil S (°C d'écart) <output id="SOut"></output></label><input type="range" id="S" min="0" max="0.9" step="0.01"></div>
       <div class="ctl" id="ctlN" hidden><label for="n">Patients par groupe <output id="nOut"></output></label><input type="range" id="n" min="5" max="120" step="5"></div>
+      <div class="ctl" id="ctlD" hidden><label for="d">Vrai effet du médicament (°C) <output id="dOut"></output></label><input type="range" id="d" min="0.1" max="1.2" step="0.05"></div>
       <table class="t" id="tbl" hidden>
         <tr><th></th><th>il ne fait rien</th><th>il marche</th></tr>
         <tr><th>« rien vu »</th><td id="t00"></td><td id="t01"></td></tr>
@@ -172,16 +175,17 @@ table.t td.dim{color:var(--ink-3)}
     }
 
     // points
-    const h0c = css('--h0'), h1c = css('--h1'), bad = css('--bad');
+    const h0c = css('--h0'), h1c = css('--h1'), fpc = css('--fp'), fnc = css('--fn');
     pts.forEach(p => {
       if (now < p.t0) return;
       const yEnd = y0 - r - 1 - (p.stack - 1) * step;
       let y = yEnd;
       if (!p.landed) { const k = Math.min(1, (now - p.t0) / 450); y = 20 + (yEnd - 20) * (k * k); }
       const dim = dimH0 && !p.h1;
-      const wrong = !dim && showS && highlight && ((highlight === 'fp' && !p.h1 && p.x > st.S) || (highlight === 'fn' && p.h1 && p.x <= st.S) || (highlight === 'both' && ((!p.h1 && p.x > st.S) || (p.h1 && p.x <= st.S))));
+      const isFP = !p.h1 && p.x > st.S, isFN = p.h1 && p.x <= st.S;
+      const wrong = !dim && showS && highlight && ((highlight === 'fp' && isFP) || (highlight === 'fn' && isFN) || (highlight === 'both' && (isFP || isFN)));
       ctx.beginPath(); ctx.arc(X(p.x), y, r, 0, 2 * Math.PI);
-      ctx.fillStyle = wrong ? bad : (p.h1 ? h1c : h0c); ctx.globalAlpha = dim ? 0.12 : wrong ? 1 : 0.85; ctx.fill(); ctx.globalAlpha = 1;
+      ctx.fillStyle = wrong ? (isFP ? fpc : fnc) : (p.h1 ? h1c : h0c); ctx.globalAlpha = dim ? 0.12 : wrong ? 1 : 0.85; ctx.fill(); ctx.globalAlpha = 1;
     });
     if (lastSingle !== null) {
       ctx.fillStyle = css('--samp'); ctx.font = '13px "IBM Plex Sans", sans-serif'; ctx.textAlign = 'center';
@@ -206,22 +210,24 @@ table.t td.dim{color:var(--ink-3)}
       text() { return `<p>Refaisons l'étude ${st.N} fois, toujours avec un médicament qui ne fait rien. Chaque point est une étude complète de 40 patients.</p><p>Les écarts s'empilent autour de 0, mais ils s'étalent : la largeur de la pile, c'est l'erreur standard, ${fr(se())} °C ici. Quelques études tombent loin, à 0,3 ou 0,4 °C, <b>sans qu'il y ait quoi que ce soit à trouver</b>.</p>`; } },
     { title: '3. Le seuil et les faux positifs',
       run() { showS = true; dimH0 = false; highlight = 'fp'; lastSingle = null; if (!pts.some(p => !p.h1)) launch(false, st.N); else draw(); },
+      table: true,
       text() { const c = counts(); return `<p>Il faut bien décider. On fixe un seuil : au-delà de S = ${fr(st.S)} °C, on dira « il marche ».</p><p>Problème : dans ce monde où il ne fait rien, ${c.fp} études sur ${c.nA} passent quand même le seuil (en rouge). On y conclura « il marche » à tort : ce sont les <b>faux positifs</b>, et leur part est le risque <b>α</b> : ${pct(c.fp / c.nA)} observé, ${pct(alpha())} en théorie.</p><p>α, c'est le prix d'avoir un seuil : on ne peut pas le mettre à 0 sans ne plus jamais rien conclure.</p>`; } },
     { title: '4. Le monde où il marche',
       run() { showS = true; dimH0 = true; highlight = 'fn'; lastSingle = null; if (!pts.some(p => p.h1)) launch(true, st.N); else draw(); },
-      text() { const c = counts(); return `<p>Même expérience dans l'autre monde : le médicament baisse vraiment la fièvre de ${fr(st.d)} °C. Les écarts s'empilent autour de ${fr(st.d)}.</p><p>Mais une partie des études tombe <b>sous</b> le seuil (en rouge) : ${c.fn} sur ${c.nB}. On y conclura « rien vu » alors que l'effet existe : ce sont les <b>faux négatifs</b>, et leur part est le risque <b>β</b> : ${pct(c.fn / c.nB)} observé, ${pct(beta())} en théorie.</p><p>« Rien vu » n'est pas « il n'y a rien » : absence de preuve n'est pas preuve d'absence.</p>`; } },
+      table: true,
+      text() { const c = counts(); return `<p>Même expérience dans l'autre monde : le médicament baisse vraiment la fièvre de ${fr(st.d)} °C. Les écarts s'empilent autour de ${fr(st.d)}.</p><p>Mais une partie des études tombe <b>sous</b> le seuil (en violet) : ${c.fn} sur ${c.nB}. On y conclura « rien vu » alors que l'effet existe : ce sont les <b>faux négatifs</b>, et leur part est le risque <b>β</b> : ${pct(c.fn / c.nB)} observé, ${pct(beta())} en théorie.</p><p>« Rien vu » n'est pas « il n'y a rien » : absence de preuve n'est pas preuve d'absence.</p>`; } },
     { title: '5. Bouger le seuil',
       run() { showS = true; dimH0 = false; highlight = 'both'; lastSingle = null; if (!pts.some(p => !p.h1)) launch(false, st.N); if (!pts.some(p => p.h1)) launch(true, st.N); draw(); },
       text() { const c = counts(); return `<p>Les deux mondes ensemble. Déplacez le seuil.</p><p>Vers la droite : moins de faux positifs (α baisse), plus de faux négatifs (β monte). Vers la gauche : l'inverse. <b>À données égales, l'un se paie avec l'autre.</b></p><p>Pour S = ${fr(st.S)} : α ≈ ${pct(alpha())} (${c.fp} sur ${c.nA}), β ≈ ${pct(beta())} (${c.fn} sur ${c.nB}). D'habitude on fixe α à 5 % et on regarde ce que ça laisse comme β.</p>`; },
-      ctl: 'S' },
+      ctl: ['S'], table: true },
     { title: '6. Plus de patients',
       run() { showS = true; dimH0 = false; highlight = 'both'; lastSingle = null; pts = []; launch(false, st.N, 6); launch(true, st.N, 6); },
       text() { const c = counts(); return `<p>La seule façon de faire baisser les deux risques en même temps : <b>plus de patients</b>. Les piles se resserrent (erreur standard ${fr(se())} °C avec ${st.n} patients par groupe) et se chevauchent moins.</p><p>Au même seuil S = ${fr(st.S)} : α ≈ ${pct(alpha())}, β ≈ ${pct(beta())}. Avec 80 patients par groupe, les deux piles ne se touchent presque plus : le seuil tranche sans se tromper.</p><p>C'est pour cela qu'on calcule le nombre de patients <b>avant</b> l'étude : on choisit α, la puissance 1 − β qu'on veut, le plus petit effet qui compte, et le nombre en découle.</p>`; },
-      ctl: 'n' },
+      ctl: ['n'], table: true },
     { title: '7. Le tableau',
       run() { showS = true; dimH0 = false; highlight = 'both'; lastSingle = null; if (!pts.some(p => !p.h1)) launch(false, st.N); if (!pts.some(p => p.h1)) launch(true, st.N); draw(); },
-      text() { return `<p>Tout tient dans un tableau à quatre cases, à lire <b>par colonne</b> : chaque colonne est un monde, et dans chaque monde on se trompe une partie du temps.</p><p>On ne sait jamais dans quelle colonne on est : c'est justement ce qu'on cherche. Ce qu'on contrôle, c'est α (par le seuil) et β (par le nombre de patients et la taille de l'effet qu'on veut voir).</p>`; },
-      table: true },
+      text() { return `<p>Tout tient dans un tableau à quatre cases, à lire <b>par colonne</b> : chaque colonne est un monde, et dans chaque monde on se trompe une partie du temps.</p><p>On ne sait jamais dans quelle colonne on est : c'est justement ce qu'on cherche. Ce qu'on contrôle, c'est α (par le seuil) et β (par le nombre de patients et la taille de l'effet qu'on veut voir).</p><p>Les trois curseurs sont libres : un gros effet ou beaucoup de patients écartent les deux piles, un seuil déplacé fait passer l'erreur d'une case à l'autre.</p>`; },
+      ctl: ['S', 'n', 'd'], table: true },
   ];
 
   let cur = 0;
@@ -234,23 +240,26 @@ table.t td.dim{color:var(--ink-3)}
     $('steps').innerHTML = steps.map((x, i) => `<button class="step ${i === cur ? 'on' : i < cur ? 'done' : ''}" data-i="${i}">${i + 1}</button>`).join('');
     $('steps').querySelectorAll('.step').forEach(b => b.addEventListener('click', () => show(+b.dataset.i)));
     $('story').innerHTML = `<h2>${s.title}</h2>` + s.text();
-    $('ctlS').hidden = s.ctl !== 'S'; $('ctlN').hidden = s.ctl !== 'n';
-    $('S').value = st.S; $('SOut').value = fr(st.S); $('n').value = st.n; $('nOut').value = st.n;
+    const ctl = s.ctl || [];
+    $('ctlS').hidden = !ctl.includes('S'); $('ctlN').hidden = !ctl.includes('n'); $('ctlD').hidden = !ctl.includes('d');
+    $('S').value = st.S; $('SOut').value = fr(st.S); $('n').value = st.n; $('nOut').value = st.n; $('d').value = st.d; $('dOut').value = fr(st.d);
     $('tbl').hidden = !s.table;
     if (s.table) {
-      const c = counts();
+      const c = counts(); const h1 = c.nB > 0;
       $('t00').innerHTML = `<div class="v">${c.nA - c.fp}</div>correct<br><span class="dim">1 − α</span>`;
-      $('t10').innerHTML = `<div class="v">${c.fp}</div>faux positif<br><span class="dim">α = ${pct(alpha())}</span>`;
-      $('t01').innerHTML = `<div class="v">${c.fn}</div>faux négatif<br><span class="dim">β = ${pct(beta())}</span>`;
-      $('t11').innerHTML = `<div class="v">${c.nB - c.fn}</div>correct<br><span class="dim">puissance 1 − β</span>`;
-      $('t10').className = 'ko'; $('t01').className = 'ko'; $('t00').className = 'ok'; $('t11').className = 'ok';
+      $('t10').innerHTML = `<div class="v">${c.fp}</div>faux positif, type I<br><span class="dim">α = ${pct(alpha())}</span>`;
+      $('t01').innerHTML = h1 ? `<div class="v">${c.fn}</div>faux négatif, type II<br><span class="dim">β = ${pct(beta())}</span>` : `<div class="v">–</div><span class="dim">étape suivante</span>`;
+      $('t11').innerHTML = h1 ? `<div class="v">${c.nB - c.fn}</div>correct<br><span class="dim">puissance 1 − β</span>` : `<div class="v">–</div>`;
+      $('t10').className = 'fp'; $('t01').className = h1 ? 'fn' : 'dim'; $('t00').className = 'ok'; $('t11').className = h1 ? 'ok' : 'dim';
     }
     $('prev').disabled = cur === 0; $('next').disabled = cur === steps.length - 1;
   }
   const refreshText = () => { $('story').innerHTML = `<h2>${steps[cur].title}</h2>` + steps[cur].text(); if (steps[cur].table) render(); };
 
   $('S').addEventListener('input', () => { st.S = +$('S').value; $('SOut').value = fr(st.S); draw(); refreshText(); });
-  $('n').addEventListener('input', () => { st.n = +$('n').value; $('nOut').value = st.n; pts = []; launch(false, st.N, 2); launch(true, st.N, 2); refreshText(); });
+  const relaunch = () => { const hadH1 = pts.some(p => p.h1); pts = []; launch(false, st.N, 2); if (hadH1) launch(true, st.N, 2); };
+  $('n').addEventListener('input', () => { st.n = +$('n').value; $('nOut').value = st.n; relaunch(); refreshText(); });
+  $('d').addEventListener('input', () => { st.d = +$('d').value; $('dOut').value = fr(st.d); relaunch(); refreshText(); });
   $('prev').addEventListener('click', () => show(cur - 1));
   $('next').addEventListener('click', () => show(cur + 1));
   $('replay').addEventListener('click', () => { pts = []; show(cur); });
