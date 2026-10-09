@@ -18,6 +18,7 @@ legend("topright", c("A", "B"), col = c("blue", "red"), lwd = 2)
 # Fréquences cumulées : la médiane se lit à 0,5
 plot(ecdf(salaires$entreprise_a), col = "blue", main = "Fréquences cumulées")
 plot(ecdf(salaires$entreprise_b), col = "red", add = TRUE)
+legend("topleft", c("A", "B"), col = c("blue", "red"), lwd = 2)
 abline(h = 0.5, lty = 2)
 
 # Boxplots côte à côte
